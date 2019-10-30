@@ -21,6 +21,9 @@ Controls for transmitting and receiving from the Lora modules. This code will li
 ## Display.c/h
 Controls for interfacing with the LCD module directly. If the Arduino libraries this functionality, this class may be excluded.
 
+## Alarm.c/h
+Carries an enumerated set of alarm messages and codes, stored locally on both the alarm and main door. this is to allow for minimized data transmission and possibility of error.
+
 ## Display_impl.c/h
 Implements functions for menu navigation and status display on the LCD. Displays status of the door, allows for manual door functions to be entered, and reads off pre-written alarm messages.
 
