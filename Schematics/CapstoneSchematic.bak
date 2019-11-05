@@ -513,11 +513,9 @@ Wire Wire Line
 Wire Wire Line
 	7250 3250 7250 3800
 $Comp
-L CapstoneSchematic-cache:CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator UReg?
+L CapstoneSchematic-cache:CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator UReg?
 U 1 1 5DBD091B
 P 5950 2600
-AR Path="/5DBD091B" Ref="UReg?"  Part="1" 
-AR Path="/5DC4244F/5DBD091B" Ref="UReg?"  Part="1" 
 F 0 "UReg?" V 5929 2688 50  0000 L CNN
 F 1 "LinearRegulatorPCB" V 6020 2688 50  0000 L CNN
 F 2 "" H 6350 2700 50  0001 C CNN

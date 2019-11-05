@@ -1,7 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
 $CMP ArduinoRGBShield
-D Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
 $ENDCMP
