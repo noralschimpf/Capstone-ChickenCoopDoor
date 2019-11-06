@@ -1,22 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator
-#
-DEF CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator U 0 40 Y Y 1 F N
-F0 "U" 0 -200 50 H V C CNN
-F1 "CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator" 50 100 50 H V C CNN
-F2 "" 0 -200 50 H I C CNN
-F3 "" 0 -200 50 H I C CNN
-DRAW
-S -200 50 250 -150 0 1 0 N
-X IN+ ~ -300 0 100 R 50 50 1 1 W
-X IN- ~ -300 -100 100 R 50 50 1 1 W
-X OUT+ ~ 350 0 100 L 50 50 1 1 w
-X OUT- ~ 350 -100 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
 # CapstoneSchematic-rescue_2RelayModule-CapstoneLib
 #
 DEF CapstoneSchematic-rescue_2RelayModule-CapstoneLib U 0 40 Y Y 1 F N
@@ -102,6 +86,22 @@ X V_POS ~ 700 -850 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# CapstoneSchematic-rescue_CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator-CapstoneSchematic-cache
+#
+DEF CapstoneSchematic-rescue_CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator-CapstoneSchematic-cache U 0 40 Y Y 1 F N
+F0 "U" 0 -200 50 H V C CNN
+F1 "CapstoneSchematic-rescue_CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator-CapstoneSchematic-cache" 50 100 50 H V C CNN
+F2 "" 0 -200 50 H I C CNN
+F3 "" 0 -200 50 H I C CNN
+DRAW
+S -200 50 250 -150 0 1 0 N
+X IN+ ~ -300 0 100 R 50 50 1 1 W
+X IN- ~ -300 -100 100 R 50 50 1 1 W
+X OUT+ ~ 350 0 100 L 50 50 1 1 w
+X OUT- ~ 350 -100 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
 # CapstoneSchematic-rescue_LinearActuator-CapstoneLib
 #
 DEF CapstoneSchematic-rescue_LinearActuator-CapstoneLib U 0 40 Y Y 1 F N
@@ -150,6 +150,21 @@ X NC_T1 ~ 1250 -50 100 L 50 50 1 1 I
 X NC_T2 ~ 1250 -300 100 L 50 50 1 1 I
 X NO_T1 ~ 1250 -150 100 L 50 50 1 1 I
 X NO_T2 ~ 1250 -400 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CapstoneSchematic_LaserSensor
+#
+DEF CapstoneSchematic_LaserSensor U 0 40 Y Y 1 F N
+F0 "U" 350 -50 50 H V C CNN
+F1 "CapstoneSchematic_LaserSensor" 700 -50 50 H V C CNN
+F2 "" 350 -50 50 H I C CNN
+F3 "" 350 -50 50 H I C CNN
+DRAW
+S 300 0 950 -400 0 1 0 N
+X Vcc 1 200 -150 100 R 50 50 1 1 I
+X Gnd 2 200 -250 100 R 50 50 1 1 I
+X DAT 3 200 -350 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -299,7 +314,7 @@ ENDDEF
 #
 # MCU_Module_Arduino_UNO_R3
 #
-DEF MCU_Module_Arduino_UNO_R3 A 0 40 Y Y 1 F N
+DEF MCU_Module_Arduino_UNO_R3 A 0 20 Y Y 1 F N
 F0 "A" -200 1050 50 H V R CNN
 F1 "MCU_Module_Arduino_UNO_R3" -200 950 50 H V R CNN
 F2 "Module:Arduino_UNO_R3" 150 -1050 50 H I L CNN

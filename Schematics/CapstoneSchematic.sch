@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:CapstoneSchematic-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -475,8 +475,6 @@ Wire Wire Line
 	7250 4800 7250 5050
 Wire Wire Line
 	7950 5050 7950 5650
-Wire Wire Line
-	7250 5050 7950 5050
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5DCB4C18
@@ -513,7 +511,7 @@ Wire Wire Line
 Wire Wire Line
 	7250 3250 7250 3800
 $Comp
-L CapstoneSchematic-cache:CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator UReg?
+L CapstoneSchematic-rescue:CapstoneSchematic-cache_CapstoneSchematic-cache_CapstoneSchematic-cache_Linear_Regulator-CapstoneSchematic-cache UReg?
 U 1 1 5DBD091B
 P 5950 2600
 AR Path="/5DBD091B" Ref="UReg?"  Part="1" 
@@ -622,4 +620,43 @@ F 3 "" H 5750 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 2950 5750 2950
+Wire Wire Line
+	7250 5050 7950 5050
+$Comp
+L CapstoneSchematic:LaserSensor U?
+U 1 1 5DC2BFC6
+P 8150 4650
+F 0 "U?" H 9128 4496 50  0000 L CNN
+F 1 "LaserSensor" H 9128 4405 50  0000 L CNN
+F 2 "" H 8500 4600 50  0001 C CNN
+F 3 "" H 8500 4600 50  0001 C CNN
+	1    8150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4800 7450 5000
+Wire Wire Line
+	7450 5000 8350 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5DC36A10
+P 8350 4900
+F 0 "#PWR?" H 8350 4650 50  0001 C CNN
+F 1 "GND" V 8355 4772 50  0000 R CNN
+F 2 "" H 8350 4900 50  0001 C CNN
+F 3 "" H 8350 4900 50  0001 C CNN
+	1    8350 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC36F90
+P 8350 4800
+F 0 "#PWR?" H 8350 4650 50  0001 C CNN
+F 1 "+5V" V 8365 4928 50  0000 L CNN
+F 2 "" H 8350 4800 50  0001 C CNN
+F 3 "" H 8350 4800 50  0001 C CNN
+	1    8350 4800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
