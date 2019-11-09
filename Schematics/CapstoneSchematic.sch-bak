@@ -159,6 +159,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001942G.pdf" H 7200 2550 
 	1    7200 2550
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	4550 5400 7050 5400
+Wire Wire Line
+	7050 5400 7050 4800
 $Comp
 L MCU_Module:Arduino_UNO_R3 A1
 U 1 1 5DBB2CDA
@@ -396,6 +400,8 @@ Wire Wire Line
 Wire Wire Line
 	5200 6350 4750 6350
 Wire Wire Line
+	5350 5750 5350 7150
+Wire Wire Line
 	5350 7150 4650 7150
 Wire Wire Line
 	2500 6750 2500 7350
@@ -407,6 +413,10 @@ Wire Wire Line
 	5000 7300 4650 7300
 Wire Wire Line
 	6550 5650 5200 5650
+Wire Wire Line
+	6650 5750 5350 5750
+Wire Wire Line
+	6650 4800 6650 5750
 Wire Wire Line
 	6250 4900 6750 4900
 Wire Wire Line
@@ -447,6 +457,43 @@ F 3 "" H 5750 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 2950 5750 2950
+$Comp
+L CapstoneSchematic:LaserSensor U6
+U 1 1 5DC2BFC6
+P 8150 4650
+F 0 "U6" H 9128 4496 50  0000 L CNN
+F 1 "LaserSensor" H 9128 4405 50  0000 L CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03503HBLU_1x03_P5.00mm_Horizontal" H 8500 4600 50  0001 C CNN
+F 3 "" H 8500 4600 50  0001 C CNN
+	1    8150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4800 7450 5000
+Wire Wire Line
+	7450 5000 8350 5000
+$Comp
+L power:GND #PWR0121
+U 1 1 5DC36A10
+P 8350 4900
+F 0 "#PWR0121" H 8350 4650 50  0001 C CNN
+F 1 "GND" V 8355 4772 50  0000 R CNN
+F 2 "" H 8350 4900 50  0001 C CNN
+F 3 "" H 8350 4900 50  0001 C CNN
+	1    8350 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 5DC36F90
+P 8350 4800
+F 0 "#PWR0122" H 8350 4650 50  0001 C CNN
+F 1 "+5V" V 8365 4928 50  0000 L CNN
+F 2 "" H 8350 4800 50  0001 C CNN
+F 3 "" H 8350 4800 50  0001 C CNN
+	1    8350 4800
+	0    -1   -1   0   
+$EndComp
 $Comp
 L pspice:0 #GND0101
 U 1 1 5DC3A737
@@ -640,67 +687,6 @@ Wire Wire Line
 	9300 5300 6950 5300
 Wire Wire Line
 	6950 5300 6950 4800
-Wire Wire Line
-	5350 5750 5350 7150
-Wire Wire Line
-	6650 5750 5350 5750
-Wire Wire Line
-	6650 4800 6650 5750
-Wire Wire Line
-	7450 4800 7450 5000
-$Comp
-L power:+5V #PWR0122
-U 1 1 5DC36F90
-P 8350 4800
-F 0 "#PWR0122" H 8350 4650 50  0001 C CNN
-F 1 "+5V" V 8365 4928 50  0000 L CNN
-F 2 "" H 8350 4800 50  0001 C CNN
-F 3 "" H 8350 4800 50  0001 C CNN
-	1    8350 4800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 5DC36A10
-P 8350 4900
-F 0 "#PWR0121" H 8350 4650 50  0001 C CNN
-F 1 "GND" V 8355 4772 50  0000 R CNN
-F 2 "" H 8350 4900 50  0001 C CNN
-F 3 "" H 8350 4900 50  0001 C CNN
-	1    8350 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7450 5000 8350 5000
-$Comp
-L CapstoneSchematic:LaserSensor U6
-U 1 1 5DC2BFC6
-P 8150 4650
-F 0 "U6" H 9128 4496 50  0000 L CNN
-F 1 "LaserSensor" H 9128 4405 50  0000 L CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03503HBLU_1x03_P5.00mm_Horizontal" H 8500 4600 50  0001 C CNN
-F 3 "" H 8500 4600 50  0001 C CNN
-	1    8150 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 5050 8100 5050
-Wire Wire Line
-	7250 4800 7250 5050
-Wire Wire Line
-	7300 5550 7300 5650
-Wire Wire Line
-	7150 5550 7300 5550
-Wire Wire Line
-	4550 5500 7650 5500
-Wire Wire Line
-	7650 5500 7650 4800
-Wire Wire Line
-	7150 4800 7150 5550
-Wire Wire Line
-	4550 5400 7550 5400
-Wire Wire Line
-	7550 5400 7550 4800
 $Comp
 L power:+5V #PWR0103
 U 1 1 5DC9AA46
@@ -745,4 +731,16 @@ F 3 "" H 10200 6400 50  0001 C CNN
 	1    10200 6400
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	7300 5650 7250 5650
+Wire Wire Line
+	8100 5050 7150 5050
+Wire Wire Line
+	7150 4800 7150 5050
+Wire Wire Line
+	7250 4800 7250 5650
+Wire Wire Line
+	7650 5500 7650 4800
+Wire Wire Line
+	4550 5500 7650 5500
 $EndSCHEMATC

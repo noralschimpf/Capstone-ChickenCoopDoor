@@ -218,6 +218,21 @@ X ~ 3 600 -200 50 L 0 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# ProxSensor
+#
+DEF ProxSensor MPS 0 40 Y Y 1 F N
+F0 "MPS" 200 -150 39 H V C CNN
+F1 "ProxSensor" 300 -50 50 H V C CNN
+F2 "" 450 -50 50 H I C CNN
+F3 "" 450 -50 50 H I C CNN
+DRAW
+S 0 0 550 -350 0 1 0 N
+X Vin 1 -100 -150 100 R 39 39 1 1 I
+X Gnd 2 650 -150 100 L 39 39 1 1 I
+X Dout 3 300 -450 100 U 39 39 1 1 I
+ENDDRAW
+ENDDEF
+#
 # SnapActionSwitch
 #
 DEF SnapActionSwitch SAS 0 40 Y Y 1 F N
