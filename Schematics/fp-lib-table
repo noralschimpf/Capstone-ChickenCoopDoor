@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Capstone_PCB_Lib)(type KiCad)(uri ${KIPRJMOD}/Capstone_PCB_Lib.pretty)(options "")(descr ""))
+)
