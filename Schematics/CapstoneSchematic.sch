@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 EESchema Schematic File Version 4
 LIBS:CapstoneSchematic-cache
 EELAYER 30 0
@@ -1329,4 +1328,3 @@ F 3 "" H 8350 4800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
->>>>>>> 5b209083562572716804d08737f8d27f0dbc1723

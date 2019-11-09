@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 EESchema Schematic File Version 4
 LIBS:CapstoneSchematic-cache
 EELAYER 30 0
@@ -613,4 +612,4 @@ Wireless Alarm Schematic
 Text Notes 8150 7650 0    50   ~ 0
 11/1/2019
 $EndSCHEMATC
->>>>>>> 5b209083562572716804d08737f8d27f0dbc1723
+

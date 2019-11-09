@@ -1,10 +1,3 @@
-<<<<<<< HEAD
 (sym_lib_table
   (lib (name CapstoneSchematic)(type Legacy)(uri ${KIPRJMOD}/CapstoneLibrary.pretty/CapstoneLib.lib)(options "")(descr ""))
 )
-=======
-(sym_lib_table
-  (lib (name CapstoneSchematic-rescue)(type Legacy)(uri ${KIPRJMOD}/CapstoneSchematic-rescue.lib)(options "")(descr ""))
-  (lib (name CapstoneSchematic)(type Legacy)(uri C:/Users/Jacob/source/repos/Capstone-ChickenCoopDoor/Schematics/CapstoneLibrary.pretty/CapstoneLib.lib)(options "")(descr ""))
-)
->>>>>>> 5b209083562572716804d08737f8d27f0dbc1723
