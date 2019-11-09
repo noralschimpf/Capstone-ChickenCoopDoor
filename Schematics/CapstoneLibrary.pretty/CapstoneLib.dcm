@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 EESchema-DOCLIB  Version 2.0
 #
 $CMP ArduinoRGBShield
@@ -13,3 +14,14 @@ F ~
 $ENDCMP
 #
 #End Doc Library
+=======
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ArduinoRGBShield
+D Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
+>>>>>>> 5b209083562572716804d08737f8d27f0dbc1723
