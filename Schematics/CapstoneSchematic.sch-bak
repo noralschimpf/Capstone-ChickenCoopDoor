@@ -209,7 +209,7 @@ U 1 1 5DBEAB00
 P 3700 3300
 F 0 "SAS2" H 4325 3475 50  0000 C CNN
 F 1 "SnapActionSwitch" H 4325 3384 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03502HBLU_1x02_P5.00mm_Horizontal" H 3650 3200 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03503HBLU_1x03_P5.00mm_Horizontal" H 3650 3200 50  0001 C CNN
 F 3 "" H 3650 3200 50  0001 C CNN
 	1    3700 3300
 	1    0    0    -1  
@@ -220,7 +220,7 @@ U 1 1 5DBEA292
 P 3800 2500
 F 0 "SAS1" H 4425 2675 50  0000 C CNN
 F 1 "SnapActionSwitch" H 4425 2584 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03503HBLU_1x03_P5.00mm_Horizontal" H 3750 2400 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03502HBLU_1x02_P5.00mm_Horizontal" H 3750 2400 50  0001 C CNN
 F 3 "" H 3750 2400 50  0001 C CNN
 	1    3800 2500
 	1    0    0    -1  
