@@ -148,15 +148,15 @@ ENDDEF
 #
 # LinearActuator
 #
-DEF LinearActuator U 0 40 Y Y 1 F N
-F0 "U" 350 -250 50 H V C CNN
+DEF LinearActuator LA 0 40 Y Y 1 F N
+F0 "LA" 350 -250 50 H V C CNN
 F1 "LinearActuator" 350 -50 50 H V C CNN
 F2 "" 350 -250 50 H I C CNN
 F3 "" 350 -250 50 H I C CNN
 DRAW
 S 50 0 650 -700 0 1 0 N
-X VNeg 1 -50 -300 100 R 50 50 1 1 I
-X Vpos 2 -50 -550 100 R 50 50 1 1 I
+X VNeg 1 -50 -550 100 R 50 50 1 1 I
+X Vpos 2 -50 -350 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
