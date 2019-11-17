@@ -1,5 +1,5 @@
-class DayNightSettings{
-    public: double temp;
-    public: int lumens;
-    public: int timeToActivate;
+struct DayNightSettings{
+    double temp;
+    int lumens;
+    int timeToActivate;
 };
