@@ -1,5 +1,11 @@
+#ifndef DayNightSettings_h
+#define DayNightSettings_h
+
 struct DayNightSettings{
-    double temp;
-    int lumens;
-    int timeToActivate;
-};
+    public:
+        double temp;
+        int lumens;
+        int timeToActivate;
+} DayNightSettings;
+
+#endif
