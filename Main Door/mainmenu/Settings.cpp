@@ -8,6 +8,16 @@ Settings::Settings()
 	MorningSettings = {0.0,512,60};
 	EveningSettings = {0.0,512,60};
 }
+Settings::Settings(double temp[2], int lumens[2], int activationTime[2])
+{
+	MorningSettings.temp = temp[0];
+	MorningSettings.lumens = lumens[0];
+	MorningSettings.timeToActivate = activationTime[0];
+
+	EveningSettings.temp = temp[1];
+	EveningSettings.lumens = lumens[1];
+	EveningSettings.timeToActivate = activationTime[1];
+}
 
 double Settings::GetTemp(bool isDaylight)
 {
