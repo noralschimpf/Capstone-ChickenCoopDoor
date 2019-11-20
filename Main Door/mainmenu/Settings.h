@@ -7,6 +7,8 @@ class Settings{
 		struct DayNightSettings MorningSettings;
 		struct DayNightSettings EveningSettings;
 	public:
+		Settings();
+		Settings(double temp[2], int lumens[2], int activationTime[2]);
 		double GetTemp(bool isDaylight);
 		int GetLumens(bool isDaylight);
 		int GetActivationTime(bool isDaylight);
