@@ -19,9 +19,10 @@ int Temperature = 0;
 int Light = 0;
 int CurrentMenu= 0;
 int MenuSelect = 0;
-int ScrollCount = 0;
-boolean MenuScroll = true; //ONLY MODIFY VIA: MenuControls()
 unsigned long MenuLastUpdated = 0; //ONLY MODIFY VIA: MenuControls()
+
+int ScrollCount = 0;
+int ScrollTotal = 0;
 
 
 void setup() {
@@ -30,7 +31,7 @@ void setup() {
   lcd.begin(16,2);
   
   lcd.clear();
-  MenuControls(CurrentMenu);
+  MenuControls(CurrentMenu,false);
   analogReference(EXTERNAL);
   
 }
@@ -39,13 +40,13 @@ void loop() {
   // put your main code here, to run repeatedly:
   if(CurrentMenu != MenuSelect)
   {
-    MenuControls(MenuSelect);
+    MenuControls(MenuSelect,false);
     CurrentMenu = MenuSelect;
     MenuLastUpdated = millis();
   }
   else if(millis() - MenuLastUpdated > REFRESH_RATE)
   {
-    MenuControls(MenuSelect);
+    MenuControls(MenuSelect,true);
     CurrentMenu = MenuSelect;
     MenuLastUpdated = millis();
   }
@@ -99,39 +100,66 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
   switch(CurrentMenu)
   {
     case MENU_MAIN:
-      print2ln(lcd,"Main Menu","Up:Open Dn:Close Lft:Day Rt:Night");
-      lcd.setBacklight(GREEN);
-      MenuScroll = true;
+      ScrollTotal = 1;
+      if (!isRefresh)
+      {
+        print2ln(lcd,"Main Menu","Up:Open Dn:CloseLft:Day Rt:Night");
+        lcd.setBacklight(GREEN);
+        ScrollCount=1;
+      }
+      else {ScrollCount=refreshLine(1,"Up:Open Dn:CloseLft:Day Rt:Night",ScrollCount,ScrollTotal);}
       break;
     case MENU_OPEN:
-      print2ln(lcd,"Opening Door","Sel:Escape");
-      lcd.setBacklight(YELLOW);
-      MenuScroll = false;
+      ScrollCount=0; ScrollTotal = 0;
+      if (!isRefresh)
+      {
+        print2ln(lcd,"Opening Door","Sel:Escape");
+        lcd.setBacklight(YELLOW);
+      }
       break;
     case MENU_CLOSE:
-      print2ln(lcd, "Closing Door","Sel:Escape");
-      lcd.setBacklight(YELLOW);
-      MenuScroll = false;
+      ScrollCount = ScrollTotal = 0;
+      if(!isRefresh)
+      {
+        print2ln(lcd, "Closing Door","Sel:Escape");
+        lcd.setBacklight(YELLOW);
+      }
+      
       break;
     case MENU_DAY:
+      ScrollTotal = 1;
       checkTemp();
       checkLight(MORNING);
-      print2ln(lcd,"Day Mode Tm:" + (String)Temperature + "L:" + (String)Light,"Sel:Escape");
-      lcd.setBacklight(GREEN);
-      MenuScroll = true;
+      if(!isRefresh)
+      {
+        print2ln(lcd,"Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
+        lcd.setBacklight(GREEN);
+        ScrollCount=1;
+      }
+      else{ScrollCount = refreshLine(0,"Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light,ScrollCount,ScrollTotal);}
       break;
     case MENU_NIGHT:
+      ScrollTotal = 1;
       checkTemp();
       checkLight(EVENING);
-      print2ln(lcd,"Night Mode  Tm:" + (String)Temperature + "L:" + (String)Light,"Sel:Escape");
-      lcd.setBacklight(GREEN);
-      MenuScroll = true;
+      if(!isRefresh)
+      {
+        print2ln(lcd,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
+        lcd.setBacklight(GREEN);
+        ScrollCount = 1;
+      }
+      else{ScrollCount = refreshLine(0,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,ScrollCount,ScrollTotal);}
       break;
       //TODO: ADD SAFETY/ERROR STATES
     default:
-      print2ln(lcd,"Main Menu","Up:Open Dn:Close L:Day R:Night");
-      lcd.setBacklight(GREEN);
-      MenuScroll = true;
+      ScrollTotal = 1;
+      if (!isRefresh)
+      {
+        print2ln(lcd,"Main Menu","Up:Open Dn:Close Lft:Day Rt:Night");
+        lcd.setBacklight(GREEN);
+        ScrollCount=1;
+      }
+      else {ScrollCount=refreshLine(1,"Up:Open Dn:Close Lft:Day Rt:Night",ScrollCount,ScrollTotal);}
       break;
   }
 }
@@ -162,10 +190,12 @@ int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
       break;
     case MENU_DAY:
       if(buttons & BUTTON_SELECT){NextScreen = MENU_MAIN;}
+      else if(checkTemp() && checkLight(MORNING)){NextScreen = MENU_OPEN;}
       else {NextScreen = MENU_DAY;}
       break;
     case MENU_NIGHT:
       if(buttons & BUTTON_SELECT){NextScreen = MENU_MAIN;}
+      else if(checkTemp() && checkLight(EVENING)){NextScreen = MENU_CLOSE;}
       else {NextScreen = MENU_NIGHT;}
       break;
       //TODO: ADD SAFETY/ERROR STATES
@@ -181,9 +211,19 @@ int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
 }
 //TODO:Add state switches within interrupts
 
-void replacechar(int col, int row, String newStr)
+int refreshLine(int row, String Str, int section, int len)
 {
-  lcd.setCursor(col,row);
-  lcd.print(newStr);
+  String strToPrint;
+  
+  //reset out-of-bounds section indices
+  if (section>len){section=0;}
+  
+  //print selected section
+  if(section==len){strToPrint=Str.substring(section*16);}
+  else {strToPrint=Str.substring(section*16,(section+1)*16);}
+  lcd.setCursor(0,row);
+  lcd.print(strToPrint);
   lcd.setCursor(0,0);
+
+  return section+1;
 }
