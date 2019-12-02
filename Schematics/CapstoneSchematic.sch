@@ -608,13 +608,6 @@ F 3 "~" H 2200 4000 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	1950 3900 1950 3800
-Wire Wire Line
-	1950 3050 2400 3050
-Connection ~ 1950 3800
-Wire Wire Line
-	1950 3800 1950 3050
-Wire Wire Line
 	1950 4250 2750 4250
 Wire Wire Line
 	2750 4250 2750 3650
@@ -796,6 +789,14 @@ F 3 "" H 5400 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 4050 6650 5750
+Wire Wire Line
+	2350 3050 2350 3900
+Wire Wire Line
+	2350 3050 2400 3050
+Wire Wire Line
+	1950 3900 2350 3900
+Text Notes 1000 5800 0    50   ~ 0
+Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line

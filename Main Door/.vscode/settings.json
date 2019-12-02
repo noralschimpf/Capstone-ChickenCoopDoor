@@ -3,6 +3,9 @@
         "string": "cpp",
         "initializer_list": "cpp",
         "xstring": "cpp",
-        "xutility": "cpp"
-    }
+        "xutility": "cpp",
+        "*.h\u0000h": "cpp"
+    },
+    "arduino.defaultBaudRate": 9600,
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }

@@ -1,0 +1,8 @@
+{
+    "sketch": "mainmenu\\mainmenu.ino",
+    "port": "COM13",
+    "board": "arduino:avr:uno",
+    "output": "../build",
+    "debugger": "jlink",
+    "prebuild": "bash prebuild.sh"
+}

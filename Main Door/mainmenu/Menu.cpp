@@ -1,7 +1,8 @@
 #include "./Door.h"
+#include <String>
+#include <Arduino.h>
 
-
-String _main_menu ="Main Menu: \n\t1) Open Door\n\t2) Close Door\n\t3) Settings\n\n";
+String _main_menu = "Main Menu: \n\t1) Open Door\n\t2) Close Door\n\t3) Settings\n\n";
 String _settings_menu = "1) Morning Settings\n\t2) Evening Settings\n\t3) Back\n\n";
 String _time_menu = "1) Temperature\n\t2) Light Level\n\t3) DelayTime\n\t4) Back\n\n";
 String I2CtempMenu = "Press the up button for higher temp, down for lower, select for back\n";
@@ -30,7 +31,7 @@ void Menu::Initialize(Door d){
 
 void Menu::NavigateMainMenu(){
         Serial.println(_main_menu);
-        String item = Serial.readString();
+        String item = Serial.readstring();
 
         int input = item.toInt();
         
@@ -50,7 +51,7 @@ void Menu::NavigateMainMenu(){
 
     void Menu::NavigateDayOrNight(){
         Serial.println(_settings_menu);
-        String item = Serial.readString();
+        String item = Serial.readstring();
 
         int input = item.toInt();
 
@@ -70,7 +71,7 @@ void Menu::NavigateMainMenu(){
 
 void Menu::NavigateSettings(bool isDaylight){
         Serial.println(_time_menu);
-        String item = Serial.readString();
+        String item = Serial.readstring();
 
         int input = item.toInt();
 
@@ -96,7 +97,7 @@ void Menu::NavigateSettings(bool isDaylight){
         // while(input !=-1){
         //     double currTemp = dor.GetTemp(isDaylight);
         //     Serial.println(currTemp,"Temperature %f\n");
-        //     in = Serial.readString();
+        //     in = Serial.readstring();
         //     for(int i =0;i<in.length();i++){
         //         if(!isDigit(in[i])){
         //             abort = true;
