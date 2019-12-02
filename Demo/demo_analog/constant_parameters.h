@@ -16,8 +16,8 @@
 #define PIN_RELAY_DOORCLOSE 9
 #define PIN_PROX_UP 12
 #define PIN_PROX_DOWN 13
-#define PIN_PHOTORESISTOR A2 
-#define PIN_TEMPSENSOR A3
+#define PIN_PHOTORESISTOR 16//A2 
+#define PIN_TEMPSENSOR 17//A3
 #define PIN_LCD_SDA A4
 #define PIN_LCD_SCL A5
 
@@ -41,7 +41,7 @@
 #define TEMP_ZEROPOINT 500 //milivolts for 0-degrees Celcius
 #define TEMP_REGULATION 10 //miliVolts per degree Celcius
 #define TEMP_THRESHOLD 440
-#define LIGHT_THRESHOLD 40
+#define LIGHT_THRESHOLD 100
 
 /***********************
  *Macro Function Values*

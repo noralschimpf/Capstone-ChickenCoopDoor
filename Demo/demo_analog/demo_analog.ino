@@ -15,12 +15,13 @@ Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
 
 //int PIN_PIN_PHOTORESISTORISTOR = A1;
 //int PIN_PHOTORESISTOR = A0;
-int Temperature = 0;
+double Temperature = 0;
 int Light = 0;
 int CurrentMenu= 0;
 int MenuSelect = 0;
 unsigned long MenuLastUpdated = 0; //ONLY MODIFY VIA: MenuControls()
-
+String line1;
+String line2;
 int ScrollCount = 0;
 int ScrollTotal = 0;
 boolean isOkay;
@@ -38,7 +39,7 @@ void setup() {
   lcd.begin(16,2);
   lcd.clear();
   MenuControls(CurrentMenu,false);
-//  analogReference(EXTERNAL);
+  analogReference(EXTERNAL);
   isOkay = true;
   isClosing = false;
 }
@@ -75,6 +76,9 @@ boolean checkTemp()
  *FOR DEMO DAY: hair-dryer on will provide temperature outside safe range*/
 {
   Temperature = analogRead(PIN_TEMPSENSOR);
+  Temperature = (1000.0*(Temperature/1024.0*3.3)); //Calculate mV reading
+  Temperature = (Temperature-500.0);//in Celcius*100
+  Temperature = ((int)((Temperature*(9.0/5.0))+3200))/100;//Fahrenheit*10
   if (Temperature>=TEMP_THRESHOLD) {return false;}
   else {return true;}
 }
@@ -139,7 +143,17 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
       checkLight(MORNING);
       if(!isRefresh)
       {
-        print2ln(lcd,"Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
+        char tempstr[6];
+        dtostrf(Temperature,1,1,tempstr);
+        char lghtstr[6];
+        dtostrf(Light,1,1,lghtstr);
+        
+        char sac[64];
+        sprintf(sac,"Day Mode        Tmp:%s Lht:%s",tempstr,lghtstr);
+        
+        line1 = (String)(sac);
+        line2="Sel:Escape";
+        print2ln(lcd,sac,line2);
         lcd.setBacklight(GREEN);
         ScrollCount=1;
       }
@@ -151,7 +165,19 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
       checkLight(EVENING);
       if(!isRefresh)
       {
-        print2ln(lcd,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
+        char tempstr[6];
+        dtostrf(Temperature,1,1,tempstr);
+        char lghtstr[6];
+        dtostrf(Light,1,1,lghtstr);
+        
+        char sac[64];
+        sprintf(sac,"Night Mode        Tmp:%s Lht:%s",tempstr,lghtstr);
+
+        line1 = (String)(sac);
+        line2="Sel:Escape";
+        print2ln(lcd,sac,line2);
+        
+//        print2ln(lcd,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
         lcd.setBacklight(GREEN);
         ScrollCount = 1;
       }
