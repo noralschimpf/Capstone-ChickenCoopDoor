@@ -27,6 +27,10 @@ int ScrollTotal = 0;
 boolean isOkay;
 boolean isClosing;
 
+char lghtstr[4];
+char tempstr[4];
+char sac[64];
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -141,15 +145,15 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
       ScrollTotal = 1;
       checkTemp();
       checkLight(MORNING);
+      
+      dtostrf(Temperature,1,1,tempstr);
+      
+      dtostrf(Light,1,1,lghtstr);
+    
+      sprintf(sac,"Day Mode        Tmp:%sLht:%s",tempstr,lghtstr);
       if(!isRefresh)
       {
-        char tempstr[6];
-        dtostrf(Temperature,1,1,tempstr);
-        char lghtstr[6];
-        dtostrf(Light,1,1,lghtstr);
-        
-        char sac[64];
-        sprintf(sac,"Day Mode        Tmp:%s Lht:%s",tempstr,lghtstr);
+
         
         line1 = (String)(sac);
         line2="Sel:Escape";
@@ -157,21 +161,22 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
         lcd.setBacklight(GREEN);
         ScrollCount=1;
       }
-      else{ScrollCount = refreshLine(0,"Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light,ScrollCount,ScrollTotal);}
+      else{ScrollCount = refreshLine(0,sac,ScrollCount,ScrollTotal);}
       break;
     case MENU_NIGHT:
       ScrollTotal = 1;
       checkTemp();
       checkLight(EVENING);
+//      char tempstr[4];
+      dtostrf(Temperature,1,1,tempstr);
+//      char lghtstr[4];
+      dtostrf(Light,1,1,lghtstr);
+      char sac[64];
+      sprintf(sac,"Night Mode      Tmp:%sLht:%s",tempstr,lghtstr);
       if(!isRefresh)
       {
-        char tempstr[6];
-        dtostrf(Temperature,1,1,tempstr);
-        char lghtstr[6];
-        dtostrf(Light,1,1,lghtstr);
         
-        char sac[64];
-        sprintf(sac,"Night Mode        Tmp:%s Lht:%s",tempstr,lghtstr);
+        
 
         line1 = (String)(sac);
         line2="Sel:Escape";
@@ -181,7 +186,7 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
         lcd.setBacklight(GREEN);
         ScrollCount = 1;
       }
-      else{ScrollCount = refreshLine(0,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,ScrollCount,ScrollTotal);}
+      else{ScrollCount = refreshLine(0,sac,ScrollCount,ScrollTotal);}
       break;
       //TODO: ADD SAFETY/ERROR STATES
     default:
@@ -323,18 +328,23 @@ void openDoor(){
 //void emergencyOpen(){
 //  digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
 //  digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
 //  delay(1000);
 //  Serial.println("Emergency");
 //  openDoorAction(1000);
-//  digitalWrite(led, LOW);
+////  digitalWrite(led, LOW);
+//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
+//
 //  Serial.println("Emergency Finished");
 //}
 //
 //void LimitSwitchActive() {
 //  if(isClosing){
-//    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-//    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-//    digitalWrite(led, HIGH);
+////    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+////    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+////    digitalWrite(led, HIGH);
 //    emergencyOpen();
 //    isOkay = false;
 //  }
