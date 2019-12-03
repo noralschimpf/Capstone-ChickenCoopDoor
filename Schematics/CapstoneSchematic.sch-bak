@@ -796,7 +796,11 @@ Wire Wire Line
 Wire Wire Line
 	1950 3900 2350 3900
 Text Notes 1000 5800 0    50   ~ 0
-Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.
+Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible
+Text Notes 7400 7500 0    59   ~ 0
+Main Door Controls Schematic
+Text Notes 8100 7650 0    50   ~ 0
+2 Dec. 2019
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line

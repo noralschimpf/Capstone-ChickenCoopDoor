@@ -5,12 +5,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Title "Main Door Control Board"
+Date "2019-12-03"
+Rev "1"
+Comp "Faul Family Riverside Farms"
+Comment1 "Engineer - Jacob Berdichevsky"
+Comment2 "Associates - Adedotun Abe, Michael Portaro, Nathan Schimpf"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -795,8 +795,8 @@ Wire Wire Line
 	2350 3050 2400 3050
 Wire Wire Line
 	1950 3900 2350 3900
-Text Notes 1000 5800 0    50   ~ 0
-Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible
+Text Notes 1050 7300 0    50   ~ 0
+Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible\n\nPOSSIBLY - Separate 12V from 5/3.3V
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line
