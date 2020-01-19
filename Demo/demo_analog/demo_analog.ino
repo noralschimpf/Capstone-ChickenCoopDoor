@@ -15,16 +15,21 @@ Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
 
 //int PIN_PIN_PHOTORESISTORISTOR = A1;
 //int PIN_PHOTORESISTOR = A0;
-int Temperature = 0;
+double Temperature = 0;
 int Light = 0;
 int CurrentMenu = 0;
 int MenuSelect = 0;
 unsigned long MenuLastUpdated = 0; //ONLY MODIFY VIA: MenuControls()
-
+String line1;
+String line2;
 int ScrollCount = 0;
 int ScrollTotal = 0;
 boolean isOkay;
 boolean isClosing;
+
+char lghtstr[4];
+char tempstr[4];
+char sac[64];
 
 void setup() {
   // put your setup code here, to run once:
@@ -37,8 +42,9 @@ void setup() {
 
   lcd.begin(16, 2);
   lcd.clear();
-  MenuControls(CurrentMenu, false);
-  //  analogReference(EXTERNAL);
+  MenuControls(CurrentMenu,false);
+  analogReference(EXTERNAL);
+  
   isOkay = true;
   isClosing = false;
 }
@@ -181,12 +187,12 @@ boolean checkTemp()
   FOR DEMO DAY: hair-dryer on will provide temperature outside safe range*/
 {
   Temperature = analogRead(PIN_TEMPSENSOR);
-  if (Temperature >= TEMP_THRESHOLD) {
-    return false;
-  }
-  else {
-    return true;
-  }
+
+  Temperature = (1000.0*(Temperature/1024.0*3.3)); //Calculate mV reading
+  Temperature = (Temperature-500.0);//in Celcius*100
+  Temperature = ((int)((Temperature*(9.0/5.0))+3200))/100;//Fahrenheit*10
+  if (Temperature>=TEMP_THRESHOLD) {return false;}
+  else {return true;}
 }
 
 boolean checkLight(int TimeOfDay)
@@ -257,29 +263,52 @@ void MenuControls(int CurrentMenu, boolean isRefresh)
       ScrollTotal = 1;
       checkTemp();
       checkLight(MORNING);
-      if (!isRefresh)
+      
+      dtostrf(Temperature,1,1,tempstr);
+      
+      dtostrf(Light,1,1,lghtstr);
+    
+      sprintf(sac,"Day Mode        Tmp:%sLht:%s",tempstr,lghtstr);
+      if(!isRefresh)
       {
-        print2ln(lcd, "Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light, "Sel:Escape");
+
+        
+        line1 = (String)(sac);
+        line2="Sel:Escape";
+        print2ln(lcd,sac,line2);
         lcd.setBacklight(GREEN);
         ScrollCount = 1;
       }
       else {
         ScrollCount = refreshLine(0, "Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light, ScrollCount, ScrollTotal);
       }
+
       break;
     case MENU_NIGHT:
       ScrollTotal = 1;
       checkTemp();
       checkLight(EVENING);
-      if (!isRefresh)
+
+//      char tempstr[4];
+      dtostrf(Temperature,1,1,tempstr);
+//      char lghtstr[4];
+      dtostrf(Light,1,1,lghtstr);
+      char sac[64];
+      sprintf(sac,"Night Mode      Tmp:%sLht:%s",tempstr,lghtstr);
+      if(!isRefresh)
       {
-        print2ln(lcd, "Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light, "Sel:Escape");
+        
+        
+
+        line1 = (String)(sac);
+        line2="Sel:Escape";
+        print2ln(lcd,sac,line2);
+        
+//        print2ln(lcd,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
         lcd.setBacklight(GREEN);
         ScrollCount = 1;
       }
-      else {
-        ScrollCount = refreshLine(0, "Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light, ScrollCount, ScrollTotal);
-      }
+      else{ScrollCount = refreshLine(0,sac,ScrollCount,ScrollTotal);}
       break;
     //TODO: ADD SAFETY/ERROR STATES
     default:
@@ -408,3 +437,29 @@ int refreshLine(int row, String Str, int section, int len)
 
   return section + 1;
 }
+
+
+//void emergencyOpen(){
+//  digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+//  digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
+//  delay(1000);
+//  Serial.println("Emergency");
+//  openDoorAction(1000);
+////  digitalWrite(led, LOW);
+//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
+//
+//  Serial.println("Emergency Finished");
+//}
+//
+//void LimitSwitchActive() {
+//  if(isClosing){
+////    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+////    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+////    digitalWrite(led, HIGH);
+//    emergencyOpen();
+//    isOkay = false;
+//  }
+//}
