@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name CapstoneSchematic-rescue)(type Legacy)(uri ${KIPRJMOD}/CapstoneSchematic-rescue.lib)(options "")(descr ""))
-  (lib (name arduino)(type Legacy)(uri C:/Users/User/Downloads/CapstoneSchematic-20191101T220153Z-001/arduino-kicad-library-master/arduino.lib)(options "")(descr ""))
-)
