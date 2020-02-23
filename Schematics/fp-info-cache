@@ -1,4 +1,4 @@
-16304177769216510
+16307326020008410
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -5949,6 +5949,13 @@ capacitor tantalum
 0
 2
 2
+CapstoneLibrary
+2 relay module
+
+
+0
+10
+4
 Capstone_PCB_Lib
 2 Channels Relay
 
@@ -5956,6 +5963,13 @@ Capstone_PCB_Lib
 0
 8
 8
+Capstone_PCB_Lib
+LOGO
+
+
+0
+0
+0
 Capstone_PCB_Lib
 Linear Regulator
 

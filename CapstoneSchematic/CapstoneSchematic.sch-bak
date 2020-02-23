@@ -1,0 +1,511 @@
+EESchema Schematic File Version 4
+LIBS:CapstoneSchematic-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CapstoneSchematic-rescue:LinearActuator-CapstoneLib U?
+U 1 1 5DBB3DF9
+P 2650 7050
+F 0 "U?" V 2896 7078 50  0000 L CNN
+F 1 "LinearActuator" V 2987 7078 50  0000 L CNN
+F 2 "" H 3000 6800 50  0001 C CNN
+F 3 "" H 3000 6800 50  0001 C CNN
+	1    2650 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 5250 3300 5250
+Wire Wire Line
+	3300 5250 3300 5600
+Wire Wire Line
+	3300 5600 3400 5600
+$Comp
+L power:+12V #PWR?
+U 1 1 5DBC046C
+P 3300 5250
+F 0 "#PWR?" H 3300 5100 50  0001 C CNN
+F 1 "+12V" H 3315 5423 50  0000 C CNN
+F 2 "" H 3300 5250 50  0001 C CNN
+F 3 "" H 3300 5250 50  0001 C CNN
+	1    3300 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5DBC0890
+P 3200 5450
+F 0 "#PWR?" H 3200 5550 50  0001 C CNN
+F 1 "-12V" H 3215 5623 50  0000 C CNN
+F 2 "" H 3200 5450 50  0001 C CNN
+F 3 "" H 3200 5450 50  0001 C CNN
+	1    3200 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 5450 3200 5800
+Wire Wire Line
+	3200 5800 3400 5800
+Wire Wire Line
+	3200 5450 3400 5450
+Wire Wire Line
+	6100 2000 6100 2250
+Wire Wire Line
+	7550 2000 6100 2000
+Wire Wire Line
+	6300 1850 7550 1850
+Wire Wire Line
+	6300 1850 6300 2250
+Wire Wire Line
+	7550 1750 7550 1700
+Wire Wire Line
+	6350 1750 7550 1750
+Wire Wire Line
+	7550 1450 7550 1550
+Wire Wire Line
+	6350 1450 7550 1450
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5DBC9C63
+P 6350 1650
+F 0 "BT?" H 6468 1746 50  0000 L CNN
+F 1 "Battery_Cell" H 6468 1655 50  0000 L CNN
+F 2 "" V 6350 1710 50  0001 C CNN
+F 3 "~" V 6350 1710 50  0001 C CNN
+	1    6350 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1400 7550 1400
+Wire Wire Line
+	6750 800  6750 1400
+Wire Wire Line
+	7550 800  7550 1250
+Wire Wire Line
+	7050 800  7550 800 
+$Comp
+L Regulator_Switching:LM2596S-ADJ U?
+U 1 1 5DBC25C6
+P 6200 2750
+F 0 "U?" H 6200 3117 50  0000 C CNN
+F 1 "LM2596S-ADJ" H 6200 3026 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 6250 2500 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 6200 2750 50  0001 C CNN
+	1    6200 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Solar_Cell SC?
+U 1 1 5DBB4ADF
+P 6850 800
+F 0 "SC?" H 6958 896 50  0000 L CNN
+F 1 "Solar_Cell" H 6958 805 50  0000 L CNN
+F 2 "" V 6850 860 50  0001 C CNN
+F 3 "~" V 6850 860 50  0001 C CNN
+	1    6850 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5DBE4411
+P 6300 1850
+F 0 "#PWR?" H 6300 1700 50  0001 C CNN
+F 1 "+12V" V 6315 1978 50  0000 L CNN
+F 2 "" H 6300 1850 50  0001 C CNN
+F 3 "" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6300 1850
+$Comp
+L power:-12V #PWR?
+U 1 1 5DBE50FA
+P 6100 2000
+F 0 "#PWR?" H 6100 2100 50  0001 C CNN
+F 1 "-12V" V 6115 2128 50  0000 L CNN
+F 2 "" H 6100 2000 50  0001 C CNN
+F 3 "" H 6100 2000 50  0001 C CNN
+	1    6100 2000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6100 2000
+$Comp
+L CapstoneSchematic-rescue:SnapActionSwitch-CapstoneLib U?
+U 1 1 5DBEA292
+P 4700 6600
+F 0 "U?" H 5325 6775 50  0000 C CNN
+F 1 "SnapActionSwitch" H 5325 6684 50  0000 C CNN
+F 2 "" H 4650 6500 50  0001 C CNN
+F 3 "" H 4650 6500 50  0001 C CNN
+	1    4700 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CapstoneSchematic-rescue:SnapActionSwitch-CapstoneLib U?
+U 1 1 5DBEAB00
+P 4700 7500
+F 0 "U?" H 5325 7675 50  0000 C CNN
+F 1 "SnapActionSwitch" H 5325 7584 50  0000 C CNN
+F 2 "" H 4650 7400 50  0001 C CNN
+F 3 "" H 4650 7400 50  0001 C CNN
+	1    4700 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L CapstoneSchematic-rescue:2RelayModule-CapstoneLib U?
+U 1 1 5DBB54F2
+P 4450 5900
+F 0 "U?" H 4925 5035 50  0000 C CNN
+F 1 "2RelayModule" H 4925 5126 50  0000 C CNN
+F 2 "" H 4906 5598 50  0001 C CNN
+F 3 "" H 4906 5598 50  0001 C CNN
+	1    4450 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 5350 2850 5350
+Wire Wire Line
+	2850 5350 2850 6500
+Wire Wire Line
+	2850 6500 2700 6500
+Wire Wire Line
+	2700 6750 2700 7200
+Wire Wire Line
+	2700 7200 3450 7200
+Wire Wire Line
+	4700 7150 4700 6400
+Wire Wire Line
+	3100 6550 3100 5700
+Wire Wire Line
+	3100 5700 3400 5700
+Wire Wire Line
+	3100 6550 3450 6550
+Wire Wire Line
+	4700 7300 4950 7300
+Wire Wire Line
+	4950 6250 4700 6250
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC0E8B4
+P 3400 6200
+F 0 "#PWR?" H 3400 6050 50  0001 C CNN
+F 1 "+5V" V 3415 6328 50  0000 L CNN
+F 2 "" H 3400 6200 50  0001 C CNN
+F 3 "" H 3400 6200 50  0001 C CNN
+	1    3400 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5DC18AF2
+P 3450 7350
+F 0 "#PWR?" H 3450 7200 50  0001 C CNN
+F 1 "-5V" V 3465 7478 50  0000 L CNN
+F 2 "" H 3450 7350 50  0001 C CNN
+F 3 "" H 3450 7350 50  0001 C CNN
+	1    3450 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor_Temperature:MCP9700AT-ELT U?
+U 1 1 5DC27357
+P 1850 3150
+F 0 "U?" H 1520 3196 50  0000 R CNN
+F 1 "MCP9700AT-ELT" H 1520 3105 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1850 2750 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001942G.pdf" H 1850 3150 50  0001 C CNN
+	1    1850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R?
+U 1 1 5DC279E0
+P 6950 3400
+F 0 "R?" H 7020 3446 50  0000 L CNN
+F 1 "R_PHOTO" H 7020 3355 50  0000 L CNN
+F 2 "" V 7000 3150 50  0001 L CNN
+F 3 "~" H 6950 3350 50  0001 C CNN
+	1    6950 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC2B291
+P 7850 5750
+F 0 "D?" H 7843 5966 50  0000 C CNN
+F 1 "LED" H 7843 5875 50  0000 C CNN
+F 2 "" H 7850 5750 50  0001 C CNN
+F 3 "~" H 7850 5750 50  0001 C CNN
+	1    7850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DC2B9C5
+P 7100 5800
+F 0 "D?" H 7093 6016 50  0000 C CNN
+F 1 "LED" H 7093 5925 50  0000 C CNN
+F 2 "" H 7100 5800 50  0001 C CNN
+F 3 "~" H 7100 5800 50  0001 C CNN
+	1    7100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5500 7650 5500
+Wire Wire Line
+	4550 5400 7550 5400
+Wire Wire Line
+	7650 5500 7650 4800
+Wire Wire Line
+	7550 5400 7550 4800
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 5DBB2CDA
+P 6950 4300
+F 0 "A?" V 6996 3156 50  0000 R CNN
+F 1 "Arduino_UNO_R3" V 6905 3156 50  0000 R CNN
+F 2 "Module:Arduino_UNO_R3" H 7100 3250 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 6750 5350 50  0001 C CNN
+	1    6950 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 6250 4950 6650
+$Comp
+L CapstoneSchematic-rescue:LoRa-CapstoneLib ULoRa?
+U 1 1 5DC1AD46
+P 6150 6050
+F 0 "ULoRa?" H 7528 5996 50  0000 L CNN
+F 1 "LoRa" H 7528 5905 50  0000 L CNN
+F 2 "" H 6700 5850 50  0001 C CNN
+F 3 "" H 6700 5850 50  0001 C CNN
+	1    6150 6050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6350 4800 6350 5950
+Wire Wire Line
+	6450 4800 6450 5950
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC1040D
+P 6150 5950
+F 0 "#PWR?" H 6150 5800 50  0001 C CNN
+F 1 "+5V" H 6165 6123 50  0000 C CNN
+F 2 "" H 6150 5950 50  0001 C CNN
+F 3 "" H 6150 5950 50  0001 C CNN
+	1    6150 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC11130
+P 6650 5950
+F 0 "#PWR?" H 6650 5700 50  0001 C CNN
+F 1 "GND" H 6655 5777 50  0000 C CNN
+F 2 "" H 6650 5950 50  0001 C CNN
+F 3 "" H 6650 5950 50  0001 C CNN
+	1    6650 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 4800 6650 5650
+Wire Wire Line
+	6650 5650 5200 5650
+Wire Wire Line
+	5200 5650 5200 6650
+Wire Wire Line
+	5200 6650 4950 6650
+Connection ~ 4950 6650
+Wire Wire Line
+	4950 6650 4950 7300
+Wire Wire Line
+	6250 5950 6250 4900
+Wire Wire Line
+	6250 4900 6550 4900
+Wire Wire Line
+	6550 4900 6550 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5DC16D22
+P 4550 5300
+F 0 "#PWR?" H 4550 5050 50  0001 C CNN
+F 1 "GND" V 4555 5172 50  0000 R CNN
+F 2 "" H 4550 5300 50  0001 C CNN
+F 3 "" H 4550 5300 50  0001 C CNN
+	1    4550 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC1AA6C
+P 4550 5600
+F 0 "#PWR?" H 4550 5450 50  0001 C CNN
+F 1 "+5V" V 4565 5728 50  0000 L CNN
+F 2 "" H 4550 5600 50  0001 C CNN
+F 3 "" H 4550 5600 50  0001 C CNN
+	1    4550 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC1B373
+P 5950 4100
+F 0 "#PWR?" H 5950 3950 50  0001 C CNN
+F 1 "+5V" V 5965 4228 50  0000 L CNN
+F 2 "" H 5950 4100 50  0001 C CNN
+F 3 "" H 5950 4100 50  0001 C CNN
+	1    5950 4100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3200 5450
+Connection ~ 3300 5250
+$Comp
+L CapstoneSchematic-rescue:ArduinoRGBShield J?
+U 1 1 5DC4EC30
+P 7650 3050
+F 0 "J?" V 7712 3194 50  0000 L CNN
+F 1 "ArduinoRGBShield" V 7803 3194 50  0000 L CNN
+F 2 "" H 7650 3050 50  0001 C CNN
+F 3 "~" H 7650 3050 50  0001 C CNN
+	1    7650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC52169
+P 7750 3450
+F 0 "#PWR?" H 7750 3300 50  0001 C CNN
+F 1 "+5V" H 7765 3623 50  0000 C CNN
+F 2 "" H 7750 3450 50  0001 C CNN
+F 3 "" H 7750 3450 50  0001 C CNN
+	1    7750 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC5291A
+P 7650 3250
+F 0 "#PWR?" H 7650 3000 50  0001 C CNN
+F 1 "GND" H 7655 3077 50  0000 C CNN
+F 2 "" H 7650 3250 50  0001 C CNN
+F 3 "" H 7650 3250 50  0001 C CNN
+	1    7650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3250 7750 3450
+Wire Wire Line
+	6100 3250 6100 3600
+Wire Wire Line
+	5500 3600 5500 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5DC66997
+P 8050 4200
+F 0 "#PWR?" H 8050 3950 50  0001 C CNN
+F 1 "GND" V 8055 4072 50  0000 R CNN
+F 2 "" H 8050 4200 50  0001 C CNN
+F 3 "" H 8050 4200 50  0001 C CNN
+	1    8050 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC679BD
+P 5900 2750
+F 0 "#PWR?" H 5900 2500 50  0001 C CNN
+F 1 "GND" V 5905 2622 50  0000 R CNN
+F 2 "" H 5900 2750 50  0001 C CNN
+F 3 "" H 5900 2750 50  0001 C CNN
+	1    5900 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L CapstoneSchematic-rescue:CMP12-CapstoneLib U?
+U 1 1 5DC684DB
+P 8400 1150
+F 0 "U?" V 8829 1178 50  0000 L CNN
+F 1 "CMP12-CapstoneLib" V 8920 1178 50  0000 L CNN
+F 2 "" H 8700 950 50  0001 C CNN
+F 3 "" H 8700 950 50  0001 C CNN
+	1    8400 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DC71C84
+P 5950 4200
+F 0 "#PWR?" H 5950 4050 50  0001 C CNN
+F 1 "+3.3V" V 5965 4328 50  0000 L CNN
+F 2 "" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 3600 6100 3600
+Wire Wire Line
+	5500 4400 5950 4400
+$Comp
+L Device:R 47kOhm
+U 1 1 5DC75DED
+P 6650 3400
+F 0 "47kOhm" V 6857 3400 50  0000 C CNN
+F 1 "R" V 6766 3400 50  0000 C CNN
+F 2 "" V 6580 3400 50  0001 C CNN
+F 3 "~" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DC7F41E
+P 7100 3400
+F 0 "#PWR?" H 7100 3250 50  0001 C CNN
+F 1 "+3.3V" H 7115 3573 50  0000 C CNN
+F 2 "" H 7100 3400 50  0001 C CNN
+F 3 "" H 7100 3400 50  0001 C CNN
+	1    7100 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 3250 7450 3650
+Wire Wire Line
+	7450 3650 7350 3650
+Wire Wire Line
+	7350 3650 7350 3800
+Wire Wire Line
+	7550 3250 7550 3700
+Wire Wire Line
+	7550 3700 7450 3700
+Wire Wire Line
+	7450 3700 7450 3800
+Wire Wire Line
+	6950 3800 6800 3800
+Wire Wire Line
+	6800 3800 6800 3400
+Connection ~ 6800 3400
+$Comp
+L power:GND #PWR?
+U 1 1 5DC900BD
+P 6500 3400
+F 0 "#PWR?" H 6500 3150 50  0001 C CNN
+F 1 "GND" V 6505 3272 50  0000 R CNN
+F 2 "" H 6500 3400 50  0001 C CNN
+F 3 "" H 6500 3400 50  0001 C CNN
+	1    6500 3400
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
