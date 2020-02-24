@@ -1,6 +1,7 @@
 ﻿/*Begining of Auto generated code by Atmel studio */
 #include <Arduino.h>
 #include "Display.h"
+#include <avr/interrupt.h>
 /*End of auto generated code by Atmel studio */
 
 #include <Adafruit_RGBLCDShield.h>
@@ -48,11 +49,12 @@ char sac[64];
 
 Adafruit_RGBLCDShield disp = Adafruit_RGBLCDShield();//NOTE - CLASSES MUST BE INITIALIZED AS POINTERS. WILL NOT EXECUTE OTHERWISE
 Display *ptrdspMainDoor;  
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-  Display dspMainDoor(disp);
-  ptrdspMainDoor = &dspMainDoor;
+  ptrdspMainDoor= new Display(disp);
+  //ptrdspMainDoor = &dspMainDoor;
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
   pinMode(PIN_LIMITSWITCH_1, INPUT_PULLUP);
@@ -60,6 +62,8 @@ void setup() {
 	analogReference(EXTERNAL);  
   isOkay = true;
   isClosing = false;
+  SPCR |= (1<<SPIE);
+  sei();
   Serial.println("Init Complete");
 }
 
@@ -262,11 +266,11 @@ ISR(PCINT5)//Prox Switch 2
 /*ISR(USART_RX_vect)//LoRa Message Receive
 {
 	Serial.println("UART Interrupt");
-}
+}*/
 ISR(SPI_STC_vect)//Display Comms
 {
 	Serial.println("SPI Interrupt");
-}*/
+}
 
 /*int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
 {
