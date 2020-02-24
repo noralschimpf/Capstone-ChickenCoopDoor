@@ -10,11 +10,12 @@
 #include "constant_parameters.h"
 
 // default constructor
-Display::Display()
+Display::Display(Adafruit_RGBLCDShield _lcd)
+	: lcd(_lcd)
 {
-	lcd = Adafruit_RGBLCDShield();
 	lcd.begin(16,2);
 	lcd.clear();
+	selectDisplay(MENU_MAIN,false);
 } //Display
 
 // default destructor

@@ -1,7 +1,7 @@
 #include "Arduino.h"
-#include "./Menu.cpp"
+// #include "./Menu.cpp"
 
-Menu _menu;
+// Menu _menu;
 // Door _door;
 bool displayed;
 
@@ -9,8 +9,8 @@ void setup()
 {                
   displayed= false;
   Serial.begin(9600);
-   _menu.Initialize(_door);
-   _menu.NavigateMainMenu();
+//   _menu.Initialize(_door);
+//   _menu.NavigateMainMenu();
 }   
 
 void loop()                     

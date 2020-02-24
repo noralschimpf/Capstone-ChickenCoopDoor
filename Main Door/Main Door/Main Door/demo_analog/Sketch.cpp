@@ -1,6 +1,6 @@
 ﻿/*Begining of Auto generated code by Atmel studio */
 #include <Arduino.h>
-
+#include "Display.h"
 /*End of auto generated code by Atmel studio */
 
 #include <Adafruit_RGBLCDShield.h>
@@ -12,12 +12,12 @@ void openDoorAction(int tme);
 void openDoor();
 void emergencyOpen();
 void LimitSwitchActive();
-void print2ln(Adafruit_RGBLCDShield lcd, String a, String b);
+//void print2ln(Adafruit_RGBLCDShield lcd, String a, String b);
 boolean checkTemp();
 boolean checkLight(int TimeOfDay);
-void MenuControls(int CurrentMenu, boolean isRefresh);
-int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu);
-int refreshLine(int row, String Str, int section, int len);
+//void MenuControls(int CurrentMenu, boolean isRefresh);
+//int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu);
+//int refreshLine(int row, String Str, int section, int len);
 //End of Auto generated function prototypes by Atmel Studio
 
 
@@ -25,7 +25,7 @@ int refreshLine(int row, String Str, int section, int len);
 
 
 const int openAndCloseTime = 11000;
-Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
+//Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
 
 //int PIN_PIN_PHOTORESISTORISTOR = A1;
 //int PIN_PHOTORESISTOR = A0;
@@ -45,42 +45,47 @@ char lghtstr[4];
 char tempstr[4];
 char sac[64];
 
+
+Adafruit_RGBLCDShield disp = Adafruit_RGBLCDShield();//NOTE - CLASSES MUST BE INITIALIZED AS POINTERS. WILL NOT EXECUTE OTHERWISE
+Display *ptrdspMainDoor;  
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
-
+  Display dspMainDoor(disp);
+  ptrdspMainDoor = &dspMainDoor;
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
   pinMode(PIN_LIMITSWITCH_1, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(PIN_LIMITSWITCH_1), LimitSwitchActive, RISING);
-
-  lcd.begin(16, 2);
-  lcd.clear();
-  MenuControls(CurrentMenu,false);
-  analogReference(EXTERNAL);
-  
+	analogReference(EXTERNAL);  
   isOkay = true;
   isClosing = false;
+  Serial.println("Init Complete");
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  // TODO: Implement sleep timer
+  //dspMainDoor.selectDisplay(MENU_MAIN,false);
+  delay(REFRESH_RATE);
+  Serial.println("in loop");
   if (CurrentMenu != MenuSelect)
   {
-    MenuControls(MenuSelect, false);
+	Serial.println("NEWMENU");
+	ptrdspMainDoor->UpdateMenuFromButtons();
     CurrentMenu = MenuSelect;
     MenuLastUpdated = millis();
   }
   else if (millis() - MenuLastUpdated > REFRESH_RATE)
   {
-    MenuControls(MenuSelect, true);
+	ptrdspMainDoor->UpdateMenuFromButtons();
+    //MenuControls(MenuSelect, true);
     CurrentMenu = MenuSelect;
     MenuLastUpdated = millis();
   }
-  MenuSelect = GetNextMenu(lcd, CurrentMenu);
-  if (!isOkay) {
-    isOkay = true;
-  }
+  //MenuSelect = GetNextMenu(lcd, CurrentMenu);
+  //if (!isOkay) {
+  //  isOkay = true;
+  //}
 }
 
 
@@ -97,7 +102,7 @@ void closeDoor() {
     //    for(int i =0; i< openAndCloseTime;i++){
     delay(1);
     //Check if door needs to stop
-    buttons = lcd.readButtons();
+    //dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
     if (buttons & BUTTON_SELECT)
     {
       //stop door due to select
@@ -131,7 +136,7 @@ void openDoorAction(int tme) {
   for (int i = 0; i < openAndCloseTime && isOkay; i++) {
     delay(1);
 
-    buttons = lcd.readButtons();
+    //dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
     if (buttons & BUTTON_SELECT)
     {
       digitalWrite(PIN_RELAY_DOOROPEN, LOW);
@@ -154,7 +159,7 @@ void openDoor() {
   Serial.println("Open Complete");
 }
 //
-void emergencyOpen() {
+/*void emergencyOpen() {
   digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
   digitalWrite(PIN_RELAY_DOOROPEN, LOW);
   //  delay(1000);
@@ -174,32 +179,23 @@ void LimitSwitchActive() {
   emergencyOpen();
   isOkay = true;
   //  }
-}
-
-
-/*
+}*/
 
 
 
 
 
-*/
 
 
-void print2ln(Adafruit_RGBLCDShield lcd, String a, String b)
-{
-  lcd.clear();
-  lcd.setCursor(0, 0);
-  lcd.print(a);
-  lcd.setCursor(0, 1);
-  lcd.print(b);
-  lcd.setCursor(0, 0);
-}
 
-boolean checkTemp()
+
+
+
+
+//boolean checkTemp()
 /*Returns True if within safe temperature
   FOR DEMO DAY: hair-dryer on will provide temperature outside safe range*/
-{
+/*{
   Temperature = analogRead(PIN_TEMPSENSOR);
 
   Temperature = (1000.0*(Temperature/1024.0*3.3)); //Calculate mV reading
@@ -237,110 +233,42 @@ boolean checkLight(int TimeOfDay)
       return false;
   }
 
-}
+}*/
 
-void MenuControls(int CurrentMenu, boolean isRefresh)
+/*ISR(INT0_vect)//Limit Switch 1
 {
-  //Set Current LCD Display
-  switch (CurrentMenu)
-  {
-    case MENU_MAIN:
-      ScrollTotal = 1;
-      if (!isRefresh)
-      {
-        print2ln(lcd, "Main Menu", "Up:Open Dn:CloseLft:Day Rt:Night");
-        lcd.setBacklight(GREEN);
-        ScrollCount = 1;
-      }
-      else {
-        ScrollCount = refreshLine(1, "Up:Open Dn:CloseLft:Day Rt:Night", ScrollCount, ScrollTotal);
-      }
-      break;
-    case MENU_OPEN:
-      ScrollCount = 0; ScrollTotal = 0;
-      if (!isRefresh)
-      {
-        print2ln(lcd, "Opening Door", "Sel:Escape");
-        lcd.setBacklight(YELLOW);
-      }
-      break;
-    case MENU_CLOSE:
-      ScrollCount = ScrollTotal = 0;
-      if (!isRefresh)
-      {
-        print2ln(lcd, "Closing Door", "Sel:Escape");
-        lcd.setBacklight(YELLOW);
-      }
-
-      break;
-    case MENU_DAY:
-      ScrollTotal = 1;
-      checkTemp();
-      checkLight(MORNING);
-      
-      dtostrf(Temperature,1,1,tempstr);
-      
-      dtostrf(Light,1,1,lghtstr);
-    
-      sprintf(sac,"Day Mode        Tmp:%sLht:%s",tempstr,lghtstr);
-      if(!isRefresh)
-      {
-
-        
-        line1 = (String)(sac);
-        line2="Sel:Escape";
-        print2ln(lcd,sac,line2);
-        lcd.setBacklight(GREEN);
-        ScrollCount = 1;
-      }
-      else {
-        ScrollCount = refreshLine(0, "Day Mode        Tmp:" + (String)Temperature + " Lht:" + (String)Light, ScrollCount, ScrollTotal);
-      }
-
-      break;
-    case MENU_NIGHT:
-      ScrollTotal = 1;
-      checkTemp();
-      checkLight(EVENING);
-
-//      char tempstr[4];
-      dtostrf(Temperature,1,1,tempstr);
-//      char lghtstr[4];
-      dtostrf(Light,1,1,lghtstr);
-      char sac[64];
-      sprintf(sac,"Night Mode      Tmp:%sLht:%s",tempstr,lghtstr);
-      if(!isRefresh)
-      {
-        
-        
-
-        line1 = (String)(sac);
-        line2="Sel:Escape";
-        print2ln(lcd,sac,line2);
-        
-//        print2ln(lcd,"Night Mode      Tmp:" + (String)Temperature + " Lht:" + (String)Light,"Sel:Escape");
-        lcd.setBacklight(GREEN);
-        ScrollCount = 1;
-      }
-      else{ScrollCount = refreshLine(0,sac,ScrollCount,ScrollTotal);}
-      break;
-    //TODO: ADD SAFETY/ERROR STATES
-    default:
-      ScrollTotal = 1;
-      if (!isRefresh)
-      {
-        print2ln(lcd, "Main Menu", "Up:Open Dn:Close Lft:Day Rt:Night");
-        lcd.setBacklight(GREEN);
-        ScrollCount = 1;
-      }
-      else {
-        ScrollCount = refreshLine(1, "Up:Open Dn:Close Lft:Day Rt:Night", ScrollCount, ScrollTotal);
-      }
-      break;
-  }
+	Serial.println("LS1 Interrupt");
 }
+ISR(INT1_vect)//Limit Switch 2
+{
+	Serial.println("LS2 Interrupt");
+}*/
+//ISR(PCINT20)//Photoeye
+/*ISR(PCINT2_vect)
+{
+	if(PCINT20){Serial.println("PEC Interrupt");}
+	else if(PCINT4){Serial.println("PX1 Interrupt");}
+	else if(PCINT5){Serial.println("PX2 Interrupt");}
+	
+}*/
+/*ISR(PCINT4)//Prox Switch 1
+{
+	
+}
+ISR(PCINT5)//Prox Switch 2
+{
+	
+}*/
+/*ISR(USART_RX_vect)//LoRa Message Receive
+{
+	Serial.println("UART Interrupt");
+}
+ISR(SPI_STC_vect)//Display Comms
+{
+	Serial.println("SPI Interrupt");
+}*/
 
-int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
+/*int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
 {
   uint8_t buttons = lcd.readButtons();
   int NextScreen = -1;
@@ -428,52 +356,30 @@ int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
   return NextScreen;
 }
 //TODO:Add state switches within interrupts
+*/
 
-int refreshLine(int row, String Str, int section, int len)
-{
-  String strToPrint;
 
-  //reset out-of-bounds section indices
-  if (section > len) {
-    section = 0;
-  }
+void emergencyOpen(){
+  digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+  digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+  pinMode(PIN_RELAY_DOOROPEN,INPUT);
+  delay(1000);
+  Serial.println("Emergency");
+  openDoorAction(1000);
+  //digitalWrite(led, LOW);
+  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+  pinMode(PIN_RELAY_DOOROPEN,INPUT);
 
-  //print selected section
-  if (section == len) {
-    strToPrint = Str.substring(section * 16);
-  }
-  else {
-    strToPrint = Str.substring(section * 16, (section + 1) * 16);
-  }
-  lcd.setCursor(0, row);
-  lcd.print(strToPrint);
-  lcd.setCursor(0, 0);
-
-  return section + 1;
+  Serial.println("Emergency Finished");
 }
 
-
-//void emergencyOpen(){
-//  digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-//  digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
-//  delay(1000);
-//  Serial.println("Emergency");
-//  openDoorAction(1000);
-////  digitalWrite(led, LOW);
-//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
-//
-//  Serial.println("Emergency Finished");
-//}
-//
-//void LimitSwitchActive() {
-//  if(isClosing){
-////    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-////    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-////    digitalWrite(led, HIGH);
-//    emergencyOpen();
-//    isOkay = false;
-//  }
-//}
+void LimitSwitchActive() {
+  if(isClosing){
+    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+    //digitalWrite(led, HIGH);
+    emergencyOpen();
+    isOkay = false;
+  }
+}
