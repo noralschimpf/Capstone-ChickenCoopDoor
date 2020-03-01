@@ -1,6 +1,7 @@
 ﻿/*Begining of Auto generated code by Atmel studio */
 #include <Arduino.h>
 #include "Display.h"
+#include "Safety.h"
 #include <avr/interrupt.h>
 /*End of auto generated code by Atmel studio */
 
@@ -49,11 +50,12 @@ char sac[64];
 
 Adafruit_RGBLCDShield disp = Adafruit_RGBLCDShield();//NOTE - CLASSES MUST BE INITIALIZED AS POINTERS. WILL NOT EXECUTE OTHERWISE
 Display *ptrdspMainDoor;  
-
+Safety *ptrsftMainDoor;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
   ptrdspMainDoor= new Display(disp);
+  ptrsftMainDoor = new Safety;
   //ptrdspMainDoor = &dspMainDoor;
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
@@ -62,9 +64,12 @@ void setup() {
 	analogReference(EXTERNAL);  
   isOkay = true;
   isClosing = false;
-  SPCR |= (1<<SPIE);
+  /*TWI INTERRUPT*/
+  TWCR |= (1<<TWIE);
   sei();
   Serial.println("Init Complete");
+  
+  
 }
 
 void loop() {
@@ -93,97 +98,8 @@ void loop() {
 }
 
 
-void closeDoor() {
-  pinMode(PIN_RELAY_DOOROPEN, OUTPUT);
-  pinMode(PIN_RELAY_DOORCLOSE, OUTPUT);
 
-  uint8_t buttons;
-  digitalWrite(PIN_RELAY_DOORCLOSE, HIGH);
-  digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-  isClosing = true;
-  Serial.println("Closing");
-  for (int i = 0; i < openAndCloseTime && isOkay; i++) {
-    //    for(int i =0; i< openAndCloseTime;i++){
-    delay(1);
-    //Check if door needs to stop
-    //dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
-    if (buttons & BUTTON_SELECT)
-    {
-      //stop door due to select
-      digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-      digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-      break;
-    }
-  }
-  //stop door
-  digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-  digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
 
-  isClosing = false;
-
-  pinMode(PIN_RELAY_DOOROPEN, INPUT);
-  pinMode(PIN_RELAY_DOORCLOSE, INPUT);
-  Serial.println("Close Complete");
-}
-
-void openDoorAction(int tme) {
-  // Set relay pins to actually work
-  pinMode(PIN_RELAY_DOOROPEN, OUTPUT);
-  pinMode(PIN_RELAY_DOORCLOSE, OUTPUT);
-
-  Serial.println("Relay pins set to output");
-  uint8_t buttons;
-
-  digitalWrite(PIN_RELAY_DOOROPEN, HIGH);
-  digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-
-  for (int i = 0; i < openAndCloseTime && isOkay; i++) {
-    delay(1);
-
-    //dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
-    if (buttons & BUTTON_SELECT)
-    {
-      digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-      digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-      break;
-    }
-  }
-  //Stop door
-  digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-  digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-
-  //Stop relay from being jank
-  pinMode(PIN_RELAY_DOOROPEN, INPUT);
-  pinMode(PIN_RELAY_DOORCLOSE, INPUT);
-}
-
-void openDoor() {
-  Serial.println("Opening");
-  openDoorAction(openAndCloseTime);
-  Serial.println("Open Complete");
-}
-//
-/*void emergencyOpen() {
-  digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-  digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-  //  delay(1000);
-  Serial.println("Emergency");
-  openDoorAction(1000);
-  //  digitalWrite(led, LOW);
-  Serial.println("Emergency Finished");
-}
-////
-void LimitSwitchActive() {
-  //  if(isClosing){
-  isOkay = false;
-  //     digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-  //     digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-  Serial.println("ERROR");
-  //    digitalWrite(led, HIGH);
-  emergencyOpen();
-  isOkay = true;
-  //  }
-}*/
 
 
 
@@ -257,7 +173,6 @@ ISR(INT1_vect)//Limit Switch 2
 }*/
 /*ISR(PCINT4)//Prox Switch 1
 {
-	
 }
 ISR(PCINT5)//Prox Switch 2
 {
@@ -267,10 +182,13 @@ ISR(PCINT5)//Prox Switch 2
 {
 	Serial.println("UART Interrupt");
 }*/
-ISR(SPI_STC_vect)//Display Comms
+
+/*TWI INTERRUPT UNUSABLE
+ALREADY ACTIVE IN ARDUINO LIB
+ISR(TWI_vect)
 {
-	Serial.println("SPI Interrupt");
-}
+	Serial.println("TWI Interrupt");
+}*/
 
 /*int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu)
 {
@@ -363,27 +281,13 @@ ISR(SPI_STC_vect)//Display Comms
 */
 
 
-void emergencyOpen(){
-  digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-  digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-  pinMode(PIN_RELAY_DOOROPEN,INPUT);
-  delay(1000);
-  Serial.println("Emergency");
-  openDoorAction(1000);
-  //digitalWrite(led, LOW);
-  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-  pinMode(PIN_RELAY_DOOROPEN,INPUT);
 
-  Serial.println("Emergency Finished");
-}
-
-void LimitSwitchActive() {
-  if(isClosing){
-    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-    //digitalWrite(led, HIGH);
-    emergencyOpen();
-    isOkay = false;
-  }
-}
+//void LimitSwitchActive() {
+	//if(isClosing){
+		//digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+		//digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+		////digitalWrite(led, HIGH);
+		//emergencyOpen();
+		//isOkay = false;
+	//}
+//}
