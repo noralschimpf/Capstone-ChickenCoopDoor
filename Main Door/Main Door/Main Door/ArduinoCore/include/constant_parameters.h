@@ -46,6 +46,24 @@ enum Menu {MENU_MAIN=0,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT};
 #define LIGHT_THRESHOLD 100
 
 /***********************
+ *Safety Class Presets *
+ ***********************/
+#define DEVICE_LS1 0
+#define DEVICE_LS2 1
+#define DEVICE_PEC 2
+#define DEVICE_PRXUP 3
+#define DEVICE_PRXDN 4
+#define DEVICE_DOORDIR 5
+#define POS_DOWN -1
+#define POS_OTHER 0
+#define POS_OPEN 1;
+#define MVT_CLOSING -1
+#define MVT_STALLED 0
+#define MVT_OPENING 1;
+#define OPENCLOSETIME 11000
+
+
+/***********************
  *Macro Function Values*
  ***********************/
 #define MORNING 0

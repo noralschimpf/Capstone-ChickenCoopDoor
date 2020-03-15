@@ -38,7 +38,8 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  ..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/Adafruit_RGBLCDShield.h \
  ..\\..\ArduinoCore\include\core/Print.h \
  ..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/utility/Adafruit_MCP23017.h \
- .././Safety.h ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
+ .././Safety.h ..\\..\ArduinoCore\include/constant_parameters.h \
+ ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
  ..\\..\ArduinoCore\include\core/Stream.h \
  ..\\..\ArduinoCore\include/./constant_parameters.h
 
@@ -121,6 +122,8 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 ..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/utility/Adafruit_MCP23017.h:
 
 .././Safety.h:
+
+..\\..\ArduinoCore\include/constant_parameters.h:
 
 ..\\..\ArduinoCore\include\libraries\Wire/Wire.h:
 

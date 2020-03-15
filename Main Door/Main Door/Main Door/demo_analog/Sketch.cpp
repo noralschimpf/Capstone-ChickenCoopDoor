@@ -8,31 +8,16 @@
 #include <Adafruit_RGBLCDShield.h>
 #include <Wire.h>
 #include "./constant_parameters.h"
-//Beginning of Auto generated function prototypes by Atmel Studio
-void closeDoor();
-void openDoorAction(int tme);
-void openDoor();
-void emergencyOpen();
-void LimitSwitchActive();
+
 //void print2ln(Adafruit_RGBLCDShield lcd, String a, String b);
 boolean checkTemp();
 boolean checkLight(int TimeOfDay);
-//void MenuControls(int CurrentMenu, boolean isRefresh);
-//int GetNextMenu(Adafruit_RGBLCDShield lcd, int CurrentMenu);
-//int refreshLine(int row, String Str, int section, int len);
-//End of Auto generated function prototypes by Atmel Studio
 
 
 
-
-
-const int openAndCloseTime = 11000;
-//Adafruit_RGBLCDShield lcd = Adafruit_RGBLCDShield();
-
-//int PIN_PIN_PHOTORESISTORISTOR = A1;
-//int PIN_PHOTORESISTOR = A0;
 double Temperature = 0;
 int Light = 0;
+//TODO: REPLACE VARS WITH CLASS-EQUIVALENCE
 int CurrentMenu = 0;
 int MenuSelect = 0;
 unsigned long MenuLastUpdated = 0; //ONLY MODIFY VIA: MenuControls()
@@ -40,9 +25,8 @@ String line1;
 String line2;
 int ScrollCount = 0;
 int ScrollTotal = 0;
-boolean isOkay;
 boolean isClosing;
-
+//END-TODO
 char lghtstr[4];
 char tempstr[4];
 char sac[64];
@@ -60,9 +44,8 @@ void setup() {
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
   pinMode(PIN_LIMITSWITCH_1, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(PIN_LIMITSWITCH_1), LimitSwitchActive, RISING);
-	analogReference(EXTERNAL);  
-  isOkay = true;
+  analogReference(EXTERNAL);  
+
   isClosing = false;
   /*TWI INTERRUPT*/
   TWCR |= (1<<TWIE);
@@ -156,6 +139,8 @@ boolean checkLight(int TimeOfDay)
 }*/
 
 /*ISR(INT0_vect)//Limit Switch 1
+TODO: MESH WITH
+attachInterrupt(digitalPinToInterrupt(PIN_LIMITSWITCH_1), LimitSwitchActive, RISING);
 {
 	Serial.println("LS1 Interrupt");
 }

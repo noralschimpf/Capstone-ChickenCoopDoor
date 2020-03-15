@@ -6,9 +6,15 @@
 */
 
 
+/*TODOs
+	*Lora alarm
+	*LED state addition
+	*revise open/close/stall
+*/
+
 #include "Safety.h"
-#include <Arduino.h>
 #include "constant_parameters.h"
+#include <Arduino.h>
 // default constructor
 Safety::Safety()
 {
@@ -20,43 +26,66 @@ Safety::~Safety()
 {
 } //~Safety
 
-int Safety::deviceStatus(device dev)
+int Safety::deviceStatus(int dev)
 {
 	switch(dev)
 	{
-		case LS1:
+		case DEVICE_LS1:
 			return digitalRead(PIN_LIMITSWITCH_1);
-		case LS2:
+		case DEVICE_LS2:
 			return digitalRead(PIN_LIMITSWITCH_2);
-		case PEC:
+		case DEVICE_PEC:
 			return digitalRead(PIN_LASERSENSOR);
-		case PrxUp:
+		case DEVICE_PRXUP:
 			return digitalRead(PIN_PROX_UP);
-		case PrxDn:				
+		case DEVICE_PRXDN:				
 			return digitalRead(PIN_PROX_DOWN);
-		
+		case DEVICE_DOORDIR:
+			return inDoorDir;
 	}
 }
-void Safety::setDevice(device dev,int state)
+void Safety::setDevice(int dev, int state)
 {
-	switch (dev)
+	switch(dev)
 	{
-		case LS1:
+		case DEVICE_LS1:
 			isLS1Clear = state;
 			break;
-		case LS2:
+		case DEVICE_LS2:
 			isLS2Clear = state;
 			break;
-		case PEC:
+		case DEVICE_PEC:
 			isPECClear = state;
 			break;
-		case PrxUp:
+		case DEVICE_PRXUP:
 			isDoorUp = state;
 			break;
-		case PrxDn:
+		case DEVICE_PRXDN:
 			isDoorDown = state;
 			break;
+		case DEVICE_DOORDIR:
+			inDoorDir = state;
+			if(state==MVT_STALLED)
+			{
+				disableMotor(true,0);
+			}
+			else
+			{
+				disableMotor(false);
+			}
+			setRelay(state);
+			break;
+		default:
+			break;
 	}
+}
+void Safety::setSafetyStatus(boolean ok)
+{
+	isOkay = ok;
+}
+boolean Safety::safetyStatus()
+{
+	return isOkay;
 }
 void Safety::cntEventIncr(int incr)
 {
@@ -69,38 +98,35 @@ void Safety::cntEventIncr(int incr)
 			cntEvent++;
 			break;
 		default:
-			
+			break;
 	}
 }
 
 //TODO:REWRITE
-void closeDoor() {
-	pinMode(PIN_RELAY_DOOROPEN, OUTPUT);
-	pinMode(PIN_RELAY_DOORCLOSE, OUTPUT);
-
+void Safety::closeDoor()
+{
 	uint8_t buttons;
-	digitalWrite(PIN_RELAY_DOORCLOSE, HIGH);
-	digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-	isClosing = true;
+	setDevice(DEVICE_DOORDIR, MVT_CLOSING);
 	Serial.println("Closing");
-	for (int i = 0; i < openAndCloseTime && isOkay; i++) {
+
+	for (int i = 0; i < OPENCLOSETIME && isOkay; i++) {
 		//    for(int i =0; i< openAndCloseTime;i++){
 		delay(1);
 		//Check if door needs to stop
 		//dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
-		if (buttons & BUTTON_SELECT)
+		/*if (buttons & BUTTON_SELECT)
 		{
 			//stop door due to select
 			digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
 			digitalWrite(PIN_RELAY_DOOROPEN, LOW);
 			break;
-		}
+		}*/
 	}
 	//stop door
 	digitalWrite(PIN_RELAY_DOOROPEN, LOW);
 	digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
 
-	isClosing = false;
+	setDevice(DEVICE_DOORDIR,MVT_STALLED);
 
 	pinMode(PIN_RELAY_DOOROPEN, INPUT);
 	pinMode(PIN_RELAY_DOORCLOSE, INPUT);
@@ -109,56 +135,94 @@ void closeDoor() {
 
 
 //TODO:REWRITE
-void openDoorAction(int tme) {
-	// Set relay pins to actually work
-	pinMode(PIN_RELAY_DOOROPEN, OUTPUT);
-	pinMode(PIN_RELAY_DOORCLOSE, OUTPUT);
-
-	Serial.println("Relay pins set to output");
+void Safety::openDoor()
+ {	
 	uint8_t buttons;
-
-	digitalWrite(PIN_RELAY_DOOROPEN, HIGH);
-	digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-
-	for (int i = 0; i < openAndCloseTime && isOkay; i++) {
-		delay(1);
-
+	setDevice(DEVICE_DOORDIR,MVT_OPENING);
+	
+	
+	unsigned long temp = millis();
+	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP))
+	{
+		delay(50);
+	}
 		//dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
-		if (buttons & BUTTON_SELECT)
+	/*
+	if (buttons & BUTTON_SELECT)
 		{
 			digitalWrite(PIN_RELAY_DOOROPEN, LOW);
 			digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
 			break;
 		}
+		DEBUG
+	*/
 	}
 	//Stop door
-	digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-	digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-
-	//Stop relay from being jank
-	pinMode(PIN_RELAY_DOOROPEN, INPUT);
-	pinMode(PIN_RELAY_DOORCLOSE, INPUT);
-}
-
-void openDoor() {
-	Serial.println("Opening");
-	openDoorAction(openAndCloseTime);
-	Serial.println("Open Complete");
+	setDevice(DEVICE_DOORDIR,MVT_STALLED);
 }
 
 //TODO:REWRITE
-void emergencyOpen(){
-	digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-	digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-	pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-	pinMode(PIN_RELAY_DOOROPEN,INPUT);
-	delay(1000);
+void Safety::emergencyOpen(){
+	Serial.println("EMERGENCY OPEN:");
+	setDevice(DEVICE_DOORDIR,MVT_OPENING);
+	unsigned long temp = millis();
+	while(deviceStatus(DEVICE_PRXUP)==0 || ((millis()-temp))<5000)
+	{
+		delay(50);
+	}
+	
+	disableMotor(true,3000);
+	
+	/*
+	digitalwrite(PIN_LED_RED,HIGH);
+	TODO:
+	ERROR STATE FOR LORA ALARM
+	*/
+}
+//TODO:WRITE
+void Safety::emergencyStall()
+{
 	Serial.println("Emergency");
-	openDoorAction(1000);
-	//digitalWrite(led, LOW);
-	pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-	pinMode(PIN_RELAY_DOOROPEN,INPUT);
-
-	Serial.println("Emergency Finished");
+	disableMotor(true, 1000);
+	//digitalWrite(PIN_LED_RED, LOW);
+	disableMotor(true,0);
+	Serial.println("Emergency Finished");	
+}
+//TODO:WRITE
+//Replaces setting outputs to inputs at each call
+void Safety::disableMotor(bool disable, int ms)
+{		
+	if(disable)
+	{
+		digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+		digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+		pinMode(PIN_RELAY_DOORCLOSE,INPUT);
+		pinMode(PIN_RELAY_DOOROPEN,INPUT);
+		Serial.println("Relay disabled\tWaiting %d ms",ms);
+		delay(ms);
+	}
+	else
+	{
+		pinMode(PIN_RELAY_DOOROPEN,OUTPUT);
+		pinMode(PIN_RELAY_DOORCLOSE,OUTPUT);
+		Serial.println("Relay pins set to output");
+	}
 }
 
+void Safety::setRelay(int doordir)
+{
+	switch(doordir)
+	{
+		case MVT_CLOSING:
+			digitalWrite(PIN_RELAY_DOORCLOSE,HIGH);
+			digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+		case MVT_STALLED:
+			digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+			digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+		case MVT_OPENING:
+			digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
+			digitalWrite(PIN_RELAY_DOOROPEN,HIGH);
+		default:
+			break;
+	}
+}

@@ -3,21 +3,19 @@ Archive member included to satisfy reference by file (symbol)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
                               Sketch.o (_ZN14HardwareSerial5beginEmh)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                              Sketch.o (Serial)
+                              Safety.o (Serial)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o (main)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
                               Sketch.o (_Znwj)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
-C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
-                              Sketch.o (attachInterrupt)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
                               Sketch.o (millis)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
                               Sketch.o (analogReference)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
-                              Sketch.o (pinMode)
+                              Safety.o (pinMode)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
                               Display.o (_ZN6StringD1Ev)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
@@ -200,17 +198,31 @@ Discarded input sections
  .bss           0x00000000        0x0 Safety.o
  .text._ZN6SafetyD2Ev
                 0x00000000        0x2 Safety.o
- .text._ZN6Safety12deviceStatusENS_6deviceE
-                0x00000000       0x30 Safety.o
- .text._ZN6Safety9setDeviceENS_6deviceEi
-                0x00000000       0x3a Safety.o
+ .text._ZN6Safety12deviceStatusEi
+                0x00000000       0x42 Safety.o
+ .text._ZN6Safety9setDeviceEii
+                0x00000000       0x4c Safety.o
+ .text._ZN6Safety15setSafetyStatusEb
+                0x00000000        0x6 Safety.o
+ .text._ZN6Safety12safetyStatusEv
+                0x00000000        0x6 Safety.o
+ .text._ZN6Safety12cntEventIncrEi
+                0x00000000       0x22 Safety.o
+ .rodata.str1.1
+                0x00000000       0x4d Safety.o
+ .text._ZN6Safety9closeDoorEv
+                0x00000000       0x94 Safety.o
+ .text._ZN6Safety8openDoorEv
+                0x00000000       0x7c Safety.o
+ .text._ZN6Safety13emergencyOpenEv
+                0x00000000       0x64 Safety.o
+ .text._ZN6Safety14emergencyStallEv
+                0x00000000        0x2 Safety.o
+ .text._ZN6Safety12disableMotorEb
+                0x00000000        0x2 Safety.o
  .text          0x00000000        0x0 Sketch.o
  .data          0x00000000        0x0 Sketch.o
  .bss           0x00000000        0x0 Sketch.o
- .text._Z9closeDoorv
-                0x00000000       0xa2 Sketch.o
- .text._Z8openDoorv
-                0x00000000       0x20 Sketch.o
  .bss.sac       0x00000000       0x40 Sketch.o
  .bss.tempstr   0x00000000        0x4 Sketch.o
  .bss.lghtstr   0x00000000        0x4 Sketch.o
@@ -301,11 +313,6 @@ Discarded input sections
                 0x00000000       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
  .rodata._ZTV5Print
                 0x00000000        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .text          0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .data          0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .bss           0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .text.detachInterrupt
-                0x00000000       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
  .text          0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
  .data          0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
  .bss           0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
@@ -1158,7 +1165,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2f80
+.text           0x00000000     0x2d84
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -1239,6 +1246,7 @@ END GROUP
  *(.text)
  .text          0x00000110        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000110                __vector_22
+                0x00000110                __vector_1
                 0x00000110                __vector_12
                 0x00000110                __bad_interrupt
                 0x00000110                __vector_6
@@ -1252,6 +1260,7 @@ END GROUP
                 0x00000110                __vector_5
                 0x00000110                __vector_4
                 0x00000110                __vector_9
+                0x00000110                __vector_2
                 0x00000110                __vector_21
                 0x00000110                __vector_15
                 0x00000110                __vector_8
@@ -1283,376 +1292,357 @@ END GROUP
                 0x0000064a        0x2 Safety.o
                 0x0000064a                _ZN6SafetyC1Ev
                 0x0000064a                _ZN6SafetyC2Ev
- .text.setup    0x0000064c      0x128 Sketch.o
+ .text.setup    0x0000064c      0x114 Sketch.o
                 0x0000064c                setup
- .text.loop     0x00000774       0xa0 Sketch.o
-                0x00000774                loop
- .text._Z14openDoorActioni
-                0x00000814       0x8c Sketch.o
-                0x00000814                _Z14openDoorActioni
- .text._Z13emergencyOpenv
-                0x000008a0       0x5c Sketch.o
-                0x000008a0                _Z13emergencyOpenv
- .text._Z17LimitSwitchActivev
-                0x000008fc       0x22 Sketch.o
-                0x000008fc                _Z17LimitSwitchActivev
+ .text.loop     0x00000760       0xa0 Sketch.o
+                0x00000760                loop
  .text.startup._GLOBAL__sub_I_Temperature
-                0x0000091e       0x20 Sketch.o
+                0x00000800       0x20 Sketch.o
  .text.exit._GLOBAL__sub_D_Temperature
-                0x0000093e       0x10 Sketch.o
+                0x00000820       0x10 Sketch.o
  .text._ZN14HardwareSerial9availableEv
-                0x0000094e       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x0000094e                _ZN14HardwareSerial9availableEv
+                0x00000830       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x00000830                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x00000966       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x00000966                _ZN14HardwareSerial4peekEv
+                0x00000848       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x00000848                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x00000982       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x00000982                _ZN14HardwareSerial4readEv
+                0x00000864       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x00000864                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x000009aa       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x000009aa                _ZN14HardwareSerial17availableForWriteEv
+                0x0000088c       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x0000088c                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x000009c8       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x000009c8                _Z14serialEventRunv
+                0x000008aa       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x000008aa                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x000009e4       0x44 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x000009e4                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x000008c6       0x44 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x000008c6                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x00000a28       0x9a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x00000a28                _ZN14HardwareSerial5writeEh
+                0x0000090a       0x9a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x0000090a                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x00000ac2       0x44 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x00000ac2                _ZN14HardwareSerial5flushEv
+                0x000009a4       0x44 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x000009a4                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x00000b06       0xca C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x00000b06                _ZN14HardwareSerial5beginEmh
+                0x000009e8       0xca C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x000009e8                _ZN14HardwareSerial5beginEmh
  .text._ZN5Print17availableForWriteEv
-                0x00000bd0        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                0x00000bd0                _ZN5Print17availableForWriteEv
+                0x00000ab2        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x00000ab2                _ZN5Print17availableForWriteEv
  .text._ZN5Print5flushEv
-                0x00000bd6        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                0x00000bd6                _ZN5Print5flushEv
+                0x00000ab8        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x00000ab8                _ZN5Print5flushEv
  .text.__vector_18
-                0x00000bd8       0x64 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                0x00000bd8                __vector_18
+                0x00000aba       0x64 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x00000aba                __vector_18
  .text.__vector_19
-                0x00000c3c       0x4c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                0x00000c3c                __vector_19
+                0x00000b1e       0x4c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x00000b1e                __vector_19
  .text._Z17Serial0_availablev
-                0x00000c88       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                0x00000c88                _Z17Serial0_availablev
+                0x00000b6a       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x00000b6a                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_18
-                0x00000c9c       0x5a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x00000b7e       0x5a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
  .text.initVariant
-                0x00000cf6        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
-                0x00000cf6                initVariant
+                0x00000bd8        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
+                0x00000bd8                initVariant
  .text.startup.main
-                0x00000cf8       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
-                0x00000cf8                main
- .text._Znwj    0x00000d16        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
-                0x00000d16                _Znwj
+                0x00000bda       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
+                0x00000bda                main
+ .text._Znwj    0x00000bf8        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
+                0x00000bf8                _Znwj
  .text._ZN5Print5writeEPKhj
-                0x00000d1a       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000d1a                _ZN5Print5writeEPKhj
+                0x00000bfc       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000bfc                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x00000d6e       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000d6e                _ZN5Print5writeEPKc
+                0x00000c50       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000c50                _ZN5Print5writeEPKc
  .text._ZN5Print5printERK6String
-                0x00000d98       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000d98                _ZN5Print5printERK6String
+                0x00000c7a       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000c7a                _ZN5Print5printERK6String
  .text._ZN5Print7printlnEv
-                0x00000db4        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000db4                _ZN5Print7printlnEv
+                0x00000c96        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000c96                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPKc
-                0x00000dbc       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000dbc                _ZN5Print7printlnEPKc
- .text.nothing  0x00000de0        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .text.attachInterrupt
-                0x00000de2       0x40 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
-                0x00000de2                attachInterrupt
- .text.__vector_1
-                0x00000e22       0x4e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
-                0x00000e22                __vector_1
- .text.__vector_2
-                0x00000e70       0x4e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
-                0x00000e70                __vector_2
+                0x00000c9e       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000c9e                _ZN5Print7printlnEPKc
  .text.__vector_16
-                0x00000ebe       0x94 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000ebe                __vector_16
- .text.millis   0x00000f52       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000f52                millis
- .text.micros   0x00000f6a       0x4a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000f6a                micros
- .text.delay    0x00000fb4       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000fb4                delay
+                0x00000cc2       0x94 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000cc2                __vector_16
+ .text.millis   0x00000d56       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000d56                millis
+ .text.micros   0x00000d6e       0x4a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000d6e                micros
+ .text.delay    0x00000db8       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000db8                delay
  .text.delayMicroseconds
-                0x0000102c       0x16 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x0000102c                delayMicroseconds
- .text.init     0x00001042       0x76 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00001042                init
+                0x00000e30       0x16 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000e30                delayMicroseconds
+ .text.init     0x00000e46       0x76 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000e46                init
  .text.analogReference
-                0x000010b8        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
-                0x000010b8                analogReference
+                0x00000ebc        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+                0x00000ebc                analogReference
  .text.turnOffPWM
-                0x000010be       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00001110       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
-                0x00001110                pinMode
+                0x00000ec2       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00000f14       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+                0x00000f14                pinMode
  .text.digitalWrite
-                0x00001188       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
-                0x00001188                digitalWrite
+                0x00000f8c       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+                0x00000f8c                digitalWrite
  .text._ZNK6String14StringIfHelperEv
-                0x000011e6        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011e6                _ZNK6String14StringIfHelperEv
+                0x00000fea        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00000fea                _ZNK6String14StringIfHelperEv
  .text._ZN6StringD2Ev
-                0x000011e8        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011e8                _ZN6StringD2Ev
-                0x000011e8                _ZN6StringD1Ev
+                0x00000fec        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00000fec                _ZN6StringD2Ev
+                0x00000fec                _ZN6StringD1Ev
  .text._ZN6String10invalidateEv
-                0x000011f2       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011f2                _ZN6String10invalidateEv
+                0x00000ff6       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00000ff6                _ZN6String10invalidateEv
  .text._ZN6String12changeBufferEj
-                0x00001216       0x34 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001216                _ZN6String12changeBufferEj
+                0x0000101a       0x34 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000101a                _ZN6String12changeBufferEj
  .text._ZN6String7reserveEj
-                0x0000124a       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x0000124a                _ZN6String7reserveEj
+                0x0000104e       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000104e                _ZN6String7reserveEj
  .text._ZN6String4copyEPKcj
-                0x00001282       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001282                _ZN6String4copyEPKcj
+                0x00001086       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001086                _ZN6String4copyEPKcj
  .text._ZN6StringC2EPKc
-                0x000012c4       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000012c4                _ZN6StringC2EPKc
-                0x000012c4                _ZN6StringC1EPKc
+                0x000010c8       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000010c8                _ZN6StringC2EPKc
+                0x000010c8                _ZN6StringC1EPKc
  .text._ZN6String4moveERS_
-                0x000012ee       0x7a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000012ee                _ZN6String4moveERS_
+                0x000010f2       0x7a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000010f2                _ZN6String4moveERS_
  .text._ZN6StringaSERKS_
-                0x00001368       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001368                _ZN6StringaSERKS_
+                0x0000116c       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000116c                _ZN6StringaSERKS_
  .text._ZN6StringC2ERKS_
-                0x00001396       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001396                _ZN6StringC2ERKS_
-                0x00001396                _ZN6StringC1ERKS_
+                0x0000119a       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000119a                _ZN6StringC2ERKS_
+                0x0000119a                _ZN6StringC1ERKS_
  .text._ZN6StringaSEOS_
-                0x000013a8       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000013a8                _ZN6StringaSEOS_
+                0x000011ac       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000011ac                _ZN6StringaSEOS_
  .text._ZN6StringaSEPKc
-                0x000013c0       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000013c0                _ZN6StringaSEPKc
+                0x000011c4       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000011c4                _ZN6StringaSEPKc
  .text._ZNK6String9substringEjj
-                0x000013ee       0x8a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000013ee                _ZNK6String9substringEjj
+                0x000011f2       0x8a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000011f2                _ZNK6String9substringEjj
  .text._ZN21Adafruit_RGBLCDShieldC2Ev
-                0x00001478       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001478                _ZN21Adafruit_RGBLCDShieldC2Ev
-                0x00001478                _ZN21Adafruit_RGBLCDShieldC1Ev
+                0x0000127c       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x0000127c                _ZN21Adafruit_RGBLCDShieldC2Ev
+                0x0000127c                _ZN21Adafruit_RGBLCDShieldC1Ev
  .text._ZN21Adafruit_RGBLCDShield13_digitalWriteEhh
-                0x000014ba       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000014ba                _ZN21Adafruit_RGBLCDShield13_digitalWriteEhh
+                0x000012be       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000012be                _ZN21Adafruit_RGBLCDShield13_digitalWriteEhh
  .text._ZN21Adafruit_RGBLCDShield12setBacklightEh
-                0x000014d4       0x48 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000014d4                _ZN21Adafruit_RGBLCDShield12setBacklightEh
+                0x000012d8       0x48 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000012d8                _ZN21Adafruit_RGBLCDShield12setBacklightEh
  .text._ZN21Adafruit_RGBLCDShield8_pinModeEhh
-                0x0000151c       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x0000151c                _ZN21Adafruit_RGBLCDShield8_pinModeEhh
+                0x00001320       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001320                _ZN21Adafruit_RGBLCDShield8_pinModeEhh
  .text._ZN21Adafruit_RGBLCDShield11pulseEnableEv
-                0x00001536       0x3e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001536                _ZN21Adafruit_RGBLCDShield11pulseEnableEv
+                0x0000133a       0x3e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x0000133a                _ZN21Adafruit_RGBLCDShield11pulseEnableEv
  .text._ZN21Adafruit_RGBLCDShield10write4bitsEh
-                0x00001574      0x168 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001574                _ZN21Adafruit_RGBLCDShield10write4bitsEh
+                0x00001378      0x168 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001378                _ZN21Adafruit_RGBLCDShield10write4bitsEh
  .text._ZN21Adafruit_RGBLCDShield10write8bitsEh
-                0x000016dc       0x74 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000016dc                _ZN21Adafruit_RGBLCDShield10write8bitsEh
+                0x000014e0       0x74 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000014e0                _ZN21Adafruit_RGBLCDShield10write8bitsEh
  .text._ZN21Adafruit_RGBLCDShield4sendEhh
-                0x00001750       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001750                _ZN21Adafruit_RGBLCDShield4sendEhh
+                0x00001554       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001554                _ZN21Adafruit_RGBLCDShield4sendEhh
  .text._ZN21Adafruit_RGBLCDShield7commandEh
-                0x000017a2        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000017a2                _ZN21Adafruit_RGBLCDShield7commandEh
+                0x000015a6        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000015a6                _ZN21Adafruit_RGBLCDShield7commandEh
  .text._ZN21Adafruit_RGBLCDShield5clearEv
-                0x000017a8        0xe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000017a8                _ZN21Adafruit_RGBLCDShield5clearEv
+                0x000015ac        0xe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000015ac                _ZN21Adafruit_RGBLCDShield5clearEv
  .text._ZN21Adafruit_RGBLCDShield9setCursorEhh
-                0x000017b6       0x5c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000017b6                _ZN21Adafruit_RGBLCDShield9setCursorEhh
+                0x000015ba       0x5c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000015ba                _ZN21Adafruit_RGBLCDShield9setCursorEhh
  .text._ZN21Adafruit_RGBLCDShield7displayEv
-                0x00001812       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001812                _ZN21Adafruit_RGBLCDShield7displayEv
+                0x00001616       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001616                _ZN21Adafruit_RGBLCDShield7displayEv
  .text._ZN21Adafruit_RGBLCDShield5beginEhhh
-                0x00001822      0x1d0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001822                _ZN21Adafruit_RGBLCDShield5beginEhhh
+                0x00001626      0x1d0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001626                _ZN21Adafruit_RGBLCDShield5beginEhhh
  .text._ZN21Adafruit_RGBLCDShield5writeEh
-                0x000019f2        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000019f2                _ZN21Adafruit_RGBLCDShield5writeEh
+                0x000017f6        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000017f6                _ZN21Adafruit_RGBLCDShield5writeEh
  .text._ZN21Adafruit_RGBLCDShield11readButtonsEv
-                0x000019fe       0x60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000019fe                _ZN21Adafruit_RGBLCDShield11readButtonsEv
+                0x00001802       0x60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001802                _ZN21Adafruit_RGBLCDShield11readButtonsEv
  .text._ZL8wiresendh
-                0x00001a5e        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001862        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
  .text._ZN17Adafruit_MCP230175beginEh
-                0x00001a68       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001a68                _ZN17Adafruit_MCP230175beginEh
+                0x0000186c       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x0000186c                _ZN17Adafruit_MCP230175beginEh
  .text._ZN17Adafruit_MCP230175beginEv
-                0x00001ac6        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001ac6                _ZN17Adafruit_MCP230175beginEv
+                0x000018ca        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x000018ca                _ZN17Adafruit_MCP230175beginEv
  .text._ZN17Adafruit_MCP2301711writeGPIOABEj
-                0x00001acc       0x36 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001acc                _ZN17Adafruit_MCP2301711writeGPIOABEj
+                0x000018d0       0x36 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x000018d0                _ZN17Adafruit_MCP2301711writeGPIOABEj
  .text._ZN17Adafruit_MCP230177pinModeEhh
-                0x00001b02       0xc4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001b02                _ZN17Adafruit_MCP230177pinModeEhh
+                0x00001906       0xc4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001906                _ZN17Adafruit_MCP230177pinModeEhh
  .text._ZN17Adafruit_MCP2301710readGPIOABEv
-                0x00001bc6       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001bc6                _ZN17Adafruit_MCP2301710readGPIOABEv
+                0x000019ca       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x000019ca                _ZN17Adafruit_MCP2301710readGPIOABEv
  .text._ZN17Adafruit_MCP2301711digitalReadEh
-                0x00001c18       0x72 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001c18                _ZN17Adafruit_MCP2301711digitalReadEh
+                0x00001a1c       0x72 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001a1c                _ZN17Adafruit_MCP2301711digitalReadEh
  .text._ZN17Adafruit_MCP230176pullUpEhh
-                0x00001c8a       0xc6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001c8a                _ZN17Adafruit_MCP230176pullUpEhh
+                0x00001a8e       0xc6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001a8e                _ZN17Adafruit_MCP230176pullUpEhh
  .text._ZN17Adafruit_MCP2301712digitalWriteEhh
-                0x00001d50       0xd2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001d50                _ZN17Adafruit_MCP2301712digitalWriteEhh
+                0x00001b54       0xd2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001b54                _ZN17Adafruit_MCP2301712digitalWriteEhh
  .text._ZN7TwoWire9availableEv
-                0x00001e22       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e22                _ZN7TwoWire9availableEv
+                0x00001c26       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001c26                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00001e32       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e32                _ZN7TwoWire4readEv
+                0x00001c36       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001c36                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x00001e5a       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e5a                _ZN7TwoWire4peekEv
+                0x00001c5e       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001c5e                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x00001e78        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e78                _ZN7TwoWire5flushEv
+                0x00001c7c        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001c7c                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire16onReceiveServiceEPhi
-                0x00001e7a       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e7a                _ZN7TwoWire16onReceiveServiceEPhi
+                0x00001c7e       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001c7e                _ZN7TwoWire16onReceiveServiceEPhi
  .text._ZN7TwoWire16onRequestServiceEv
-                0x00001ece       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001ece                _ZN7TwoWire16onRequestServiceEv
+                0x00001cd2       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001cd2                _ZN7TwoWire16onRequestServiceEv
  .text._ZN7TwoWire5writeEPKhj
-                0x00001ee6       0x5a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001ee6                _ZN7TwoWire5writeEPKhj
+                0x00001cea       0x5a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001cea                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x00001f40       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001f40                _ZN7TwoWire5writeEh
+                0x00001d44       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001d44                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00001f9e       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001f9e                _ZN7TwoWireC1Ev
-                0x00001f9e                _ZN7TwoWireC2Ev
+                0x00001da2       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001da2                _ZN7TwoWireC1Ev
+                0x00001da2                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00001fbe       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001fbe                _ZN7TwoWire5beginEv
+                0x00001dc2       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001dc2                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00001fe2       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001fe2                _ZN7TwoWire17beginTransmissionEh
+                0x00001de6       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001de6                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire17beginTransmissionEi
-                0x00001ff6        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001ff6                _ZN7TwoWire17beginTransmissionEi
+                0x00001dfa        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001dfa                _ZN7TwoWire17beginTransmissionEi
  .text._ZN7TwoWire15endTransmissionEh
-                0x00001ffa       0x26 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001ffa                _ZN7TwoWire15endTransmissionEh
+                0x00001dfe       0x26 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001dfe                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire11requestFromEhhmhh
-                0x00002020       0xa8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00002020                _ZN7TwoWire11requestFromEhhmhh
+                0x00001e24       0xa8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001e24                _ZN7TwoWire11requestFromEhhmhh
  .text._ZN7TwoWire11requestFromEhhh
-                0x000020c8       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x000020c8                _ZN7TwoWire11requestFromEhhh
+                0x00001ecc       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001ecc                _ZN7TwoWire11requestFromEhhh
  .text._ZN7TwoWire11requestFromEii
-                0x000020e8        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x000020e8                _ZN7TwoWire11requestFromEii
+                0x00001eec        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001eec                _ZN7TwoWire11requestFromEii
  .text._ZN7TwoWire15endTransmissionEv
-                0x000020ee        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x000020ee                _ZN7TwoWire15endTransmissionEv
+                0x00001ef2        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001ef2                _ZN7TwoWire15endTransmissionEv
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x000020f4        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .text.__empty  0x000020fc        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
-                0x000020fc                yield
+                0x00001ef8        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .text.__empty  0x00001f00        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+                0x00001f00                yield
  .text.twi_init
-                0x000020fe       0x3c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000020fe                twi_init
+                0x00001f02       0x3c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00001f02                twi_init
  .text.twi_readFrom
-                0x0000213a       0x90 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x0000213a                twi_readFrom
+                0x00001f3e       0x90 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00001f3e                twi_readFrom
  .text.twi_writeTo
-                0x000021ca       0xac C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000021ca                twi_writeTo
+                0x00001fce       0xac C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00001fce                twi_writeTo
  .text.twi_transmit
-                0x00002276       0x50 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x00002276                twi_transmit
+                0x0000207a       0x50 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0000207a                twi_transmit
  .text.twi_attachSlaveRxEvent
-                0x000022c6        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000022c6                twi_attachSlaveRxEvent
+                0x000020ca        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000020ca                twi_attachSlaveRxEvent
  .text.twi_attachSlaveTxEvent
-                0x000022d0        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000022d0                twi_attachSlaveTxEvent
+                0x000020d4        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000020d4                twi_attachSlaveTxEvent
  .text.twi_stop
-                0x000022da       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000022da                twi_stop
+                0x000020de       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000020de                twi_stop
  .text.twi_releaseBus
-                0x000022ee        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000022ee                twi_releaseBus
+                0x000020f2        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000020f2                twi_releaseBus
  .text.__vector_24
-                0x000022fa      0x25a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000022fa                __vector_24
+                0x000020fe      0x25a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000020fe                __vector_24
  .text.libgcc.div
-                0x00002554       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
-                0x00002554                __udivmodsi4
- .text.libgcc   0x00002598        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x00002598                __tablejump2__
+                0x00002358       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002358                __udivmodsi4
+ .text.libgcc   0x0000239c        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000239c                __tablejump2__
  .text.avr-libc
-                0x000025a4      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x000025a4                malloc
-                0x000026d4                free
+                0x000023a8      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x000023a8                malloc
+                0x000024d8                free
  .text.avr-libc
-                0x000027e6      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
-                0x000027e6                realloc
+                0x000025ea      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                0x000025ea                realloc
  .text.avr-libc
-                0x00002972       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x00002972                memcpy
+                0x00002776       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00002776                memcpy
  .text.avr-libc
-                0x00002984        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x00002984                strcpy
+                0x00002788        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x00002788                strcpy
  .text.avr-libc
-                0x00002992       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x00002992                sprintf
+                0x00002796       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x00002796                sprintf
  .text.avr-libc
-                0x000029d6      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x000029d6                vfprintf
+                0x000027da      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x000027da                vfprintf
  .text.avr-libc
-                0x00002d98       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00002d98                strnlen_P
+                0x00002b9c       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00002b9c                strnlen_P
  .text.avr-libc
-                0x00002dae       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00002dae                strnlen
+                0x00002bb2       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00002bb2                strnlen
  .text.avr-libc
-                0x00002dc4       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00002dc4                fputc
+                0x00002bc8       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00002bc8                fputc
  .text.avr-libc
-                0x00002e3c       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00002e3c                __ultoa_invert
+                0x00002c40       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00002c40                __ultoa_invert
  .text.libgcc.prologue
-                0x00002ef8       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00002ef8                __prologue_saves__
+                0x00002cfc       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00002cfc                __prologue_saves__
  .text.libgcc.prologue
-                0x00002f30       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00002f30                __epilogue_restores__
-                0x00002f66                . = ALIGN (0x2)
+                0x00002d34       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00002d34                __epilogue_restores__
+                0x00002d6a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002f66        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00002f66                _exit
-                0x00002f66                exit
+ .fini9         0x00002d6a        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00002d6a                _exit
+                0x00002d6a                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00002f66       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x00002f66                __do_global_dtors
+ .fini6         0x00002d6a       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00002d6a                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1665,11 +1655,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002f7c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002d80        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002f80                _etext = .
+                0x00002d84                _etext = .
 
-.data           0x00800100      0x15e load address 0x00002f80
+.data           0x00800100       0xf8 load address 0x00002d84
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
@@ -1677,154 +1667,152 @@ END GROUP
                 0x00800102                __malloc_heap_start
                 0x00800104                __malloc_margin
  *(.data*)
- .data.intFunc  0x00800106        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
  .data.analog_reference
-                0x0080010a        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
-                0x0080010a                analog_reference
+                0x00800106        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+                0x00800106                analog_reference
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x0080010b        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .rodata        0x00800107        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
  *(.rodata*)
  .rodata.str1.1
-                0x00800113       0x8b Display.o
+                0x0080010f       0x8b Display.o
                                  0x8c (size before relaxing)
  .rodata.str1.1
-                0x0080019e       0x81 Sketch.o
-                                 0x82 (size before relaxing)
+                0x0080019a       0x1e Sketch.o
+                                 0x1f (size before relaxing)
  .rodata._ZTV14HardwareSerial
-                0x0080021f       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
-                0x0080021f                _ZTV14HardwareSerial
+                0x008001b8       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+                0x008001b8                _ZTV14HardwareSerial
  .rodata.str1.1
-                0x00800231        0xf C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x008001ca        0xf C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
  .rodata.str1.1
-                0x00800240        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x008001d9        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
  .rodata._ZTV21Adafruit_RGBLCDShield
-                0x00800240        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00800240                _ZTV21Adafruit_RGBLCDShield
+                0x008001d9        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x008001d9                _ZTV21Adafruit_RGBLCDShield
  .rodata._ZTV7TwoWire
-                0x0080024c       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080024c                _ZTV7TwoWire
+                0x008001e5       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008001e5                _ZTV7TwoWire
  *(.gnu.linkonce.r*)
-                0x0080025e                . = ALIGN (0x2)
-                0x0080025e                _edata = .
-                0x0080025e                PROVIDE (__data_end, .)
+                0x008001f8                . = ALIGN (0x2)
+ *fill*         0x008001f7        0x1 
+                0x008001f8                _edata = .
+                0x008001f8                PROVIDE (__data_end, .)
 
-.bss            0x0080025e      0x1a4
-                0x0080025e                PROVIDE (__bss_start, .)
+.bss            0x008001f8      0x1a3
+                0x008001f8                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.ptrsftMainDoor
-                0x0080025e        0x2 Sketch.o
-                0x0080025e                ptrsftMainDoor
+                0x008001f8        0x2 Sketch.o
+                0x008001f8                ptrsftMainDoor
  .bss.ptrdspMainDoor
-                0x00800260        0x2 Sketch.o
-                0x00800260                ptrdspMainDoor
- .bss.disp      0x00800262       0x1c Sketch.o
-                0x00800262                disp
+                0x008001fa        0x2 Sketch.o
+                0x008001fa                ptrdspMainDoor
+ .bss.disp      0x008001fc       0x1c Sketch.o
+                0x008001fc                disp
  .bss.isClosing
-                0x0080027e        0x1 Sketch.o
-                0x0080027e                isClosing
- .bss.isOkay    0x0080027f        0x1 Sketch.o
-                0x0080027f                isOkay
- .bss.line2     0x00800280        0x6 Sketch.o
-                0x00800280                line2
- .bss.line1     0x00800286        0x6 Sketch.o
-                0x00800286                line1
+                0x00800218        0x1 Sketch.o
+                0x00800218                isClosing
+ .bss.line2     0x00800219        0x6 Sketch.o
+                0x00800219                line2
+ .bss.line1     0x0080021f        0x6 Sketch.o
+                0x0080021f                line1
  .bss.MenuLastUpdated
-                0x0080028c        0x4 Sketch.o
-                0x0080028c                MenuLastUpdated
+                0x00800225        0x4 Sketch.o
+                0x00800225                MenuLastUpdated
  .bss.MenuSelect
-                0x00800290        0x2 Sketch.o
-                0x00800290                MenuSelect
+                0x00800229        0x2 Sketch.o
+                0x00800229                MenuSelect
  .bss.CurrentMenu
-                0x00800292        0x2 Sketch.o
-                0x00800292                CurrentMenu
- .bss.Serial    0x00800294       0x9d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
-                0x00800294                Serial
+                0x0080022b        0x2 Sketch.o
+                0x0080022b                CurrentMenu
+ .bss.Serial    0x0080022d       0x9d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+                0x0080022d                Serial
  .bss.timer0_fract
-                0x00800331        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x008002ca        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x00800332        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00800332                timer0_millis
+                0x008002cb        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x008002cb                timer0_millis
  .bss.timer0_overflow_count
-                0x00800336        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00800336                timer0_overflow_count
- .bss.Wire      0x0080033a        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080033a                Wire
+                0x008002cf        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x008002cf                timer0_overflow_count
+ .bss.Wire      0x008002d3        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002d3                Wire
  .bss._ZN7TwoWire14user_onReceiveE
-                0x00800346        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800346                _ZN7TwoWire14user_onReceiveE
+                0x008002df        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002df                _ZN7TwoWire14user_onReceiveE
  .bss._ZN7TwoWire14user_onRequestE
-                0x00800348        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800348                _ZN7TwoWire14user_onRequestE
+                0x008002e1        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002e1                _ZN7TwoWire14user_onRequestE
  .bss._ZN7TwoWire12transmittingE
-                0x0080034a        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080034a                _ZN7TwoWire12transmittingE
+                0x008002e3        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002e3                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x0080034b        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080034b                _ZN7TwoWire14txBufferLengthE
+                0x008002e4        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002e4                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x0080034c        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080034c                _ZN7TwoWire13txBufferIndexE
+                0x008002e5        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002e5                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x0080034d       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080034d                _ZN7TwoWire8txBufferE
+                0x008002e6       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008002e6                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x0080036d        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080036d                _ZN7TwoWire9txAddressE
+                0x00800306        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800306                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x0080036e        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080036e                _ZN7TwoWire14rxBufferLengthE
+                0x00800307        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800307                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x0080036f        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080036f                _ZN7TwoWire13rxBufferIndexE
+                0x00800308        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800308                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x00800370       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800370                _ZN7TwoWire8rxBufferE
+                0x00800309       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800309                _ZN7TwoWire8rxBufferE
  .bss.twi_error
-                0x00800390        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00800329        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_rxBufferIndex
-                0x00800391        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080032a        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_rxBuffer
-                0x00800392       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080032b       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_txBufferLength
-                0x008003b2        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080034b        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_txBufferIndex
-                0x008003b3        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080034c        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_txBuffer
-                0x008003b4       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080034d       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferLength
-                0x008003d4        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080036d        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferIndex
-                0x008003d5        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080036e        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_masterBuffer
-                0x008003d6       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080036f       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveReceive
-                0x008003f6        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080038f        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveTransmit
-                0x008003f8        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00800391        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_inRepStart
-                0x008003fa        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00800393        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_sendStop
-                0x008003fb        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00800394        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_slarw
-                0x008003fc        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00800395        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_state
-                0x008003fd        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00800396        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  *(COMMON)
- COMMON         0x008003fe        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008003fe                __brkval
-                0x00800400                __flp
-                0x00800402                PROVIDE (__bss_end, .)
-                0x00002f80                __data_load_start = LOADADDR (.data)
-                0x000030de                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x00800397        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x00800397                __brkval
+                0x00800399                __flp
+                0x0080039b                PROVIDE (__bss_end, .)
+                0x00002d84                __data_load_start = LOADADDR (.data)
+                0x00002e7c                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800402        0x0
+.noinit         0x0080039b        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800402                _end = .
-                0x00800402                PROVIDE (__heap_start, .)
+                0x0080039b                _end = .
+                0x0080039b                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1863,34 +1851,32 @@ END GROUP
 .stab.indexstr
  *(.stab.indexstr)
 
-.comment        0x00000000       0x8c
+.comment        0x00000000       0x5c
  *(.comment)
  .comment       0x00000000       0x30 Display.o
                                  0x31 (size before relaxing)
- .comment       0x00000030       0x30 Safety.o
-                                 0x31 (size before relaxing)
- .comment       0x00000060       0x31 Sketch.o
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .comment       0x00000060       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
- .comment       0x00000060       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
- .comment       0x00000060       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
- .comment       0x00000060       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
- .comment       0x00000060       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+ .comment       0x00000030       0x31 Safety.o
+ .comment       0x00000030       0x31 Sketch.o
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+ .comment       0x00000030       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+ .comment       0x00000030       0x2c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
                                  0x2d (size before relaxing)
- .comment       0x0000008c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+ .comment       0x0000005c       0x31 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -1912,7 +1898,7 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x8b8
+.debug_aranges  0x00000000      0x878
  *(.debug_aranges)
  .debug_aranges
                 0x00000000       0x68 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
@@ -1925,30 +1911,28 @@ END GROUP
  .debug_aranges
                 0x00000108      0x100 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x00000208       0x40 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
+                0x00000208       0x48 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
  .debug_aranges
-                0x00000248       0x48 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000250       0x30 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
  .debug_aranges
-                0x00000290       0x30 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+                0x00000280       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
  .debug_aranges
-                0x000002c0       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+                0x000002b8      0x2b8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
  .debug_aranges
-                0x000002f8      0x2b8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00000570      0x110 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
  .debug_aranges
-                0x000005b0      0x110 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00000680       0x60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
  .debug_aranges
-                0x000006c0       0x60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x000006e0       0xf8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
  .debug_aranges
-                0x00000720       0xf8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x000007d8       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
  .debug_aranges
-                0x00000818       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .debug_aranges
-                0x00000838       0x80 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000007f8       0x80 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x1106e
+.debug_info     0x00000000    0x10e52
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_info    0x000005f4     0x1f64 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
@@ -1956,18 +1940,17 @@ END GROUP
  .debug_info    0x0000406e      0x237 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .debug_info    0x000042a5      0x11c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
  .debug_info    0x000043c1     0x28ff C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .debug_info    0x00006cc0      0x21c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .debug_info    0x00006edc      0x2cb C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .debug_info    0x000071a7      0x26d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .debug_info    0x00007414      0x5fe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .debug_info    0x00007a12     0x4338 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .debug_info    0x0000bd4a     0x1ba5 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .debug_info    0x0000d8ef      0x98d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .debug_info    0x0000e27c     0x27b0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .debug_info    0x00010a2c       0x3e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .debug_info    0x00010a6a      0x604 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_info    0x00006cc0      0x2cb C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_info    0x00006f8b      0x26d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_info    0x000071f8      0x5fe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x000077f6     0x4338 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_info    0x0000bb2e     0x1ba5 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_info    0x0000d6d3      0x98d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_info    0x0000e060     0x27b0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_info    0x00010810       0x3e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .debug_info    0x0001084e      0x604 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
-.debug_abbrev   0x00000000     0x2cee
+.debug_abbrev   0x00000000     0x2bf2
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_abbrev  0x000005a2      0x4b7 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
@@ -1975,18 +1958,17 @@ END GROUP
  .debug_abbrev  0x00000e27      0x12d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .debug_abbrev  0x00000f54       0xce C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
  .debug_abbrev  0x00001022      0x47a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .debug_abbrev  0x0000149c       0xfc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .debug_abbrev  0x00001598      0x146 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x000016de      0x16b C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .debug_abbrev  0x00001849      0x15b C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .debug_abbrev  0x000019a4      0x4c2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .debug_abbrev  0x00001e66      0x43e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .debug_abbrev  0x000022a4      0x23f C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .debug_abbrev  0x000024e3      0x581 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .debug_abbrev  0x00002a64       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .debug_abbrev  0x00002a8e      0x260 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_abbrev  0x0000149c      0x146 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x000015e2      0x16b C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_abbrev  0x0000174d      0x15b C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x000018a8      0x4c2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_abbrev  0x00001d6a      0x43e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_abbrev  0x000021a8      0x23f C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_abbrev  0x000023e7      0x581 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_abbrev  0x00002968       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .debug_abbrev  0x00002992      0x260 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
-.debug_line     0x00000000     0x477a
+.debug_line     0x00000000     0x45da
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x133 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_line    0x00000133      0x4c4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
@@ -1994,36 +1976,34 @@ END GROUP
  .debug_line    0x00000883      0x165 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .debug_line    0x000009e8      0x12f C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
  .debug_line    0x00000b17      0x685 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .debug_line    0x0000119c      0x1a0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .debug_line    0x0000133c      0x299 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .debug_line    0x000015d5      0x20f C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .debug_line    0x000017e4      0x252 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .debug_line    0x00001a36     0x1355 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .debug_line    0x00002d8b      0x9a0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .debug_line    0x0000372b      0x52d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .debug_line    0x00003c58      0x5ec C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .debug_line    0x00004244       0x41 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .debug_line    0x00004285      0x4f5 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_line    0x0000119c      0x299 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_line    0x00001435      0x20f C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_line    0x00001644      0x252 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00001896     0x1355 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_line    0x00002beb      0x9a0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_line    0x0000358b      0x52d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_line    0x00003ab8      0x5ec C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_line    0x000040a4       0x41 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .debug_line    0x000040e5      0x4f5 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
-.debug_frame    0x00000000     0x1b9c
+.debug_frame    0x00000000     0x1aa8
  *(.debug_frame)
  .debug_frame   0x00000000      0x110 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
  .debug_frame   0x00000110       0xe0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
  .debug_frame   0x000001f0       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .debug_frame   0x00000244       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
  .debug_frame   0x00000298      0x3ac C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .debug_frame   0x00000644       0xf4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .debug_frame   0x00000738       0xc4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .debug_frame   0x000007fc       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .debug_frame   0x00000850       0x7c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .debug_frame   0x000008cc      0xa60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .debug_frame   0x0000132c      0x364 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .debug_frame   0x00001690      0x134 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .debug_frame   0x000017c4      0x280 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .debug_frame   0x00001a44       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .debug_frame   0x00001a68      0x134 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_frame   0x00000644       0xc4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000708       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_frame   0x0000075c       0x7c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x000007d8      0xa60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_frame   0x00001238      0x364 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_frame   0x0000159c      0x134 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_frame   0x000016d0      0x280 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_frame   0x00001950       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .debug_frame   0x00001974      0x134 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
-.debug_str      0x00000000     0x33cc
+.debug_str      0x00000000     0x334a
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .debug_str     0x00000208     0x1572 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
@@ -2036,42 +2016,39 @@ END GROUP
                                 0x1dc (size before relaxing)
  .debug_str     0x000018d6      0x3ec C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
                                0x1254 (size before relaxing)
- .debug_str     0x00001cc2      0x156 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
-                                0x249 (size before relaxing)
- .debug_str     0x00001e18       0x8e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_str     0x00001cc2      0x162 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
                                 0x25c (size before relaxing)
- .debug_str     0x00001ea6       0x72 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_str     0x00001e24       0x72 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
                                 0x260 (size before relaxing)
- .debug_str     0x00001f18       0xa9 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x00001e96       0xa9 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
                                 0x2c1 (size before relaxing)
- .debug_str     0x00001fc1      0x3f2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_str     0x00001f3f      0x3f2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
                                0x11a7 (size before relaxing)
- .debug_str     0x000023b3      0x87d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_str     0x00002331      0x87d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
                                 0xbd6 (size before relaxing)
- .debug_str     0x00002c30      0x147 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_str     0x00002bae      0x147 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
                                 0x57d (size before relaxing)
- .debug_str     0x00002d77      0x4e8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_str     0x00002cf5      0x4e8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
                                0x18d3 (size before relaxing)
- .debug_str     0x0000325f       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .debug_str     0x000031dd       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
                                 0x151 (size before relaxing)
- .debug_str     0x0000327b      0x151 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_str     0x000031f9      0x151 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
                                 0x3dc (size before relaxing)
 
-.debug_loc      0x00000000     0x9ac9
+.debug_loc      0x00000000     0x9894
  *(.debug_loc)
  .debug_loc     0x00000000      0x4dc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
  .debug_loc     0x000004dc      0x1b0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
  .debug_loc     0x0000068c       0x4c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
  .debug_loc     0x000006d8     0x1c87 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .debug_loc     0x0000235f      0x235 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .debug_loc     0x00002594      0x28d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .debug_loc     0x00002821       0xfe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .debug_loc     0x0000291f      0x5fc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .debug_loc     0x00002f1b     0x422d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .debug_loc     0x00007148     0x127a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .debug_loc     0x000083c2      0x73b C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .debug_loc     0x00008afd      0xbe6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .debug_loc     0x000096e3      0x3e6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_loc     0x0000235f      0x28d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_loc     0x000025ec       0xfe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_loc     0x000026ea      0x5fc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00002ce6     0x422d C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_loc     0x00006f13     0x127a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_loc     0x0000818d      0x73b C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_loc     0x000088c8      0xbe6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_loc     0x000094ae      0x3e6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -2091,23 +2068,22 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x878
+.debug_ranges   0x00000000      0x848
  *(.debug_ranges)
  .debug_ranges  0x00000000       0x58 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial.o)
  .debug_ranges  0x00000058       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(HardwareSerial0.o)
  .debug_ranges  0x00000090       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .debug_ranges  0x000000b0       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
  .debug_ranges  0x000000c8      0x120 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
- .debug_ranges  0x000001e8       0x30 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WInterrupts.o)
- .debug_ranges  0x00000218       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
- .debug_ranges  0x00000250       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
- .debug_ranges  0x00000270       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .debug_ranges  0x00000298      0x2f8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
- .debug_ranges  0x00000590      0x130 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
- .debug_ranges  0x000006c0       0x50 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
- .debug_ranges  0x00000710       0xe8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .debug_ranges  0x000007f8       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
- .debug_ranges  0x00000808       0x70 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+ .debug_ranges  0x000001e8       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000220       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+ .debug_ranges  0x00000240       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000268      0x2f8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+ .debug_ranges  0x00000560      0x130 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+ .debug_ranges  0x00000690       0x50 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+ .debug_ranges  0x000006e0       0xe8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .debug_ranges  0x000007c8       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+ .debug_ranges  0x000007d8       0x70 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
 
 .debug_macro
  *(.debug_macro)
