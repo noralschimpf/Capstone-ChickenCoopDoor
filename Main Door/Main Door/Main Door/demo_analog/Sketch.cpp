@@ -168,7 +168,7 @@ ISR(INT0_vect)//Limit Switch 1
 	#endif
 	
 	ptrsftMainDoor->cntEventIncr(1);
-	ptrsftMainDoor->emergencyOpen();
+	ptrsftMainDoor->setSafetyStatus(ISOK_LSERR);
 	if(ptrsftMainDoor->inEventCount() >=3)
 	{
 		/*
@@ -184,7 +184,7 @@ ISR(INT1_vect)//Limit Switch 2
 	#endif
 	
 	ptrsftMainDoor->cntEventIncr(1);
-	ptrsftMainDoor->emergencyStall();
+	ptrsftMainDoor->setSafetyStatus(ISOK_LSERR);
 	if(ptrsftMainDoor->inEventCount() >=3)
 	{
 		/*
@@ -205,7 +205,7 @@ ISR(PCINT2_vect)
 		if(ptrsftMainDoor->deviceStatus(DEVICE_DOORDIR)==MVT_CLOSING)
 		{
 			ptrsftMainDoor->cntEventIncr(1);
-			ptrsftMainDoor->emergencyOpen();	
+			ptrsftMainDoor->setSafetyStatus(ISOK_PECERR);	
 			if(ptrsftMainDoor->inEventCount() >=3)
 			{
 				/*

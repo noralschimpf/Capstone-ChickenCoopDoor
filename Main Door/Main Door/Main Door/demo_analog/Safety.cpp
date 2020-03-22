@@ -86,11 +86,11 @@ void Safety::setDevice(int dev, int state)
 			break;
 	}
 }
-void Safety::setSafetyStatus(boolean ok)
+void Safety::setSafetyStatus(int ok)
 {
 	isOkay = ok;
 }
-boolean Safety::safetyStatus()
+int Safety::safetyStatus()
 {
 	return isOkay;
 }
@@ -125,18 +125,32 @@ void Safety::closeDoor()
 	#endif
 	
 	unsigned long i=0;
-	//Jacob comment: shouldnt it be 1 millisecond?
-	while(((i+OPENCLOSETIME < millis()) || (deviceStatus(DEVICE_PRXDN)==0))&&isOkay)
+	
+	while(((i+OPENCLOSETIME < millis()) || (deviceStatus(DEVICE_PRXDN)==0))&& isOkay==ISOK_OK)
 	{
-		//    for(int i =0; i< openAndCloseTime;i++){
-		delay(50);
+		delay(DELAY_INLOOP_MS);
 	}
 	
-	//where isOkay being set to false?
-	if(!isOkay)
+	//jacob comment: where isOkay being set to false?
+	//nathan answer: isOkay is a global flag, set during interrupts
+	if(ISOK_LSERR)
 	{
+		#ifdef DEBUG
+		Serial.println("LSERR flag caught");
+		#endif
 		emergencyOpen();
+		cntEventIncr(0);
+		setSafetyStatus(ISOK_OK);
 	}
+	else if(ISOK_PECERR)
+	{
+		#ifdef DEBUG
+		Serial.println("PECERR flag caught");
+		#endif
+		emergencyStall();
+		setSafetyStatus(ISOK_OK);
+	}
+	
 	//stop door
 	setDevice(DEVICE_DOORDIR,MVT_STALLED);
 	
@@ -146,29 +160,26 @@ void Safety::closeDoor()
 }
 
 
-//TODO:REWRITE
+
 void Safety::openDoor()
  {	
-	uint8_t buttons;
+	//uint8_t buttons;
 	setDevice(DEVICE_DOORDIR,MVT_OPENING);
 	
 	
 	unsigned long temp = millis();
-	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP) && isOkay)
+	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP))
 	{
-		//JACOB COMMENT: Should be 1 millisecond I would think
-		delay(50);
-	}
-		//dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
-	/*
+		delay(DELAY_INLOOP_MS);
+	
+	/*	dspMainDoor.UpdateMenuFromButtons();
+	
 	if (buttons & BUTTON_SELECT)
 		{
-			digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-			digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
 			break;
-		}
-		DEBUG
-	*/
+		}*/
+	}
+	
 	//Stop door
 	setDevice(DEVICE_DOORDIR,MVT_STALLED);
 }
@@ -184,7 +195,7 @@ void Safety::emergencyOpen(){
 	unsigned long temp = millis();
 	while(deviceStatus(DEVICE_PRXUP)==0 || ((millis()-temp))<5000)
 	{
-		delay(50);
+		delay(DELAY_INLOOP_MS);
 	}
 	
 	disableMotor(true,3000);
@@ -205,7 +216,7 @@ void Safety::emergencyStall()
 	disableMotor(true, 1000);
 	//digitalWrite(PIN_LED_RED, LOW);
 	//Jacob Comment: this should be false? or wait, whats the point of this method?
-	disableMotor(true,0);
+	disableMotor(false,0);
 	
 	#ifdef DEBUG 
 	Serial.println("Emergency Finished");	
@@ -242,7 +253,7 @@ void Safety::disableMotor(bool disable, int ms)
 	}
 }
 
-//Jacob Comment: dont you need to add breaks on switch statement?
+
 void Safety::setRelay(int doordir)
 {
 	switch(doordir)
@@ -250,12 +261,15 @@ void Safety::setRelay(int doordir)
 		case MVT_CLOSING:
 			digitalWrite(PIN_RELAY_DOORCLOSE,HIGH);
 			digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+			break;
 		case MVT_STALLED:
 			digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
 			digitalWrite(PIN_RELAY_DOOROPEN,LOW);
+			break;
 		case MVT_OPENING:
 			digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
 			digitalWrite(PIN_RELAY_DOOROPEN,HIGH);
+			break;
 		default:
 			break;
 	}

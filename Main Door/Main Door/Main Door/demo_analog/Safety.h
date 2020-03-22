@@ -23,7 +23,7 @@ private:
 	int isDoorDown;
 	int inDoorDir;
 	int cntEvent;
-	bool isOkay;
+	int isOkay;
 
 //functions
 public:
@@ -31,11 +31,11 @@ public:
 	~Safety();
 	int deviceStatus(int dev);
 	int inEventCount();
-	bool safetyStatus();
+	int safetyStatus();
 	
 	void setDevice(int dev, int state);
 	void cntEventIncr(int incr);//0 reset, 1 increment
-	void setSafetyStatus(bool ok);
+	void setSafetyStatus(int ok);
 	void openDoor();//open until (prox sensed & motor pad) or timeout
 	void emergencyOpen();//raise door fully and exit operation
 	void emergencyStall();

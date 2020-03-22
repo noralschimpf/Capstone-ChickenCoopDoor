@@ -61,7 +61,11 @@ enum Menu {MENU_MAIN=0,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT};
 #define MVT_STALLED 0
 #define MVT_OPENING 1
 #define OPENCLOSETIME 11000
+#define DELAY_INLOOP_MS 1
 
+#define ISOK_OK 0
+#define ISOK_LSERR 1
+#define ISOK_PECERR 2
 
 /***********************
  *Macro Function Values*
