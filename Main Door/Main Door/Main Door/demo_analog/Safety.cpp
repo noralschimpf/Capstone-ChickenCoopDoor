@@ -125,11 +125,14 @@ void Safety::closeDoor()
 	#endif
 	
 	unsigned long i=0;
+	//Jacob comment: shouldnt it be 1 millisecond?
 	while(((i+OPENCLOSETIME < millis()) || (deviceStatus(DEVICE_PRXDN)==0))&&isOkay)
 	{
 		//    for(int i =0; i< openAndCloseTime;i++){
 		delay(50);
 	}
+	
+	//where isOkay being set to false?
 	if(!isOkay)
 	{
 		emergencyOpen();
@@ -151,8 +154,9 @@ void Safety::openDoor()
 	
 	
 	unsigned long temp = millis();
-	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP)&& isOkay)
+	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP) && isOkay)
 	{
+		//JACOB COMMENT: Should be 1 millisecond I would think
 		delay(50);
 	}
 		//dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
@@ -200,6 +204,7 @@ void Safety::emergencyStall()
 	
 	disableMotor(true, 1000);
 	//digitalWrite(PIN_LED_RED, LOW);
+	//Jacob Comment: this should be false? or wait, whats the point of this method?
 	disableMotor(true,0);
 	
 	#ifdef DEBUG 
@@ -208,6 +213,9 @@ void Safety::emergencyStall()
 }
 //TODO:WRITE
 //Replaces setting outputs to inputs at each call
+// Jacob Comment: Why are you doing digital writes here and in setRelay,
+// id remove the delay from this method and add it on whoever is doing the calling, that'll elim second arg
+//Seems like they're doing similar things
 void Safety::disableMotor(bool disable, int ms)
 {		
 	if(disable)
@@ -234,6 +242,7 @@ void Safety::disableMotor(bool disable, int ms)
 	}
 }
 
+//Jacob Comment: dont you need to add breaks on switch statement?
 void Safety::setRelay(int doordir)
 {
 	switch(doordir)
