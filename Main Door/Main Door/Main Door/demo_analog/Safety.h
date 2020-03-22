@@ -30,8 +30,9 @@ public:
 	Safety();
 	~Safety();
 	int deviceStatus(int dev);
+	int inEventCount();
 	bool safetyStatus();
-	//int isOkay();//checks for immediate safety sensor concerns while closing
+	
 	void setDevice(int dev, int state);
 	void cntEventIncr(int incr);//0 reset, 1 increment
 	void setSafetyStatus(bool ok);
@@ -41,7 +42,7 @@ public:
 	void closeDoor();//close until (prox sensed & motor pad) or timeout
 protected:
 private:
-	void disableMotor(bool disable, int ms);
+	void disableMotor(bool disable, int ms = 0);
 	void setRelay(int doordir);
 	
 	Safety( const Safety &c );

@@ -35,44 +35,65 @@ char sac[64];
 Adafruit_RGBLCDShield disp = Adafruit_RGBLCDShield();//NOTE - CLASSES MUST BE INITIALIZED AS POINTERS. WILL NOT EXECUTE OTHERWISE
 Display *ptrdspMainDoor;  
 Safety *ptrsftMainDoor;
+unsigned long tmeLastUpdated;
 void setup() {
-  // put your setup code here, to run once:
+  
+  #ifdef DEBUG
   Serial.begin(9600);
+  #endif
+  
   ptrdspMainDoor= new Display(disp);
   ptrsftMainDoor = new Safety;
-  //ptrdspMainDoor = &dspMainDoor;
+  
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
   pinMode(PIN_LIMITSWITCH_1, INPUT_PULLUP);
   analogReference(EXTERNAL);  
 
   isClosing = false;
-  /*TWI INTERRUPT*/
+  /*
+  TWI INTERRUPT
   TWCR |= (1<<TWIE);
-  sei();
-  Serial.println("Init Complete");
+  */
   
+  /* INT0 & INT1 Interrupts Enable*/
+  //set both to activate on falling edge
+  EICRA |= (1 << ISC11) | (1<<ISC01);
+  //enable both interrupts
+  EIMSK = 0x03;
+  
+  /*PCINT Interrupt Enable*/
+  PCICR |= (1<<PCIE2)|(1<<PCIE0);
+  
+  
+  //TODO Interrupt Vector table placement & write prevention(MCUCR)
+  
+  
+  sei();
+  
+  tmeLastUpdated = millis();
+  #ifdef DEBUG
+  Serial.println("Init Complete");
+  #endif
   
 }
 
 void loop() {
   // TODO: Implement sleep timer
   //dspMainDoor.selectDisplay(MENU_MAIN,false);
-  delay(REFRESH_RATE);
+  //delay(REFRESH_RATE);
+  
+  #ifdef DEBUG
   Serial.println("in loop");
-  if (CurrentMenu != MenuSelect)
+  #endif
+  
+  
+  if (ptrdspMainDoor->UpdateMenuFromButtons(tmeLastUpdated))
   {
+	#ifdef DEBUG
 	Serial.println("NEWMENU");
-	ptrdspMainDoor->UpdateMenuFromButtons();
-    CurrentMenu = MenuSelect;
-    MenuLastUpdated = millis();
-  }
-  else if (millis() - MenuLastUpdated > REFRESH_RATE)
-  {
-	ptrdspMainDoor->UpdateMenuFromButtons();
-    //MenuControls(MenuSelect, true);
-    CurrentMenu = MenuSelect;
-    MenuLastUpdated = millis();
+	#endif
+	tmeLastUpdated = millis();
   }
   //MenuSelect = GetNextMenu(lcd, CurrentMenu);
   //if (!isOkay) {
@@ -138,38 +159,96 @@ boolean checkLight(int TimeOfDay)
 
 }*/
 
-/*ISR(INT0_vect)//Limit Switch 1
-TODO: MESH WITH
-attachInterrupt(digitalPinToInterrupt(PIN_LIMITSWITCH_1), LimitSwitchActive, RISING);
+ISR(INT0_vect)//Limit Switch 1
+//TODO: MESH WITH
+//attachInterrupt(digitalPinToInterrupt(PIN_LIMITSWITCH_1), LimitSwitchActive, RISING);
 {
+	#ifdef DEBUG
 	Serial.println("LS1 Interrupt");
+	#endif
+	
+	ptrsftMainDoor->cntEventIncr(1);
+	ptrsftMainDoor->emergencyOpen();
+	if(ptrsftMainDoor->inEventCount() >=3)
+	{
+		/*
+		TODO:
+		LORA ALARM & ERROR CODE
+		*/
+	}
 }
 ISR(INT1_vect)//Limit Switch 2
 {
+	#ifdef DEBUG
 	Serial.println("LS2 Interrupt");
-}*/
-//ISR(PCINT20)//Photoeye
-/*ISR(PCINT2_vect)
-{
-	if(PCINT20){Serial.println("PEC Interrupt");}
-	else if(PCINT4){Serial.println("PX1 Interrupt");}
-	else if(PCINT5){Serial.println("PX2 Interrupt");}
+	#endif
 	
-}*/
-/*ISR(PCINT4)//Prox Switch 1
-{
+	ptrsftMainDoor->cntEventIncr(1);
+	ptrsftMainDoor->emergencyStall();
+	if(ptrsftMainDoor->inEventCount() >=3)
+	{
+		/*
+		TODO:
+		LORA ALARM & ERROR CODE
+		*/
+	}
 }
-ISR(PCINT5)//Prox Switch 2
+
+ISR(PCINT2_vect)
 {
-	
-}*/
-/*ISR(USART_RX_vect)//LoRa Message Receive
+	if(PCINT20)
+	{
+		#ifdef DEBUG
+		Serial.println("PEC Interrupt");
+		#endif
+		
+		if(ptrsftMainDoor->deviceStatus(DEVICE_DOORDIR)==MVT_CLOSING)
+		{
+			ptrsftMainDoor->cntEventIncr(1);
+			ptrsftMainDoor->emergencyOpen();	
+			if(ptrsftMainDoor->inEventCount() >=3)
+			{
+				/*
+				TODO:
+				LORA ALARM & ERROR CODE
+				*/
+			}
+		}
+		
+	}
+}
+ISR(PCINT0_vect)
+{
+	if(PCINT4)
+	{
+		#ifdef DEBUG
+		Serial.println("PX1 Interrupt");
+		#endif
+			
+		ptrsftMainDoor->setDevice(DEVICE_PRXUP,1);
+		ptrsftMainDoor->setDevice(DEVICE_DOORDIR,MVT_STALLED);
+	}
+	else if(PCINT5)
+	{
+		#ifdef DEBUG
+		Serial.println("PX2 Interrupt");
+		#endif
+			
+		ptrsftMainDoor->setDevice(DEVICE_PRXDN,1);
+		ptrsftMainDoor->cntEventIncr(0);
+		ptrsftMainDoor->setDevice(DEVICE_DOORDIR,MVT_STALLED);
+	}
+		
+}
+
+/*ISR(USART_RX_vect)//LoRa Message Receive 
+WARNING: UNUSABLE - conflicts with serial libraries
 {
 	Serial.println("UART Interrupt");
 }*/
 
 /*TWI INTERRUPT UNUSABLE
-ALREADY ACTIVE IN ARDUINO LIB
+WARNING: UNUSABLE - conflicts with lcd library
 ISR(TWI_vect)
 {
 	Serial.println("TWI Interrupt");

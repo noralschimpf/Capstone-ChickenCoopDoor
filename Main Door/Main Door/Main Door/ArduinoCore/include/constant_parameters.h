@@ -31,7 +31,7 @@
 #define BLUE 0x4
 #define VIOLET 0x5
 #define WHITE 0x7
-#define REFRESH_RATE 3000 //in ms
+#define REFRESH_RATE 1000 //in ms
 enum Menu {MENU_MAIN=0,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT};
 
 /***********************
@@ -59,7 +59,7 @@ enum Menu {MENU_MAIN=0,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT};
 #define POS_OPEN 1;
 #define MVT_CLOSING -1
 #define MVT_STALLED 0
-#define MVT_OPENING 1;
+#define MVT_OPENING 1
 #define OPENCLOSETIME 11000
 
 

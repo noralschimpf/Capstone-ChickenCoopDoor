@@ -5,7 +5,7 @@
 * Author: natha
 */
 
-
+#include <Arduino.h>
 #include "Display.h"
 #include "constant_parameters.h"
 
@@ -98,8 +98,8 @@ void Display::selectDisplay(int inCurrentMenu, bool blnIsRefresh, char *strArg1,
 		{
 			case MENU_MAIN:
 				assignStates(inNextStates,-1,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT);
-				setCurrentDisplay("Main Menu","Up:Open DnCloseLft:Day Rt:Night",GREEN,
-					inNextStates,1,1);
+				setCurrentDisplay("Main Menu","Up:Open DnClose Lft:Day Rt:Night",GREEN,
+					inNextStates,2,1,false);
 				break;
 			case MENU_OPEN:
 				assignStates(inNextStates,MENU_MAIN,-1,-1,-1,-1);
@@ -111,11 +111,15 @@ void Display::selectDisplay(int inCurrentMenu, bool blnIsRefresh, char *strArg1,
 				break;
 			case MENU_DAY:
 				//TODO: separate temperature readings/calls?
-				sprintf(strTemp,"Day Mode        Tmp:%s Lht:%s",strArg1,strArg2);
+				sprintf(strTemp,"Day Mode        Tmp:%sLht:%s",strArg1,strArg2);
+				assignStates(inNextStates,MENU_MAIN,-1,-1,-1,-1);
+				setCurrentDisplay(strTemp,"Sel:Escape",GREEN,inNextStates,1,0);
 				break;
 			case MENU_NIGHT:
 				//TODO: separate temperature readings/calls?
-				sprintf(strTemp,"Night Mode      Tmp:%s Lht:%s",strArg1,strArg2);
+				sprintf(strTemp,"Night Mode      Tmp:%sLht:%s",strArg1,strArg2);
+				assignStates(inNextStates,MENU_MAIN,-1,-1,-1,-1);
+				setCurrentDisplay(strTemp,"Sel:Escape",GREEN,inNextStates,1,0);
 				break;
 			default:
 				assignStates(inNextStates,-1,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT);
@@ -127,16 +131,41 @@ void Display::selectDisplay(int inCurrentMenu, bool blnIsRefresh, char *strArg1,
 	
 }
 
-void Display::UpdateMenuFromButtons()
+bool Display::UpdateMenuFromButtons(unsigned long tme)
 //Reads buttons and alters for initialized menu directions
 {
 	uint8_t buttons = lcd.readButtons();
-	if((buttons & BUTTON_SELECT) && inNext[SELECT] != -1){selectDisplay(inNext[SELECT],false);}
-	else if((buttons & BUTTON_UP) && inNext[UP] != -1){selectDisplay(inNext[UP],false);}
-	else if((buttons & BUTTON_DOWN) && inNext[DOWN] != -1){selectDisplay(inNext[DOWN],false);}
-	else if((buttons & BUTTON_LEFT) && inNext[LEFT] != -1){selectDisplay(inNext[LEFT],false);}
-	else if((buttons & BUTTON_RIGHT) && inNext[RIGHT] != -1){selectDisplay(inNext[RIGHT],false);}
-	else {selectDisplay(inCurrent,true);}
+	if((buttons & BUTTON_SELECT) && inNext[SELECT] != -1)
+	{
+		selectDisplay(inNext[SELECT],false);
+		return true;
+	}
+	else if((buttons & BUTTON_UP) && inNext[UP] != -1)
+	{
+		selectDisplay(inNext[UP],false);
+		return true;
+	}
+	else if((buttons & BUTTON_DOWN) && inNext[DOWN] != -1)
+	{
+		selectDisplay(inNext[DOWN],false);
+		return true;
+	}
+	else if((buttons & BUTTON_LEFT) && inNext[LEFT] != -1)
+	{
+		selectDisplay(inNext[LEFT],false);
+		return true;
+	}
+	else if((buttons & BUTTON_RIGHT) && inNext[RIGHT] != -1)
+	{
+		selectDisplay(inNext[RIGHT],false);
+		return true;
+	}
+	else if (tme+REFRESH_RATE>=millis())
+	{
+		selectDisplay(inCurrent,true);
+		return true;
+	}//TEST
+	else {return false;}
 }
 
 void Display::assignStates(int arr[5], int a, int b, int c, int d, int e)

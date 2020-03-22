@@ -24,6 +24,13 @@ Safety::Safety()
 // default destructor
 Safety::~Safety()
 {
+	setSafetyStatus(true);
+	cntEventIncr(0);
+	for(int i= DEVICE_LS1; i<DEVICE_DOORDIR;i++)
+	{
+		setDevice(i,deviceStatus(i));
+	}
+	setDevice(DEVICE_DOORDIR,MVT_STALLED);
 } //~Safety
 
 int Safety::deviceStatus(int dev)
@@ -102,35 +109,37 @@ void Safety::cntEventIncr(int incr)
 	}
 }
 
+int Safety::inEventCount()
+{
+	return cntEvent;
+}
+
 //TODO:REWRITE
 void Safety::closeDoor()
 {
 	uint8_t buttons;
 	setDevice(DEVICE_DOORDIR, MVT_CLOSING);
+	
+	#ifdef DEBUG
 	Serial.println("Closing");
-
-	for (int i = 0; i < OPENCLOSETIME && isOkay; i++) {
+	#endif
+	
+	unsigned long i=0;
+	while(((i+OPENCLOSETIME < millis()) || (deviceStatus(DEVICE_PRXDN)==0))&&isOkay)
+	{
 		//    for(int i =0; i< openAndCloseTime;i++){
-		delay(1);
-		//Check if door needs to stop
-		//dspMainDoor.UpdateMenuFromButtons();//UNCOMMENT
-		/*if (buttons & BUTTON_SELECT)
-		{
-			//stop door due to select
-			digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-			digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-			break;
-		}*/
+		delay(50);
+	}
+	if(!isOkay)
+	{
+		emergencyOpen();
 	}
 	//stop door
-	digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-	digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-
 	setDevice(DEVICE_DOORDIR,MVT_STALLED);
-
-	pinMode(PIN_RELAY_DOOROPEN, INPUT);
-	pinMode(PIN_RELAY_DOORCLOSE, INPUT);
+	
+	#ifdef DEBUG
 	Serial.println("Close Complete");
+	#endif
 }
 
 
@@ -142,7 +151,7 @@ void Safety::openDoor()
 	
 	
 	unsigned long temp = millis();
-	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP))
+	while((temp + OPENCLOSETIME < millis()) || deviceStatus(DEVICE_PRXUP)&& isOkay)
 	{
 		delay(50);
 	}
@@ -156,14 +165,17 @@ void Safety::openDoor()
 		}
 		DEBUG
 	*/
-	}
 	//Stop door
 	setDevice(DEVICE_DOORDIR,MVT_STALLED);
 }
 
-//TODO:REWRITE
+//TODO:VERIFY
 void Safety::emergencyOpen(){
+	
+	#ifdef DEBUG
 	Serial.println("EMERGENCY OPEN:");
+	#endif
+	
 	setDevice(DEVICE_DOORDIR,MVT_OPENING);
 	unsigned long temp = millis();
 	while(deviceStatus(DEVICE_PRXUP)==0 || ((millis()-temp))<5000)
@@ -182,11 +194,17 @@ void Safety::emergencyOpen(){
 //TODO:WRITE
 void Safety::emergencyStall()
 {
+	#ifdef DEBUG
 	Serial.println("Emergency");
+	#endif
+	
 	disableMotor(true, 1000);
 	//digitalWrite(PIN_LED_RED, LOW);
 	disableMotor(true,0);
+	
+	#ifdef DEBUG 
 	Serial.println("Emergency Finished");	
+	#endif
 }
 //TODO:WRITE
 //Replaces setting outputs to inputs at each call
@@ -198,14 +216,21 @@ void Safety::disableMotor(bool disable, int ms)
 		digitalWrite(PIN_RELAY_DOOROPEN,LOW);
 		pinMode(PIN_RELAY_DOORCLOSE,INPUT);
 		pinMode(PIN_RELAY_DOOROPEN,INPUT);
-		Serial.println("Relay disabled\tWaiting %d ms",ms);
+		
+		#ifdef DEBUG
+		Serial.println("Relay disabled\tWaiting");
+		#endif
+		
 		delay(ms);
 	}
 	else
 	{
 		pinMode(PIN_RELAY_DOOROPEN,OUTPUT);
 		pinMode(PIN_RELAY_DOORCLOSE,OUTPUT);
+		
+		#ifdef DEBUG
 		Serial.println("Relay pins set to output");
+		#endif
 	}
 }
 

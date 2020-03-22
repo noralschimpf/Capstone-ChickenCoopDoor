@@ -31,11 +31,12 @@ class Display
 	public:
 		Display(Adafruit_RGBLCDShield _lcd);
 		~Display();
-		void print2ln(String strTop, String strBot);
 		int refreshLine();
+		bool UpdateMenuFromButtons(unsigned long tme);
+		
+		void print2ln(String strTop, String strBot);
 		void setCurrentDisplay(String _top, String _bot, int _backlight, int NextStates[5], int _scrollTotal = 0, int _scrollRow = -1, bool _refresh = false);
 		void selectDisplay(int inCurrentMenu, bool blnIsRefresh, char *strArg1="", char *strArg2 = ""); //replaces MenuControls in sketch.cpp
-		void UpdateMenuFromButtons();
 	protected:
 		
 	private:
