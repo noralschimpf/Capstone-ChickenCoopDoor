@@ -137,7 +137,7 @@ void Safety::closeDoor()
 			#ifdef DEBUG
 			Serial.println("LSERR flag caught");
 			#endif
-			emergencyOpen();
+			emergencyStall();
 			cntEventIncr(0);
 			setSafetyStatus(ISOK_OK);
 			break;
@@ -145,7 +145,7 @@ void Safety::closeDoor()
 			#ifdef DEBUG
 			Serial.println("PECERR flag caught");
 			#endif
-			emergencyStall();
+			emergencyOpen();
 			setSafetyStatus(ISOK_OK);
 			break;
 		default:
@@ -199,7 +199,7 @@ void Safety::emergencyOpen(){
 		delay(DELAY_INLOOP_MS);
 	}
 	
-	disableMotor(true,3000);
+	emergencyStall();
 	
 	/*
 	digitalwrite(PIN_LED_RED,HIGH);
@@ -211,7 +211,7 @@ void Safety::emergencyOpen(){
 void Safety::emergencyStall()
 {
 	#ifdef DEBUG
-	Serial.println("Emergency");
+	Serial.println("Emergency Stall");
 	#endif
 	
 	disableMotor(true, 1000);
