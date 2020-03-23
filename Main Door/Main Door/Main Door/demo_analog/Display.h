@@ -31,6 +31,7 @@ class Display
 	public:
 		Display(Adafruit_RGBLCDShield _lcd);
 		~Display();
+		int CurrentMenu();
 		int refreshLine();
 		bool UpdateMenuFromButtons(unsigned long tme);
 		

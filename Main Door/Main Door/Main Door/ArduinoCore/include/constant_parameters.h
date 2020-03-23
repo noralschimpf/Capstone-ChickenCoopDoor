@@ -32,7 +32,7 @@
 #define VIOLET 0x5
 #define WHITE 0x7
 #define REFRESH_RATE 1000 //in ms
-enum Menu {MENU_MAIN=0,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT};
+enum Menu {MENU_MAIN=0,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT,MENU_ERR};
 
 /***********************
  *Sensor Preset Values**

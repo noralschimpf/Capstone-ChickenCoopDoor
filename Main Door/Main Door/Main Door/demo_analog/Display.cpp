@@ -93,6 +93,7 @@ void Display::selectDisplay(int inCurrentMenu, bool blnIsRefresh, char *strArg1,
 	{
 		char strTemp [32];
 		int inNextStates[5];
+		inCurrent = inCurrentMenu;
 		switch(inCurrentMenu)
 		//TODO: rework as enums
 		{
@@ -121,6 +122,9 @@ void Display::selectDisplay(int inCurrentMenu, bool blnIsRefresh, char *strArg1,
 				assignStates(inNextStates,MENU_MAIN,-1,-1,-1,-1);
 				setCurrentDisplay(strTemp,"Sel:Escape",GREEN,inNextStates,1,0);
 				break;
+			case MENU_ERR:
+				assignStates(inNextStates, MENU_MAIN,-1,-1,-1,-1);
+				setCurrentDisplay("WARNING: SAFETY ALERT TRIGGERED ","Sel:Escape",RED,inNextStates,1,0);
 			default:
 				assignStates(inNextStates,-1,MENU_OPEN,MENU_CLOSE,MENU_DAY,MENU_NIGHT);
 				setCurrentDisplay("Main Menu","Up:Open DnCloseLft:Day Rt:Night",GREEN, inNextStates,1,1);
@@ -177,4 +181,9 @@ void Display::assignStates(int arr[5], int a, int b, int c, int d, int e)
 	arr[4] = e;
 	
 	
+}
+
+int Display::CurrentMenu()
+{
+	return inCurrent;
 }

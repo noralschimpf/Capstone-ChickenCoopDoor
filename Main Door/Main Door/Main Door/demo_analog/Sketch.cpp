@@ -32,7 +32,8 @@ char tempstr[4];
 char sac[64];
 
 
-Adafruit_RGBLCDShield disp = Adafruit_RGBLCDShield();//NOTE - CLASSES MUST BE INITIALIZED AS POINTERS. WILL NOT EXECUTE OTHERWISE
+Adafruit_RGBLCDShield disp = Adafruit_RGBLCDShield();
+//NOTE - CLASSES MUST BE INITIALIZED AS POINTERS. WILL NOT EXECUTE OTHERWISE
 Display *ptrdspMainDoor;  
 Safety *ptrsftMainDoor;
 unsigned long tmeLastUpdated;
@@ -67,8 +68,6 @@ void setup() {
   
   
   //TODO Interrupt Vector table placement & write prevention(MCUCR)
-  
-  
   sei();
   
   tmeLastUpdated = millis();
@@ -80,8 +79,7 @@ void setup() {
 
 void loop() {
   // TODO: Implement sleep timer
-  //dspMainDoor.selectDisplay(MENU_MAIN,false);
-  //delay(REFRESH_RATE);
+  
   
   #ifdef DEBUG
   Serial.println("in loop");
@@ -94,6 +92,36 @@ void loop() {
 	Serial.println("NEWMENU");
 	#endif
 	tmeLastUpdated = millis();
+  }
+  
+  switch(ptrdspMainDoor->CurrentMenu())
+  {
+	  /*
+	  SWITCH IS FOR INTERFACING CLASSES ACCORDING TO STATES
+	  EACH MENU MAY NOT NEED A CASE
+	  */
+		case MENU_DAY:
+			/*
+			call sensor reads and
+			motor ops here
+			
+			make sure to set display to operation
+			
+			if(lightVal is night) {set to MENU_NIGHT}
+			*/
+			break;
+		case MENU_NIGHT:
+			/*
+			call sensor reads and
+			motor ops here
+			
+			make sure to set display to operation
+			
+			if(lightVal is day) {set to MENU_DAY}
+			*/
+		
+			
+	  
   }
   //MenuSelect = GetNextMenu(lcd, CurrentMenu);
   //if (!isOkay) {

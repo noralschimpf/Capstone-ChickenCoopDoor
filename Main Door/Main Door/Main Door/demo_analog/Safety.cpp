@@ -131,24 +131,25 @@ void Safety::closeDoor()
 		delay(DELAY_INLOOP_MS);
 	}
 	
-	//jacob comment: where isOkay being set to false?
-	//nathan answer: isOkay is a global flag, set during interrupts
-	if(ISOK_LSERR)
+	switch(isOkay)
 	{
-		#ifdef DEBUG
-		Serial.println("LSERR flag caught");
-		#endif
-		emergencyOpen();
-		cntEventIncr(0);
-		setSafetyStatus(ISOK_OK);
-	}
-	else if(ISOK_PECERR)
-	{
-		#ifdef DEBUG
-		Serial.println("PECERR flag caught");
-		#endif
-		emergencyStall();
-		setSafetyStatus(ISOK_OK);
+		case ISOK_LSERR:
+			#ifdef DEBUG
+			Serial.println("LSERR flag caught");
+			#endif
+			emergencyOpen();
+			cntEventIncr(0);
+			setSafetyStatus(ISOK_OK);
+			break;
+		case:ISOK_PECERR
+			#ifdef DEBUG
+			Serial.println("PECERR flag caught");
+			#endif
+			emergencyStall();
+			setSafetyStatus(ISOK_OK);
+			break;
+		default:
+			break;
 	}
 	
 	//stop door
@@ -215,7 +216,6 @@ void Safety::emergencyStall()
 	
 	disableMotor(true, 1000);
 	//digitalWrite(PIN_LED_RED, LOW);
-	//Jacob Comment: this should be false? or wait, whats the point of this method?
 	disableMotor(false,0);
 	
 	#ifdef DEBUG 
