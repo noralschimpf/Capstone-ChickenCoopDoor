@@ -9,7 +9,7 @@
 
 Determines if door should be opened/closed
 Timers for tracking how long after sunrise/sunset
-User-Specified environement values (temperature, acceptable light intensity, timer delays) must be accessible or copied to this library.
+User-Specified environment values (temperature, acceptable light intensity, timer delays) must be accessible or copied to this library.
 */
 
 
@@ -23,24 +23,46 @@ class Sensor
 public:
 protected:
 private:
-	float flTemp;
+	//Latest Sensor Readings
+	double dbTemp;
 	int inLight;
-	float flTempConfig;
-	int inLightConfig;
-	int msDayDelay;
-	int msNightDelay;
+	//User-Configurable Values
+	double dbTempConfig;
+	int inDaylightConfig;
+	int inNightlightConfig;
+	
+	//Timerstamp for Motor Delays
+	unsigned long msDelayStart;
+	//User-Configurable Delay Times
+	unsigned long msDayDelay;
+	unsigned long msNightDelay;
+	
+	//System-Controlled Value
+	//Should be changed in Sketch.cpp
+	//according to Motor Operation
+	int inTimeOfDay;
 
 //functions
 public:
 	Sensor();
+	Sensor(double tmp, int dlt, int nlt, unsigned long msd, unsigned long msn);
 	~Sensor();
 	int doorOp();//returns integer indicating if door should open, close, or neither
-	float retTemp();
+	double retTemp();
+	double retTempCfg();
 	int retLight();
+	int retLightCfg(int mode);
+	unsigned long retMsDayCfg();
+	unsigned long retMsNightCfg();
+	void msDayCfg(unsigned long ms);
+	void msNightCfg(unsigned long ms);
+	void TempCfg(double t);
+	void LightCfg(int mode, int l);
 protected:
 private:
 	void readTemp();//reads environment sensors (photores, temp)
 	void readLight();//storing to internal members
+	
 	Sensor( const Sensor &c );
 	Sensor& operator=( const Sensor &c );
 

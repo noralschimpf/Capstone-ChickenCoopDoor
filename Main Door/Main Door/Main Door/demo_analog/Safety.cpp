@@ -18,12 +18,6 @@
 // default constructor
 Safety::Safety()
 {
-	
-} //Safety
-
-// default destructor
-Safety::~Safety()
-{
 	setSafetyStatus(true);
 	cntEventIncr(0);
 	for(int i= DEVICE_LS1; i<DEVICE_DOORDIR;i++)
@@ -31,6 +25,12 @@ Safety::~Safety()
 		setDevice(i,deviceStatus(i));
 	}
 	setDevice(DEVICE_DOORDIR,MVT_STALLED);
+	
+} //Safety
+
+// default destructor
+Safety::~Safety()
+{
 } //~Safety
 
 int Safety::deviceStatus(int dev)
@@ -141,7 +141,7 @@ void Safety::closeDoor()
 			cntEventIncr(0);
 			setSafetyStatus(ISOK_OK);
 			break;
-		case:ISOK_PECERR
+		case ISOK_PECERR:
 			#ifdef DEBUG
 			Serial.println("PECERR flag caught");
 			#endif

@@ -6,5 +6,7 @@ Display.cpp
 
 Safety.cpp
 
+Sensor.cpp
+
 Sketch.cpp
 

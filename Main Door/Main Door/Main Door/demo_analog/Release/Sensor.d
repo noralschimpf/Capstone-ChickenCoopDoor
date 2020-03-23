@@ -1,4 +1,4 @@
-Sketch.d Sketch.o: .././Sketch.cpp \
+Sensor.d Sensor.o: .././Sensor.cpp .././Sensor.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
@@ -34,14 +34,9 @@ Sketch.d Sketch.o: .././Sketch.cpp \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  ..\\..\ArduinoCore\include\core/Arduino.h \
  ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h \
- .././Display.h \
- ..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/Adafruit_RGBLCDShield.h \
- ..\\..\ArduinoCore\include\core/Print.h \
- ..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/utility/Adafruit_MCP23017.h \
- .././Safety.h ..\\..\ArduinoCore\include/constant_parameters.h \
- .././Sensor.h ..\\..\ArduinoCore\include\libraries\Wire/Wire.h \
- ..\\..\ArduinoCore\include\core/Stream.h \
- ..\\..\ArduinoCore\include/./constant_parameters.h
+ ..\\..\ArduinoCore\include/constant_parameters.h
+
+.././Sensor.h:
 
 ..\\..\ArduinoCore\include\core/Arduino.h:
 
@@ -113,22 +108,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 ..\\..\ArduinoCore\include\variants\standard/pins_arduino.h:
 
-.././Display.h:
-
-..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/Adafruit_RGBLCDShield.h:
-
-..\\..\ArduinoCore\include\core/Print.h:
-
-..\\..\ArduinoCore\include\libraries\adafruit_rgb_lcd_shield_library/utility/Adafruit_MCP23017.h:
-
-.././Safety.h:
-
 ..\\..\ArduinoCore\include/constant_parameters.h:
-
-.././Sensor.h:
-
-..\\..\ArduinoCore\include\libraries\Wire/Wire.h:
-
-..\\..\ArduinoCore\include\core/Stream.h:
-
-..\\..\ArduinoCore\include/./constant_parameters.h:

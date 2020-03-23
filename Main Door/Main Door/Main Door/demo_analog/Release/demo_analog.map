@@ -1,5 +1,37 @@
 Archive member included to satisfy reference by file (symbol)
 
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              Sensor.o (__subsf3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+                              Sensor.o (__fixsfsi)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o) (__fixunssfsi)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              Sensor.o (__floatsisf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              Sensor.o (__gesf2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              Sensor.o (__mulsf3)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o) (__fp_cmp)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o (main)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
@@ -26,44 +58,16 @@ C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o) (yield)
 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o) (twi_init)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
-                              C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__subsf3)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__ltsf2)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__divsf3)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
-                              C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__fixunssfsi)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
-                              C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__floatunsisf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_inf)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_nan)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscA)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_pscB)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__fp_round)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_split3)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o) (__fp_zero)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
-                              C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__gtsf2)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
-                              C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__mulsf3)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
-                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__unordsf2)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                              Sensor.o (__divmodhi4)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
                               C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o) (__udivmodsi4)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
@@ -74,8 +78,8 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
                               Sketch.o (__do_clear_bss)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
                               Sketch.o (__do_global_ctors)
-c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                              Sketch.o (__do_global_dtors)
+c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                              c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o) (__udivmodhi4)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(dtostrf.o)
@@ -192,37 +196,134 @@ Discarded input sections
  .text          0x00000000        0x0 Safety.o
  .data          0x00000000        0x0 Safety.o
  .bss           0x00000000        0x0 Safety.o
+ .text._ZN6SafetyD2Ev
+                0x00000000        0x2 Safety.o
  .text._ZN6Safety12safetyStatusEv
                 0x00000000        0x8 Safety.o
  .text._ZN6Safety14emergencyStallEv
                 0x00000000       0x1e Safety.o
- .text._ZN6SafetyD2Ev
-                0x00000000       0x48 Safety.o
  .text._ZN6Safety8openDoorEv
                 0x00000000       0x66 Safety.o
  .text._ZN6Safety13emergencyOpenEv
                 0x00000000       0x5a Safety.o
  .text._ZN6Safety9closeDoorEv
-                0x00000000       0x58 Safety.o
+                0x00000000       0x6e Safety.o
+ .text          0x00000000        0x0 Sensor.o
+ .data          0x00000000        0x0 Sensor.o
+ .bss           0x00000000        0x0 Sensor.o
+ .text._ZN6SensorC2Ev
+                0x00000000       0x4c Sensor.o
+ .text._ZN6SensorD2Ev
+                0x00000000        0x2 Sensor.o
+ .text._ZN6Sensor7retTempEv
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor10retTempCfgEv
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor8retLightEv
+                0x00000000        0x8 Sensor.o
+ .text._ZN6Sensor11retLightCfgEi
+                0x00000000       0x20 Sensor.o
+ .text._ZN6Sensor11retMsDayCfgEv
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor13retMsNightCfgEv
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor8msDayCfgEm
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor10msNightCfgEm
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor7TempCfgEd
+                0x00000000        0xc Sensor.o
+ .text._ZN6Sensor8LightCfgEii
+                0x00000000       0x1e Sensor.o
+ .text._ZN6Sensor8readTempEv
+                0x00000000       0x88 Sensor.o
+ .text._ZN6Sensor9readLightEv
+                0x00000000       0x16 Sensor.o
+ .text._ZN6Sensor6doorOpEv
+                0x00000000      0x122 Sensor.o
  .text          0x00000000        0x0 Sketch.o
  .data          0x00000000        0x0 Sketch.o
  .bss           0x00000000        0x0 Sketch.o
- .bss.sac       0x00000000       0x40 Sketch.o
- .bss.tempstr   0x00000000        0x4 Sketch.o
- .bss.lghtstr   0x00000000        0x4 Sketch.o
- .bss.ScrollTotal
-                0x00000000        0x2 Sketch.o
- .bss.ScrollCount
-                0x00000000        0x2 Sketch.o
- .bss.MenuLastUpdated
-                0x00000000        0x4 Sketch.o
- .bss.MenuSelect
-                0x00000000        0x2 Sketch.o
- .bss.CurrentMenu
-                0x00000000        0x2 Sketch.o
- .bss.Light     0x00000000        0x2 Sketch.o
- .bss.Temperature
-                0x00000000        0x4 Sketch.o
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixsfsi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text.avr-libc.fplib
+                0x00000000       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text.avr-libc.fplib
+                0x00000000       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text.avr-libc.fplib
+                0x00000000        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text.avr-libc.fplib
+                0x00000000        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text.avr-libc.fplib
+                0x00000000       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text.avr-libc.fplib
+                0x00000000       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text.avr-libc.fplib
+                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text.avr-libc.fplib
+                0x00000000        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text.avr-libc.fplib
+                0x00000000       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
  .text          0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .data          0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .bss           0x00000000        0x0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
@@ -556,16 +657,6 @@ Discarded input sections
                 0x00000000       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .text.twi_reply
                 0x00000000       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
- .text.avr-libc.fplib
-                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
- .text.avr-libc.fplib
-                0x00000000       0xcc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
@@ -581,76 +672,27 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
  .text.avr-libc.fplib
                 0x00000000       0xdc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .text.avr-libc.fplib
-                0x00000000       0x5e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .text.avr-libc.fplib
-                0x00000000       0x7a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .text.avr-libc.fplib
-                0x00000000       0x48 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .text.avr-libc.fplib
-                0x00000000        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .text.avr-libc.fplib
-                0x00000000        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .text.avr-libc.fplib
-                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .text.avr-libc.fplib
-                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
- .text.avr-libc.fplib
-                0x00000000       0x22 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .text.avr-libc.fplib
-                0x00000000       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .text.avr-libc.fplib
-                0x00000000        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .text.avr-libc.fplib
-                0x00000000        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .text.avr-libc.fplib
-                0x00000000        0x8 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
- .text.avr-libc.fplib
-                0x00000000       0xd2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
  .text.avr-libc.fplib
                 0x00000000        0xa c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.div
+                0x00000000       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
@@ -731,22 +773,22 @@ Discarded input sections
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
  .text.libgcc.fixed
                 0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
- .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+ .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
- .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000000       0x28 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text.libgcc.fixed
-                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
+                0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
@@ -1035,6 +1077,7 @@ Address of section .data set to 0x800100
 LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
 LOAD Display.o
 LOAD Safety.o
+LOAD Sensor.o
 LOAD Sketch.o
 START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
@@ -1148,7 +1191,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x2d4a
+.text           0x00000000     0x2e80
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -1194,428 +1237,430 @@ END GROUP
                 0x000000c6                __ctors_end = .
                 0x000000c6                __dtors_start = .
  *(.dtors)
- .dtors         0x000000c6        0x2 Sketch.o
-                0x000000c8                __dtors_end = .
+                0x000000c6                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x000000c8        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x000000c8                __init
+ .init0         0x000000c6        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000c6                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x000000c8        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init2         0x000000c6        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x000000d4       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
-                0x000000d4                __do_copy_data
- .init4         0x000000ea       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
-                0x000000ea                __do_clear_bss
+ .init4         0x000000d2       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x000000d2                __do_copy_data
+ .init4         0x000000e8       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000e8                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x000000fa       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
-                0x000000fa                __do_global_ctors
+ .init6         0x000000f8       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x000000f8                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000110        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .init9         0x0000010e        0x8 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
  *(.init9)
  *(.text)
- .text          0x00000118        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
-                0x00000118                __vector_22
-                0x00000118                __vector_12
-                0x00000118                __bad_interrupt
-                0x00000118                __vector_6
-                0x00000118                __vector_23
-                0x00000118                __vector_25
-                0x00000118                __vector_11
-                0x00000118                __vector_13
-                0x00000118                __vector_17
-                0x00000118                __vector_19
-                0x00000118                __vector_7
-                0x00000118                __vector_4
-                0x00000118                __vector_9
-                0x00000118                __vector_21
-                0x00000118                __vector_15
-                0x00000118                __vector_8
-                0x00000118                __vector_14
-                0x00000118                __vector_10
-                0x00000118                __vector_18
-                0x00000118                __vector_20
-                0x0000011c                . = ALIGN (0x2)
+ .text          0x00000116        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.209/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000116                __vector_22
+                0x00000116                __vector_12
+                0x00000116                __bad_interrupt
+                0x00000116                __vector_6
+                0x00000116                __vector_23
+                0x00000116                __vector_25
+                0x00000116                __vector_11
+                0x00000116                __vector_13
+                0x00000116                __vector_17
+                0x00000116                __vector_19
+                0x00000116                __vector_7
+                0x00000116                __vector_4
+                0x00000116                __vector_9
+                0x00000116                __vector_21
+                0x00000116                __vector_15
+                0x00000116                __vector_8
+                0x00000116                __vector_14
+                0x00000116                __vector_10
+                0x00000116                __vector_18
+                0x00000116                __vector_20
+                0x0000011a                . = ALIGN (0x2)
  *(.text.*)
  .text._ZN7Display8print2lnE6StringS0_
-                0x0000011c       0x50 Display.o
-                0x0000011c                _ZN7Display8print2lnE6StringS0_
+                0x0000011a       0x50 Display.o
+                0x0000011a                _ZN7Display8print2lnE6StringS0_
  .text._ZN7Display11refreshLineEv
-                0x0000016c      0x106 Display.o
-                0x0000016c                _ZN7Display11refreshLineEv
+                0x0000016a      0x106 Display.o
+                0x0000016a                _ZN7Display11refreshLineEv
  .text._ZN7Display17setCurrentDisplayE6StringS0_iPiiib
-                0x00000272      0x114 Display.o
-                0x00000272                _ZN7Display17setCurrentDisplayE6StringS0_iPiiib
+                0x00000270      0x114 Display.o
+                0x00000270                _ZN7Display17setCurrentDisplayE6StringS0_iPiiib
  .text._ZN7Display13selectDisplayEibPcS0_
-                0x00000386      0x252 Display.o
-                0x00000386                _ZN7Display13selectDisplayEibPcS0_
+                0x00000384      0x2c0 Display.o
+                0x00000384                _ZN7Display13selectDisplayEibPcS0_
  .text._ZN7DisplayC2E21Adafruit_RGBLCDShield
-                0x000005d8       0xb2 Display.o
-                0x000005d8                _ZN7DisplayC1E21Adafruit_RGBLCDShield
-                0x000005d8                _ZN7DisplayC2E21Adafruit_RGBLCDShield
+                0x00000644       0xb2 Display.o
+                0x00000644                _ZN7DisplayC1E21Adafruit_RGBLCDShield
+                0x00000644                _ZN7DisplayC2E21Adafruit_RGBLCDShield
  .text._ZN7Display21UpdateMenuFromButtonsEm
-                0x0000068a       0xb2 Display.o
-                0x0000068a                _ZN7Display21UpdateMenuFromButtonsEm
+                0x000006f6       0xb2 Display.o
+                0x000006f6                _ZN7Display21UpdateMenuFromButtonsEm
+ .text._ZN7Display11CurrentMenuEv
+                0x000007a8        0x8 Display.o
+                0x000007a8                _ZN7Display11CurrentMenuEv
  .text._ZN6Safety12disableMotorEbi.part.0
-                0x0000073c       0x36 Safety.o
- .text._ZN6SafetyC2Ev
-                0x00000772        0x2 Safety.o
-                0x00000772                _ZN6SafetyC1Ev
-                0x00000772                _ZN6SafetyC2Ev
+                0x000007b0       0x36 Safety.o
  .text._ZN6Safety12deviceStatusEi
-                0x00000774       0x42 Safety.o
-                0x00000774                _ZN6Safety12deviceStatusEi
+                0x000007e6       0x42 Safety.o
+                0x000007e6                _ZN6Safety12deviceStatusEi
  .text._ZN6Safety15setSafetyStatusEi
-                0x000007b6        0x8 Safety.o
-                0x000007b6                _ZN6Safety15setSafetyStatusEi
+                0x00000828        0x8 Safety.o
+                0x00000828                _ZN6Safety15setSafetyStatusEi
  .text._ZN6Safety12cntEventIncrEi
-                0x000007be       0x22 Safety.o
-                0x000007be                _ZN6Safety12cntEventIncrEi
+                0x00000830       0x22 Safety.o
+                0x00000830                _ZN6Safety12cntEventIncrEi
  .text._ZN6Safety12inEventCountEv
-                0x000007e0        0x8 Safety.o
-                0x000007e0                _ZN6Safety12inEventCountEv
+                0x00000852        0x8 Safety.o
+                0x00000852                _ZN6Safety12inEventCountEv
  .text._ZN6Safety12disableMotorEbi
-                0x000007e8       0x18 Safety.o
-                0x000007e8                _ZN6Safety12disableMotorEbi
+                0x0000085a       0x18 Safety.o
+                0x0000085a                _ZN6Safety12disableMotorEbi
  .text._ZN6Safety8setRelayEi
-                0x00000800       0x34 Safety.o
-                0x00000800                _ZN6Safety8setRelayEi
+                0x00000872       0x34 Safety.o
+                0x00000872                _ZN6Safety8setRelayEi
  .text._ZN6Safety9setDeviceEii.part.2
-                0x00000834       0x38 Safety.o
+                0x000008a6       0x38 Safety.o
  .text._ZN6Safety9setDeviceEii
-                0x0000086c       0x4c Safety.o
-                0x0000086c                _ZN6Safety9setDeviceEii
- .text.setup    0x000008b8      0x118 Sketch.o
-                0x000008b8                setup
- .text.loop     0x000009d0       0x36 Sketch.o
-                0x000009d0                loop
+                0x000008de       0x4c Safety.o
+                0x000008de                _ZN6Safety9setDeviceEii
+ .text._ZN6SafetyC2Ev
+                0x0000092a       0x48 Safety.o
+                0x0000092a                _ZN6SafetyC1Ev
+                0x0000092a                _ZN6SafetyC2Ev
+ .text._ZN6SensorC2Ediimm
+                0x00000972       0x58 Sensor.o
+                0x00000972                _ZN6SensorC2Ediimm
+                0x00000972                _ZN6SensorC1Ediimm
+ .text.setup    0x000009ca      0x170 Sketch.o
+                0x000009ca                setup
+ .text.loop     0x00000b3a       0x40 Sketch.o
+                0x00000b3a                loop
  .text.__vector_2
-                0x00000a06       0x70 Sketch.o
-                0x00000a06                __vector_2
+                0x00000b7a       0x70 Sketch.o
+                0x00000b7a                __vector_2
  .text.__vector_1
-                0x00000a76       0x48 Sketch.o
-                0x00000a76                __vector_1
+                0x00000bea       0x48 Sketch.o
+                0x00000bea                __vector_1
  .text.__vector_5
-                0x00000abe       0x84 Sketch.o
-                0x00000abe                __vector_5
+                0x00000c32       0x84 Sketch.o
+                0x00000c32                __vector_5
  .text.__vector_3
-                0x00000b42       0x6c Sketch.o
-                0x00000b42                __vector_3
- .text.startup._GLOBAL__sub_I_Temperature
-                0x00000bae       0x20 Sketch.o
- .text.exit._GLOBAL__sub_D_Temperature
-                0x00000bce       0x10 Sketch.o
+                0x00000cb6       0x6c Sketch.o
+                0x00000cb6                __vector_3
+ .text.startup._GLOBAL__sub_I_disp
+                0x00000d22        0x8 Sketch.o
  .text.initVariant
-                0x00000bde        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
-                0x00000bde                initVariant
+                0x00000d2a        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
+                0x00000d2a                initVariant
  .text.startup.main
-                0x00000be0       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
-                0x00000be0                main
- .text._Znwj    0x00000bfe        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
-                0x00000bfe                _Znwj
+                0x00000d2c       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
+                0x00000d2c                main
+ .text._Znwj    0x00000d4a        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
+                0x00000d4a                _Znwj
  .text._ZN5Print17availableForWriteEv
-                0x00000c02        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000c02                _ZN5Print17availableForWriteEv
+                0x00000d4e        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000d4e                _ZN5Print17availableForWriteEv
  .text._ZN5Print5flushEv
-                0x00000c08        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000c08                _ZN5Print5flushEv
+                0x00000d54        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000d54                _ZN5Print5flushEv
  .text._ZN5Print5writeEPKhj
-                0x00000c0a       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000c0a                _ZN5Print5writeEPKhj
+                0x00000d56       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000d56                _ZN5Print5writeEPKhj
  .text._ZN5Print5printERK6String
-                0x00000c5e       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
-                0x00000c5e                _ZN5Print5printERK6String
+                0x00000daa       0x1c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Print.o)
+                0x00000daa                _ZN5Print5printERK6String
  .text.__vector_16
-                0x00000c7a       0x94 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000c7a                __vector_16
- .text.millis   0x00000d0e       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000d0e                millis
- .text.micros   0x00000d26       0x4a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000d26                micros
- .text.delay    0x00000d70       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000d70                delay
+                0x00000dc6       0x94 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000dc6                __vector_16
+ .text.millis   0x00000e5a       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000e5a                millis
+ .text.micros   0x00000e72       0x4a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000e72                micros
+ .text.delay    0x00000ebc       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000ebc                delay
  .text.delayMicroseconds
-                0x00000de8       0x16 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000de8                delayMicroseconds
- .text.init     0x00000dfe       0x76 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x00000dfe                init
+                0x00000f34       0x16 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000f34                delayMicroseconds
+ .text.init     0x00000f4a       0x76 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00000f4a                init
  .text.analogReference
-                0x00000e74        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
-                0x00000e74                analogReference
+                0x00000fc0        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_analog.o)
+                0x00000fc0                analogReference
  .text.turnOffPWM
-                0x00000e7a       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00000ecc       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
-                0x00000ecc                pinMode
+                0x00000fc6       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00001018       0x78 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+                0x00001018                pinMode
  .text.digitalWrite
-                0x00000f44       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
-                0x00000f44                digitalWrite
+                0x00001090       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+                0x00001090                digitalWrite
  .text.digitalRead
-                0x00000fa2       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
-                0x00000fa2                digitalRead
+                0x000010ee       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring_digital.o)
+                0x000010ee                digitalRead
  .text._ZNK6String14StringIfHelperEv
-                0x00000ff4        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00000ff4                _ZNK6String14StringIfHelperEv
+                0x00001140        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001140                _ZNK6String14StringIfHelperEv
  .text._ZN6StringD2Ev
-                0x00000ff6        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00000ff6                _ZN6StringD2Ev
-                0x00000ff6                _ZN6StringD1Ev
+                0x00001142        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001142                _ZN6StringD2Ev
+                0x00001142                _ZN6StringD1Ev
  .text._ZN6String10invalidateEv
-                0x00001000       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001000                _ZN6String10invalidateEv
+                0x0000114c       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000114c                _ZN6String10invalidateEv
  .text._ZN6String12changeBufferEj
-                0x00001024       0x34 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001024                _ZN6String12changeBufferEj
+                0x00001170       0x34 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001170                _ZN6String12changeBufferEj
  .text._ZN6String7reserveEj
-                0x00001058       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001058                _ZN6String7reserveEj
+                0x000011a4       0x38 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000011a4                _ZN6String7reserveEj
  .text._ZN6String4copyEPKcj
-                0x00001090       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001090                _ZN6String4copyEPKcj
+                0x000011dc       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000011dc                _ZN6String4copyEPKcj
  .text._ZN6StringC2EPKc
-                0x000010d2       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000010d2                _ZN6StringC2EPKc
-                0x000010d2                _ZN6StringC1EPKc
+                0x0000121e       0x2a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000121e                _ZN6StringC2EPKc
+                0x0000121e                _ZN6StringC1EPKc
  .text._ZN6String4moveERS_
-                0x000010fc       0x7a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000010fc                _ZN6String4moveERS_
+                0x00001248       0x7a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001248                _ZN6String4moveERS_
  .text._ZN6StringaSERKS_
-                0x00001176       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x00001176                _ZN6StringaSERKS_
+                0x000012c2       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000012c2                _ZN6StringaSERKS_
  .text._ZN6StringC2ERKS_
-                0x000011a4       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011a4                _ZN6StringC2ERKS_
-                0x000011a4                _ZN6StringC1ERKS_
+                0x000012f0       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x000012f0                _ZN6StringC2ERKS_
+                0x000012f0                _ZN6StringC1ERKS_
  .text._ZN6StringaSEOS_
-                0x000011b6       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011b6                _ZN6StringaSEOS_
+                0x00001302       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001302                _ZN6StringaSEOS_
  .text._ZN6StringaSEPKc
-                0x000011ce       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011ce                _ZN6StringaSEPKc
+                0x0000131a       0x2e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x0000131a                _ZN6StringaSEPKc
  .text._ZNK6String9substringEjj
-                0x000011fc       0x8a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
-                0x000011fc                _ZNK6String9substringEjj
+                0x00001348       0x8a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x00001348                _ZNK6String9substringEjj
  .text._ZN21Adafruit_RGBLCDShieldC2Ev
-                0x00001286       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001286                _ZN21Adafruit_RGBLCDShieldC2Ev
-                0x00001286                _ZN21Adafruit_RGBLCDShieldC1Ev
+                0x000013d2       0x42 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000013d2                _ZN21Adafruit_RGBLCDShieldC2Ev
+                0x000013d2                _ZN21Adafruit_RGBLCDShieldC1Ev
  .text._ZN21Adafruit_RGBLCDShield13_digitalWriteEhh
-                0x000012c8       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000012c8                _ZN21Adafruit_RGBLCDShield13_digitalWriteEhh
+                0x00001414       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001414                _ZN21Adafruit_RGBLCDShield13_digitalWriteEhh
  .text._ZN21Adafruit_RGBLCDShield12setBacklightEh
-                0x000012e2       0x48 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000012e2                _ZN21Adafruit_RGBLCDShield12setBacklightEh
+                0x0000142e       0x48 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x0000142e                _ZN21Adafruit_RGBLCDShield12setBacklightEh
  .text._ZN21Adafruit_RGBLCDShield8_pinModeEhh
-                0x0000132a       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x0000132a                _ZN21Adafruit_RGBLCDShield8_pinModeEhh
+                0x00001476       0x1a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001476                _ZN21Adafruit_RGBLCDShield8_pinModeEhh
  .text._ZN21Adafruit_RGBLCDShield11pulseEnableEv
-                0x00001344       0x3e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001344                _ZN21Adafruit_RGBLCDShield11pulseEnableEv
+                0x00001490       0x3e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001490                _ZN21Adafruit_RGBLCDShield11pulseEnableEv
  .text._ZN21Adafruit_RGBLCDShield10write4bitsEh
-                0x00001382      0x168 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001382                _ZN21Adafruit_RGBLCDShield10write4bitsEh
+                0x000014ce      0x168 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000014ce                _ZN21Adafruit_RGBLCDShield10write4bitsEh
  .text._ZN21Adafruit_RGBLCDShield10write8bitsEh
-                0x000014ea       0x74 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000014ea                _ZN21Adafruit_RGBLCDShield10write8bitsEh
+                0x00001636       0x74 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001636                _ZN21Adafruit_RGBLCDShield10write8bitsEh
  .text._ZN21Adafruit_RGBLCDShield4sendEhh
-                0x0000155e       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x0000155e                _ZN21Adafruit_RGBLCDShield4sendEhh
+                0x000016aa       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000016aa                _ZN21Adafruit_RGBLCDShield4sendEhh
  .text._ZN21Adafruit_RGBLCDShield7commandEh
-                0x000015b0        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000015b0                _ZN21Adafruit_RGBLCDShield7commandEh
+                0x000016fc        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x000016fc                _ZN21Adafruit_RGBLCDShield7commandEh
  .text._ZN21Adafruit_RGBLCDShield5clearEv
-                0x000015b6        0xe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000015b6                _ZN21Adafruit_RGBLCDShield5clearEv
+                0x00001702        0xe C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001702                _ZN21Adafruit_RGBLCDShield5clearEv
  .text._ZN21Adafruit_RGBLCDShield9setCursorEhh
-                0x000015c4       0x5c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x000015c4                _ZN21Adafruit_RGBLCDShield9setCursorEhh
+                0x00001710       0x5c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001710                _ZN21Adafruit_RGBLCDShield9setCursorEhh
  .text._ZN21Adafruit_RGBLCDShield7displayEv
-                0x00001620       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001620                _ZN21Adafruit_RGBLCDShield7displayEv
+                0x0000176c       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x0000176c                _ZN21Adafruit_RGBLCDShield7displayEv
  .text._ZN21Adafruit_RGBLCDShield5beginEhhh
-                0x00001630      0x1d0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001630                _ZN21Adafruit_RGBLCDShield5beginEhhh
+                0x0000177c      0x1d0 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x0000177c                _ZN21Adafruit_RGBLCDShield5beginEhhh
  .text._ZN21Adafruit_RGBLCDShield5writeEh
-                0x00001800        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x00001800                _ZN21Adafruit_RGBLCDShield5writeEh
+                0x0000194c        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x0000194c                _ZN21Adafruit_RGBLCDShield5writeEh
  .text._ZN21Adafruit_RGBLCDShield11readButtonsEv
-                0x0000180c       0x60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x0000180c                _ZN21Adafruit_RGBLCDShield11readButtonsEv
+                0x00001958       0x60 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x00001958                _ZN21Adafruit_RGBLCDShield11readButtonsEv
  .text._ZL8wiresendh
-                0x0000186c        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x000019b8        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
  .text._ZN17Adafruit_MCP230175beginEh
-                0x00001876       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001876                _ZN17Adafruit_MCP230175beginEh
+                0x000019c2       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x000019c2                _ZN17Adafruit_MCP230175beginEh
  .text._ZN17Adafruit_MCP230175beginEv
-                0x000018d4        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x000018d4                _ZN17Adafruit_MCP230175beginEv
+                0x00001a20        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001a20                _ZN17Adafruit_MCP230175beginEv
  .text._ZN17Adafruit_MCP2301711writeGPIOABEj
-                0x000018da       0x36 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x000018da                _ZN17Adafruit_MCP2301711writeGPIOABEj
+                0x00001a26       0x36 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001a26                _ZN17Adafruit_MCP2301711writeGPIOABEj
  .text._ZN17Adafruit_MCP230177pinModeEhh
-                0x00001910       0xc4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001910                _ZN17Adafruit_MCP230177pinModeEhh
+                0x00001a5c       0xc4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001a5c                _ZN17Adafruit_MCP230177pinModeEhh
  .text._ZN17Adafruit_MCP2301710readGPIOABEv
-                0x000019d4       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x000019d4                _ZN17Adafruit_MCP2301710readGPIOABEv
+                0x00001b20       0x52 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001b20                _ZN17Adafruit_MCP2301710readGPIOABEv
  .text._ZN17Adafruit_MCP2301711digitalReadEh
-                0x00001a26       0x72 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001a26                _ZN17Adafruit_MCP2301711digitalReadEh
+                0x00001b72       0x72 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001b72                _ZN17Adafruit_MCP2301711digitalReadEh
  .text._ZN17Adafruit_MCP230176pullUpEhh
-                0x00001a98       0xc6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001a98                _ZN17Adafruit_MCP230176pullUpEhh
+                0x00001be4       0xc6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001be4                _ZN17Adafruit_MCP230176pullUpEhh
  .text._ZN17Adafruit_MCP2301712digitalWriteEhh
-                0x00001b5e       0xd2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
-                0x00001b5e                _ZN17Adafruit_MCP2301712digitalWriteEhh
+                0x00001caa       0xd2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_MCP23017.o)
+                0x00001caa                _ZN17Adafruit_MCP2301712digitalWriteEhh
  .text._ZN7TwoWire9availableEv
-                0x00001c30       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001c30                _ZN7TwoWire9availableEv
+                0x00001d7c       0x10 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001d7c                _ZN7TwoWire9availableEv
  .text._ZN7TwoWire4readEv
-                0x00001c40       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001c40                _ZN7TwoWire4readEv
+                0x00001d8c       0x28 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001d8c                _ZN7TwoWire4readEv
  .text._ZN7TwoWire4peekEv
-                0x00001c68       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001c68                _ZN7TwoWire4peekEv
+                0x00001db4       0x1e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001db4                _ZN7TwoWire4peekEv
  .text._ZN7TwoWire5flushEv
-                0x00001c86        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001c86                _ZN7TwoWire5flushEv
+                0x00001dd2        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001dd2                _ZN7TwoWire5flushEv
  .text._ZN7TwoWire16onReceiveServiceEPhi
-                0x00001c88       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001c88                _ZN7TwoWire16onReceiveServiceEPhi
+                0x00001dd4       0x54 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001dd4                _ZN7TwoWire16onReceiveServiceEPhi
  .text._ZN7TwoWire16onRequestServiceEv
-                0x00001cdc       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001cdc                _ZN7TwoWire16onRequestServiceEv
+                0x00001e28       0x18 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001e28                _ZN7TwoWire16onRequestServiceEv
  .text._ZN7TwoWire5writeEPKhj
-                0x00001cf4       0x5a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001cf4                _ZN7TwoWire5writeEPKhj
+                0x00001e40       0x5a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001e40                _ZN7TwoWire5writeEPKhj
  .text._ZN7TwoWire5writeEh
-                0x00001d4e       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001d4e                _ZN7TwoWire5writeEh
+                0x00001e9a       0x5e C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001e9a                _ZN7TwoWire5writeEh
  .text._ZN7TwoWireC2Ev
-                0x00001dac       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001dac                _ZN7TwoWireC1Ev
-                0x00001dac                _ZN7TwoWireC2Ev
+                0x00001ef8       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001ef8                _ZN7TwoWireC1Ev
+                0x00001ef8                _ZN7TwoWireC2Ev
  .text._ZN7TwoWire5beginEv
-                0x00001dcc       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001dcc                _ZN7TwoWire5beginEv
+                0x00001f18       0x24 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001f18                _ZN7TwoWire5beginEv
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00001df0       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001df0                _ZN7TwoWire17beginTransmissionEh
+                0x00001f3c       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001f3c                _ZN7TwoWire17beginTransmissionEh
  .text._ZN7TwoWire17beginTransmissionEi
-                0x00001e04        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e04                _ZN7TwoWire17beginTransmissionEi
+                0x00001f50        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001f50                _ZN7TwoWire17beginTransmissionEi
  .text._ZN7TwoWire15endTransmissionEh
-                0x00001e08       0x26 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e08                _ZN7TwoWire15endTransmissionEh
+                0x00001f54       0x26 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001f54                _ZN7TwoWire15endTransmissionEh
  .text._ZN7TwoWire11requestFromEhhmhh
-                0x00001e2e       0xa8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001e2e                _ZN7TwoWire11requestFromEhhmhh
+                0x00001f7a       0xa8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00001f7a                _ZN7TwoWire11requestFromEhhmhh
  .text._ZN7TwoWire11requestFromEhhh
-                0x00001ed6       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001ed6                _ZN7TwoWire11requestFromEhhh
+                0x00002022       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00002022                _ZN7TwoWire11requestFromEhhh
  .text._ZN7TwoWire11requestFromEii
-                0x00001ef6        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001ef6                _ZN7TwoWire11requestFromEii
+                0x00002042        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00002042                _ZN7TwoWire11requestFromEii
  .text._ZN7TwoWire15endTransmissionEv
-                0x00001efc        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00001efc                _ZN7TwoWire15endTransmissionEv
+                0x00002048        0x6 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00002048                _ZN7TwoWire15endTransmissionEv
  .text.startup._GLOBAL__sub_I__ZN7TwoWire8rxBufferE
-                0x00001f02        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
- .text.__empty  0x00001f0a        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
-                0x00001f0a                yield
+                0x0000204e        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+ .text.__empty  0x00002056        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(hooks.o)
+                0x00002056                yield
  .text.twi_init
-                0x00001f0c       0x3c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x00001f0c                twi_init
+                0x00002058       0x3c C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002058                twi_init
  .text.twi_readFrom
-                0x00001f48       0x90 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x00001f48                twi_readFrom
+                0x00002094       0x90 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002094                twi_readFrom
  .text.twi_writeTo
-                0x00001fd8       0xac C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x00001fd8                twi_writeTo
+                0x00002124       0xac C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002124                twi_writeTo
  .text.twi_transmit
-                0x00002084       0x50 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x00002084                twi_transmit
+                0x000021d0       0x50 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x000021d0                twi_transmit
  .text.twi_attachSlaveRxEvent
-                0x000020d4        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000020d4                twi_attachSlaveRxEvent
+                0x00002220        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002220                twi_attachSlaveRxEvent
  .text.twi_attachSlaveTxEvent
-                0x000020de        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000020de                twi_attachSlaveTxEvent
+                0x0000222a        0xa C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0000222a                twi_attachSlaveTxEvent
  .text.twi_stop
-                0x000020e8       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000020e8                twi_stop
+                0x00002234       0x14 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002234                twi_stop
  .text.twi_releaseBus
-                0x000020fc        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x000020fc                twi_releaseBus
+                0x00002248        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002248                twi_releaseBus
  .text.__vector_24
-                0x00002108      0x25a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
-                0x00002108                __vector_24
- .text.libgcc   0x00002362        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
-                0x00002362                __tablejump2__
+                0x00002254      0x25a C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x00002254                __vector_24
+ .text.libgcc   0x000024ae        0xc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x000024ae                __tablejump2__
  .text.avr-libc
-                0x0000236e      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x0000236e                malloc
-                0x0000249e                free
+                0x000024ba      0x242 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x000024ba                malloc
+                0x000025ea                free
  .text.avr-libc
-                0x000025b0      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
-                0x000025b0                realloc
+                0x000026fc      0x18c c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(realloc.o)
+                0x000026fc                realloc
  .text.avr-libc
-                0x0000273c       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x0000273c                memcpy
+                0x00002888       0x12 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00002888                memcpy
  .text.avr-libc
-                0x0000274e        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
-                0x0000274e                strcpy
+                0x0000289a        0xe c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strcpy.o)
+                0x0000289a                strcpy
  .text.avr-libc
-                0x0000275c       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
-                0x0000275c                sprintf
+                0x000028a8       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(sprintf.o)
+                0x000028a8                sprintf
  .text.avr-libc
-                0x000027a0      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
-                0x000027a0                vfprintf
+                0x000028ec      0x3c2 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(vfprintf_std.o)
+                0x000028ec                vfprintf
  .text.avr-libc
-                0x00002b62       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
-                0x00002b62                strnlen_P
+                0x00002cae       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen_P.o)
+                0x00002cae                strnlen_P
  .text.avr-libc
-                0x00002b78       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
-                0x00002b78                strnlen
+                0x00002cc4       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(strnlen.o)
+                0x00002cc4                strnlen
  .text.avr-libc
-                0x00002b8e       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
-                0x00002b8e                fputc
+                0x00002cda       0x78 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(fputc.o)
+                0x00002cda                fputc
  .text.avr-libc
-                0x00002c06       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
-                0x00002c06                __ultoa_invert
+                0x00002d52       0xbc c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(ultoa_invert.o)
+                0x00002d52                __ultoa_invert
  .text.libgcc.prologue
-                0x00002cc2       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
-                0x00002cc2                __prologue_saves__
+                0x00002e0e       0x38 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_prologue.o)
+                0x00002e0e                __prologue_saves__
  .text.libgcc.prologue
-                0x00002cfa       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
-                0x00002cfa                __epilogue_restores__
-                0x00002d30                . = ALIGN (0x2)
+                0x00002e46       0x36 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_epilogue.o)
+                0x00002e46                __epilogue_restores__
+                0x00002e7c                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00002d30        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00002d30                _exit
-                0x00002d30                exit
+ .fini9         0x00002e7c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00002e7c                _exit
+                0x00002e7c                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
  *(.fini7)
  *(.fini7)
  *(.fini6)
- .fini6         0x00002d30       0x16 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_dtors.o)
-                0x00002d30                __do_global_dtors
  *(.fini6)
  *(.fini5)
  *(.fini5)
@@ -1628,11 +1673,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00002d46        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00002e7c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00002d4a                _etext = .
+                0x00002e80                _etext = .
 
-.data           0x00800100       0xd8 load address 0x00002d4a
+.data           0x00800100       0xf8 load address 0x00002e80
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  .data          0x00800100        0x6 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
@@ -1648,130 +1693,123 @@ END GROUP
  .rodata        0x00800107        0x8 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
  *(.rodata*)
  .rodata.str1.1
-                0x0080010f       0xaa Display.o
-                                 0xab (size before relaxing)
+                0x0080010f       0xcb Display.o
+                                 0xcc (size before relaxing)
  .rodata.str1.1
-                0x008001b9        0x1 Sketch.o
- .rodata.str1.1
-                0x008001b9        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
+                0x008001da        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(WString.o)
  .rodata._ZTV21Adafruit_RGBLCDShield
-                0x008001b9        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
-                0x008001b9                _ZTV21Adafruit_RGBLCDShield
+                0x008001da        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Adafruit_RGBLCDShield.o)
+                0x008001da                _ZTV21Adafruit_RGBLCDShield
  .rodata._ZTV7TwoWire
-                0x008001c5       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x008001c5                _ZTV7TwoWire
+                0x008001e6       0x12 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x008001e6                _ZTV7TwoWire
  *(.gnu.linkonce.r*)
-                0x008001d8                . = ALIGN (0x2)
- *fill*         0x008001d7        0x1 
-                0x008001d8                _edata = .
-                0x008001d8                PROVIDE (__data_end, .)
+                0x008001f8                . = ALIGN (0x2)
+                0x008001f8                _edata = .
+                0x008001f8                PROVIDE (__data_end, .)
 
-.bss            0x008001d8      0x102
-                0x008001d8                PROVIDE (__bss_start, .)
+.bss            0x008001f8       0xf7
+                0x008001f8                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  .bss.tmeLastUpdated
-                0x008001d8        0x4 Sketch.o
-                0x008001d8                tmeLastUpdated
+                0x008001f8        0x4 Sketch.o
+                0x008001f8                tmeLastUpdated
+ .bss.ptrsnsMainDoor
+                0x008001fc        0x2 Sketch.o
+                0x008001fc                ptrsnsMainDoor
  .bss.ptrsftMainDoor
-                0x008001dc        0x2 Sketch.o
-                0x008001dc                ptrsftMainDoor
+                0x008001fe        0x2 Sketch.o
+                0x008001fe                ptrsftMainDoor
  .bss.ptrdspMainDoor
-                0x008001de        0x2 Sketch.o
-                0x008001de                ptrdspMainDoor
- .bss.disp      0x008001e0       0x1c Sketch.o
-                0x008001e0                disp
- .bss.isClosing
-                0x008001fc        0x1 Sketch.o
-                0x008001fc                isClosing
- .bss.line2     0x008001fd        0x6 Sketch.o
-                0x008001fd                line2
- .bss.line1     0x00800203        0x6 Sketch.o
-                0x00800203                line1
+                0x00800200        0x2 Sketch.o
+                0x00800200                ptrdspMainDoor
+ .bss.disp      0x00800202       0x1c Sketch.o
+                0x00800202                disp
  .bss.timer0_fract
-                0x00800209        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x0080021e        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x0080020a        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x0080020a                timer0_millis
+                0x0080021f        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x0080021f                timer0_millis
  .bss.timer0_overflow_count
-                0x0080020e        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
-                0x0080020e                timer0_overflow_count
- .bss.Wire      0x00800212        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800212                Wire
+                0x00800223        0x4 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(wiring.o)
+                0x00800223                timer0_overflow_count
+ .bss.Wire      0x00800227        0xc C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800227                Wire
  .bss._ZN7TwoWire14user_onReceiveE
-                0x0080021e        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x0080021e                _ZN7TwoWire14user_onReceiveE
+                0x00800233        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800233                _ZN7TwoWire14user_onReceiveE
  .bss._ZN7TwoWire14user_onRequestE
-                0x00800220        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800220                _ZN7TwoWire14user_onRequestE
+                0x00800235        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800235                _ZN7TwoWire14user_onRequestE
  .bss._ZN7TwoWire12transmittingE
-                0x00800222        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800222                _ZN7TwoWire12transmittingE
+                0x00800237        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800237                _ZN7TwoWire12transmittingE
  .bss._ZN7TwoWire14txBufferLengthE
-                0x00800223        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800223                _ZN7TwoWire14txBufferLengthE
+                0x00800238        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800238                _ZN7TwoWire14txBufferLengthE
  .bss._ZN7TwoWire13txBufferIndexE
-                0x00800224        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800224                _ZN7TwoWire13txBufferIndexE
+                0x00800239        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x00800239                _ZN7TwoWire13txBufferIndexE
  .bss._ZN7TwoWire8txBufferE
-                0x00800225       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800225                _ZN7TwoWire8txBufferE
+                0x0080023a       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x0080023a                _ZN7TwoWire8txBufferE
  .bss._ZN7TwoWire9txAddressE
-                0x00800245        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800245                _ZN7TwoWire9txAddressE
+                0x0080025a        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x0080025a                _ZN7TwoWire9txAddressE
  .bss._ZN7TwoWire14rxBufferLengthE
-                0x00800246        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800246                _ZN7TwoWire14rxBufferLengthE
+                0x0080025b        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x0080025b                _ZN7TwoWire14rxBufferLengthE
  .bss._ZN7TwoWire13rxBufferIndexE
-                0x00800247        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800247                _ZN7TwoWire13rxBufferIndexE
+                0x0080025c        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x0080025c                _ZN7TwoWire13rxBufferIndexE
  .bss._ZN7TwoWire8rxBufferE
-                0x00800248       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
-                0x00800248                _ZN7TwoWire8rxBufferE
+                0x0080025d       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(Wire.o)
+                0x0080025d                _ZN7TwoWire8rxBufferE
  .bss.twi_error
-                0x00800268        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080027d        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_rxBufferIndex
-                0x00800269        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080027e        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_rxBuffer
-                0x0080026a       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080027f       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_txBufferLength
-                0x0080028a        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x0080029f        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_txBufferIndex
-                0x0080028b        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002a0        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_txBuffer
-                0x0080028c       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002a1       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferLength
-                0x008002ac        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002c1        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_masterBufferIndex
-                0x008002ad        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002c2        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_masterBuffer
-                0x008002ae       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002c3       0x20 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveReceive
-                0x008002ce        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002e3        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_onSlaveTransmit
-                0x008002d0        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002e5        0x2 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_inRepStart
-                0x008002d2        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002e7        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_sendStop
-                0x008002d3        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002e8        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_slarw
-                0x008002d4        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002e9        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  .bss.twi_state
-                0x008002d5        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
+                0x008002ea        0x1 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(twi.o)
  *(COMMON)
- COMMON         0x008002d6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
-                0x008002d6                __brkval
-                0x008002d8                __flp
-                0x008002da                PROVIDE (__bss_end, .)
-                0x00002d4a                __data_load_start = LOADADDR (.data)
-                0x00002e22                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x008002eb        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x008002eb                __brkval
+                0x008002ed                __flp
+                0x008002ef                PROVIDE (__bss_end, .)
+                0x00002e80                __data_load_start = LOADADDR (.data)
+                0x00002f78                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008002da        0x0
+.noinit         0x008002ef        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008002da                _end = .
-                0x008002da                PROVIDE (__heap_start, .)
+                0x008002ef                _end = .
+                0x008002ef                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1815,6 +1853,7 @@ END GROUP
  .comment       0x00000000       0x30 Display.o
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 Safety.o
+ .comment       0x00000030       0x31 Sensor.o
  .comment       0x00000030       0x31 Sketch.o
  .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(main.o)
  .comment       0x00000030       0x31 C:\Users\natha\source\repos\CAPSTO~1\MAINDO~1\MAINDO~1\MAINDO~1\ARDUIN~1\Release\libArduinoCore.a(new.o)
