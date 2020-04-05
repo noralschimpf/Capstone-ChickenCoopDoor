@@ -38,7 +38,6 @@ void setup() {
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
   pinMode(PIN_LIMITSWITCH_1, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(PIN_LIMITSWITCH_1), LimitSwitchActive, RISING);
 
   lcd.begin(16, 2);
   lcd.clear();
@@ -51,7 +50,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.println("inloop");
+  
   if (CurrentMenu != MenuSelect)
   {
     MenuControls(MenuSelect, false);
@@ -68,6 +67,8 @@ void loop() {
   if (!isOkay) {
     isOkay = true;
   }
+
+//  Serial.println(digitalRead(PIN_LIMITSWITCH_1));
 }
 
 
@@ -80,10 +81,8 @@ void closeDoor() {
   digitalWrite(PIN_RELAY_DOOROPEN, LOW);
   isClosing = true;
   Serial.println("Closing");
-  for (int i = 0; i < openAndCloseTime && isOkay; i++) {
-    //    for(int i =0; i< openAndCloseTime;i++){
+  for (int i = 0; i < openAndCloseTime && !isLimitSwitchActive(); i++) {
     delay(1);
-    //Check if door needs to stop
     buttons = lcd.readButtons();
     if (buttons & BUTTON_SELECT)
     {
@@ -94,13 +93,10 @@ void closeDoor() {
     }
   }
   //stop door
-  digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-  digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
+  stopDoor();
 
   isClosing = false;
 
-  pinMode(PIN_RELAY_DOOROPEN, INPUT);
-  pinMode(PIN_RELAY_DOORCLOSE, INPUT);
   Serial.println("Close Complete");
 }
 
@@ -115,7 +111,7 @@ void openDoorAction(int tme) {
   digitalWrite(PIN_RELAY_DOOROPEN, HIGH);
   digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
 
-  for (int i = 0; i < openAndCloseTime && isOkay; i++) {
+  for (int i = 0; i < openAndCloseTime && !isLimitSwitchActive(); i++) {
     delay(1);
 
     buttons = lcd.readButtons();
@@ -126,6 +122,10 @@ void openDoorAction(int tme) {
       break;
     }
   }
+  stopDoor();
+}
+
+void stopDoor(){
   //Stop door
   digitalWrite(PIN_RELAY_DOOROPEN, LOW);
   digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
@@ -133,6 +133,7 @@ void openDoorAction(int tme) {
   //Stop relay from being jank
   pinMode(PIN_RELAY_DOOROPEN, INPUT);
   pinMode(PIN_RELAY_DOORCLOSE, INPUT);
+
 }
 
 void openDoor() {
@@ -140,37 +141,15 @@ void openDoor() {
   openDoorAction(openAndCloseTime);
   Serial.println("Open Complete");
 }
-//
-void emergencyOpen() {
-  digitalWrite(PIN_RELAY_DOORCLOSE, LOW);
-  digitalWrite(PIN_RELAY_DOOROPEN, LOW);
-  //  delay(1000);
-  Serial.println("Emergency");
-  openDoorAction(1000);
-  //  digitalWrite(led, LOW);
-  Serial.println("Emergency Finished");
-}
-////
-void LimitSwitchActive() {
-  //  if(isClosing){
-  isOkay = false;
-  //     digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-  //     digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-  Serial.println("ERROR");
-  //    digitalWrite(led, HIGH);
-  emergencyOpen();
-  isOkay = true;
-  //  }
+
+
+bool isLimitSwitchActive(){
+    int isActive=digitalRead(PIN_LIMITSWITCH_1);
+//    isActive+=digitalRead(PIN_LIMITSWITCH_1);
+
+    return isActive == 0;
 }
 
-
-/*
-
-
-
-
-
-*/
 
 
 void print2ln(Adafruit_RGBLCDShield lcd, String a, String b)
@@ -438,29 +417,3 @@ int refreshLine(int row, String Str, int section, int len)
 
   return section + 1;
 }
-
-
-//void emergencyOpen(){
-//  digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-//  digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
-//  delay(1000);
-//  Serial.println("Emergency");
-//  openDoorAction(1000);
-////  digitalWrite(led, LOW);
-//  pinMode(PIN_RELAY_DOORCLOSE,INPUT);
-//  pinMode(PIN_RELAY_DOOROPEN,INPUT);
-//
-//  Serial.println("Emergency Finished");
-//}
-//
-//void LimitSwitchActive() {
-//  if(isClosing){
-////    digitalWrite(PIN_RELAY_DOORCLOSE,LOW);
-////    digitalWrite(PIN_RELAY_DOOROPEN,LOW);
-////    digitalWrite(led, HIGH);
-//    emergencyOpen();
-//    isOkay = false;
-//  }
-//}

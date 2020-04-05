@@ -141,12 +141,6 @@ F 3 "~" H 8900 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 1950 9200 1950
-Wire Wire Line
-	2600 2850 3800 2850
-Wire Wire Line
-	2600 2850 2600 2750
-Wire Wire Line
-	2750 3650 3700 3650
 $Comp
 L CapstoneSchematic:LinearActuator LA1
 U 1 1 5DDA921B
@@ -160,49 +154,8 @@ F 3 "" H 2400 2450 50  0001 C CNN
 $EndComp
 Text Label 4950 3450 0    50   ~ 0
 SAS_Int2
-Text Label 5050 2650 0    50   ~ 0
-SAS_Int1
-$Comp
-L Device:Fuse 2A1
-U 1 1 5DC36D6F
-P 2400 2900
-F 0 "2A1" V 2203 2900 50  0000 C CNN
-F 1 "Fuse" V 2294 2900 50  0000 C CNN
-F 2 "" V 2330 2900 50  0001 C CNN
-F 3 "~" H 2400 2900 50  0001 C CNN
-	1    2400 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 3600 4950 3600
-Wire Wire Line
-	5300 2800 5300 3600
-Wire Wire Line
-	5050 2800 5300 2800
 Wire Wire Line
 	3700 3500 3750 3500
-$Comp
-L power:+5V #PWR0119
-U 1 1 5DBF5204
-P 3750 3500
-F 0 "#PWR0119" H 3750 3350 50  0001 C CNN
-F 1 "+5V" V 3765 3628 50  0000 L CNN
-F 2 "" H 3750 3500 50  0001 C CNN
-F 3 "" H 3750 3500 50  0001 C CNN
-	1    3750 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR0104
-U 1 1 5DC0E8B4
-P 3800 2700
-F 0 "#PWR0104" H 3800 2550 50  0001 C CNN
-F 1 "+5V" V 3815 2828 50  0000 L CNN
-F 2 "" H 3800 2700 50  0001 C CNN
-F 3 "" H 3800 2700 50  0001 C CNN
-	1    3800 2700
-	0    -1   -1   0   
-$EndComp
 $Comp
 L CapstoneSchematic:SnapActionSwitch SAS2
 U 1 1 5DBEAB00
@@ -212,17 +165,6 @@ F 1 "SnapActionSwitch" H 4325 3384 50  0000 C CNN
 F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03503HBLU_1x03_P5.00mm_Horizontal" H 3650 3200 50  0001 C CNN
 F 3 "" H 3650 3200 50  0001 C CNN
 	1    3700 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L CapstoneSchematic:SnapActionSwitch SAS1
-U 1 1 5DBEA292
-P 3800 2500
-F 0 "SAS1" H 4425 2675 50  0000 C CNN
-F 1 "SnapActionSwitch" H 4425 2584 50  0000 C CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03502HBLU_1x02_P5.00mm_Horizontal" H 3750 2400 50  0001 C CNN
-F 3 "" H 3750 2400 50  0001 C CNN
-	1    3800 2500
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
@@ -515,17 +457,6 @@ F 3 "" H 4150 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CapstoneSchematic:LoRa ULoRa1
-U 1 1 5DC1AD46
-P 4050 1500
-F 0 "ULoRa1" H 5428 1446 50  0000 L CNN
-F 1 "LoRa" H 5428 1355 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 4600 1300 50  0001 C CNN
-F 3 "" H 4600 1300 50  0001 C CNN
-	1    4050 1500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Sensor_Temperature:MCP9700AT-ELT T1
 U 1 1 5DC27357
 P 9100 3650
@@ -608,21 +539,11 @@ F 3 "~" H 2200 4000 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	1950 4250 2750 4250
-Wire Wire Line
-	2750 4250 2750 3650
-Wire Wire Line
-	5050 2650 6250 2650
-Wire Wire Line
-	6250 2650 6250 2950
-Wire Wire Line
-	6250 2950 6650 2950
+	1950 4250 2675 4250
 Wire Wire Line
 	4950 3450 5450 3450
 Wire Wire Line
 	5450 3450 5450 3050
-Wire Wire Line
-	5450 3050 6650 3050
 Wire Wire Line
 	6200 2100 6200 3150
 Wire Wire Line
@@ -789,14 +710,64 @@ F 3 "" H 5400 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 4050 6650 5750
-Wire Wire Line
-	2350 3050 2350 3900
-Wire Wire Line
-	2350 3050 2400 3050
-Wire Wire Line
-	1950 3900 2350 3900
-Text Notes 1000 5800 0    50   ~ 0
+Text Notes 1125 6175 0    50   ~ 0
 Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible\nTo debounce switch will need to put a .1 micro f cap on gnd and input pin
+Wire Wire Line
+	5450 3050 6650 3050
+$Comp
+L CapstoneSchematic:LoRa ULoRa1
+U 1 1 5DC1AD46
+P 4050 1500
+F 0 "ULoRa1" H 5428 1446 50  0000 L CNN
+F 1 "LoRa" H 5428 1355 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 4600 1300 50  0001 C CNN
+F 3 "" H 4600 1300 50  0001 C CNN
+	1    4050 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8177E0
+P 3700 3500
+F 0 "#PWR?" H 3700 3250 50  0001 C CNN
+F 1 "GND" V 3705 3372 50  0000 R CNN
+F 2 "" H 3700 3500 50  0001 C CNN
+F 3 "" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	0    1    1    0   
+$EndComp
+Connection ~ 3700 3500
+$Comp
+L Device:C C?
+U 1 1 5E81A87E
+P 2525 2975
+F 0 "C?" V 2273 2975 50  0000 C CNN
+F 1 "C" V 2364 2975 50  0000 C CNN
+F 2 "" H 2563 2825 50  0001 C CNN
+F 3 "~" H 2525 2975 50  0001 C CNN
+	1    2525 2975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 2750 2400 2875
+Wire Wire Line
+	2400 2875 2375 2875
+Wire Wire Line
+	2375 2875 2375 2975
+Wire Wire Line
+	2600 2750 2600 2875
+Wire Wire Line
+	2600 2875 2675 2875
+Wire Wire Line
+	2675 2875 2675 2975
+Wire Wire Line
+	2375 2975 2375 3900
+Wire Wire Line
+	1950 3900 2375 3900
+Connection ~ 2375 2975
+Wire Wire Line
+	2675 2975 2675 4250
+Connection ~ 2675 2975
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line
