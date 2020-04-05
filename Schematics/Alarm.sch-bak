@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Alarm-cache
+LIBS:CapstoneSchematic-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Wireless Alarm Schematic"
 Date ""
 Rev ""
@@ -217,17 +217,6 @@ F 3 "" H 10200 2425 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Switch:SW_MEC_5G Alarm_Silence1
-U 1 1 5DC6DC68
-P 9925 2425
-F 0 "Alarm_Silence1" H 9925 2710 50  0000 C CNN
-F 1 "SW_MEC_5G" H 9925 2619 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9925 2625 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9925 2625 50  0001 C CNN
-	1    9925 2425
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0109
 U 1 1 5E54092B
 P 6350 5600
@@ -262,4 +251,15 @@ Wire Wire Line
 	9450 2100 9450 2425
 Wire Wire Line
 	9450 2425 9725 2425
+$Comp
+L Switch:SW_MEC_5G Alarm_Silence1
+U 1 1 5DC6DC68
+P 9925 2425
+F 0 "Alarm_Silence1" H 9925 2710 50  0000 C CNN
+F 1 "SW_MEC_5G" H 9925 2619 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9925 2625 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9925 2625 50  0001 C CNN
+	1    9925 2425
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

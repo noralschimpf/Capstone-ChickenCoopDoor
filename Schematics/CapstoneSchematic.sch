@@ -85,12 +85,12 @@ $EndSheet
 $Comp
 L CapstoneSchematic:LEDModule LED_GREEN1
 U 1 1 5DC91461
-P 4300 4400
-F 0 "LED_GREEN1" H 4231 4279 50  0000 R CNN
-F 1 "200" H 4231 4188 50  0000 R CNN
-F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03502HBLU_1x02_P5.00mm_Horizontal" V 4370 4250 50  0001 C CNN
-F 3 "~" H 4300 4250 50  0001 C CNN
-	1    4300 4400
+P 4750 4350
+F 0 "LED_GREEN1" H 4681 4229 50  0000 R CNN
+F 1 "200" H 4681 4138 50  0000 R CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type094_RT03502HBLU_1x02_P5.00mm_Horizontal" V 4820 4200 50  0001 C CNN
+F 3 "~" H 4750 4200 50  0001 C CNN
+	1    4750 4350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -107,12 +107,12 @@ $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5DCB250A
-P 4600 4700
-F 0 "#PWR0116" H 4600 4450 50  0001 C CNN
-F 1 "GND" V 4605 4572 50  0000 R CNN
-F 2 "" H 4600 4700 50  0001 C CNN
-F 3 "" H 4600 4700 50  0001 C CNN
-	1    4600 4700
+P 5050 4650
+F 0 "#PWR0116" H 5050 4400 50  0001 C CNN
+F 1 "GND" V 5055 4522 50  0000 R CNN
+F 2 "" H 5050 4650 50  0001 C CNN
+F 3 "" H 5050 4650 50  0001 C CNN
+	1    5050 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -543,16 +543,6 @@ Wire Wire Line
 Wire Wire Line
 	6200 3150 6650 3150
 Entry Wire Line
-	6645 3250 6545 3350
-Entry Wire Line
-	6625 3350 6525 3450
-Entry Wire Line
-	6625 3450 6525 3550
-Wire Bus Line
-	4400 3800 5550 3800
-Wire Bus Line
-	5550 3800 5550 3600
-Entry Wire Line
 	6210 3750 6310 3650
 Entry Wire Line
 	6310 3750 6210 3850
@@ -576,12 +566,6 @@ Wire Wire Line
 Wire Wire Line
 	6310 3750 6650 3750
 Wire Wire Line
-	6625 3450 6650 3450
-Wire Wire Line
-	6625 3350 6650 3350
-Wire Bus Line
-	6520 3600 5550 3600
-Wire Wire Line
 	6645 3250 6650 3250
 Wire Wire Line
 	6645 2850 6650 2850
@@ -593,22 +577,8 @@ Wire Wire Line
 	795  3950 800  3950
 Wire Bus Line
 	695  4885 6210 4885
-Text Label 4300 4400 0    50   ~ 0
-LED_G
-Wire Bus Line
-	3700 4295 4400 4295
-Entry Wire Line
-	3600 4395 3700 4295
 Wire Wire Line
-	4300 4395 4300 4400
-Wire Wire Line
-	3600 4395 3600 4400
-Text Label 3600 4400 0    50   ~ 0
-LED_R
-Wire Bus Line
-	4400 3800 4400 4295
-Entry Wire Line
-	4400 4295 4300 4395
+	4750 4345 4750 4350
 Text Label 6650 3750 2    50   ~ 0
 IN2
 Text Label 6650 3650 2    50   ~ 0
@@ -755,10 +725,6 @@ Wire Wire Line
 Connection ~ 2675 2975
 Text Label 6650 3250 2    50   ~ 0
 LoRa2
-Text Label 6525 3450 2    50   ~ 0
-LED_R
-Text Label 6525 3550 2    50   ~ 0
-LED_G
 Wire Bus Line
 	6545 2500 6550 2500
 Connection ~ 6545 2500
@@ -766,14 +732,36 @@ Wire Bus Line
 	5500 2500 6545 2500
 Text Label 6525 3050 2    50   ~ 0
 SAS_Int2
+Text Label 3600 4400 0    50   ~ 0
+LED_R
+$Comp
+L power:+5V #PWR?
+U 1 1 5E8A92AF
+P 4750 4350
+F 0 "#PWR?" H 4750 4200 50  0001 C CNN
+F 1 "+5V" V 4765 4478 50  0000 L CNN
+F 2 "" H 4750 4350 50  0001 C CNN
+F 3 "" H 4750 4350 50  0001 C CNN
+	1    4750 4350
+	0    1    1    0   
+$EndComp
+Connection ~ 4750 4350
+Wire Wire Line
+	3600 4275 3600 4400
+Entry Wire Line
+	6645 3250 6545 3350
+Wire Wire Line
+	5775 3450 6650 3450
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line
-	6525 3450 6525 3600
-Wire Bus Line
-	4250 1500 4250 1700
+	6210 3735 6210 4885
 Wire Bus Line
 	6545 2500 6545 3350
 Wire Bus Line
-	6210 3735 6210 4885
+	4250 1500 4250 1700
+Wire Wire Line
+	5775 4275 3600 4275
+Wire Wire Line
+	5775 3450 5775 4275
 $EndSCHEMATC
