@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:CapstoneSchematic-cache
+LIBS:Alarm-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 1
 Title "Wireless Alarm Schematic"
 Date ""
 Rev ""
@@ -14,32 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR0101
-U 1 1 5DC5496C
-P 11000 1800
-AR Path="/5DC5496C" Ref="#PWR0101"  Part="1" 
-AR Path="/5DC4244F/5DC5496C" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0101" H 11000 1550 50  0001 C CNN
-F 1 "GND" H 11005 1627 50  0000 C CNN
-F 2 "" H 11000 1800 50  0001 C CNN
-F 3 "" H 11000 1800 50  0001 C CNN
-	1    11000 1800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5DC54972
-P 10450 1800
-AR Path="/5DC54972" Ref="R1"  Part="1" 
-AR Path="/5DC4244F/5DC54972" Ref="R?"  Part="1" 
-F 0 "R1" H 10380 1754 50  0000 R CNN
-F 1 "220" H 10380 1845 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 10380 1800 50  0001 C CNN
-F 3 "~" H 10450 1800 50  0001 C CNN
-	1    10450 1800
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5DC549DA
@@ -66,21 +40,6 @@ F 3 "" H 4225 2325 50  0001 C CNN
 	1    4225 2325
 	0    1    -1   0   
 $EndComp
-$Comp
-L Device:LED D_RED1
-U 1 1 5DC54A01
-P 10750 1800
-AR Path="/5DC54A01" Ref="D_RED1"  Part="1" 
-AR Path="/5DC4244F/5DC54A01" Ref="D_RED?"  Part="1" 
-F 0 "D_RED1" H 10743 2016 50  0000 C CNN
-F 1 "LED" H 10743 1925 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 10750 1800 50  0001 C CNN
-F 3 "~" H 10750 1800 50  0001 C CNN
-	1    10750 1800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	11000 1800 10900 1800
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5DC609D6
@@ -137,8 +96,6 @@ Text GLabel 4675 2425 2    50   Input ~ 0
 Lora_Reset
 Wire Wire Line
 	4675 2425 4225 2425
-Text GLabel 9600 2000 2    50   Input ~ 0
-Lora_Reset
 Wire Wire Line
 	6450 1600 4150 1600
 Wire Wire Line
@@ -167,7 +124,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 2000 9050 2000
 Wire Wire Line
-	9450 2100 9050 2100
+	9450 2200 9050 2200
 $Comp
 L CapstoneSchematic:LoRa ULoRa1
 U 1 1 5DC549E8
@@ -204,19 +161,6 @@ F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 8450 6500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0108
-U 1 1 5DC6E068
-P 10200 2425
-AR Path="/5DC6E068" Ref="#PWR0108"  Part="1" 
-AR Path="/5DC4244F/5DC6E068" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0108" H 10200 2275 50  0001 C CNN
-F 1 "+5V" H 10215 2598 50  0000 C CNN
-F 2 "" H 10200 2425 50  0001 C CNN
-F 3 "" H 10200 2425 50  0001 C CNN
-	1    10200 2425
-	0    1    -1   0   
-$EndComp
-$Comp
 L power:+5V #PWR0109
 U 1 1 5E54092B
 P 6350 5600
@@ -229,8 +173,6 @@ F 3 "" H 6350 5600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 5600 6450 5600
-Wire Wire Line
-	9050 1800 10300 1800
 Wire Wire Line
 	9750 1100 10050 1100
 Wire Wire Line
@@ -246,20 +188,46 @@ Wire Wire Line
 Wire Wire Line
 	5400 1900 5400 2625
 Wire Wire Line
-	10125 2425 10200 2425
+	10125 2425 10150 2425
+Text GLabel 9600 2000 2    50   Input ~ 0
+Lora_Reset
+$Comp
+L Switch:SW_MEC_5G_LED SW?
+U 1 1 5E936E97
+P 9925 2325
+F 0 "SW?" H 9925 2710 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 9925 2619 50  0000 C CNN
+F 2 "" H 9925 2625 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9925 2625 50  0001 C CNN
+	1    9925 2325
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	9450 2100 9450 2425
+	10125 2325 10150 2325
+Wire Wire Line
+	10150 2325 10150 2425
+Connection ~ 10150 2425
+Wire Wire Line
+	10150 2425 10200 2425
+$Comp
+L power:GND #PWR?
+U 1 1 5E944770
+P 10200 2425
+F 0 "#PWR?" H 10200 2175 50  0001 C CNN
+F 1 "GND" V 10205 2297 50  0000 R CNN
+F 2 "" H 10200 2425 50  0001 C CNN
+F 3 "" H 10200 2425 50  0001 C CNN
+	1    10200 2425
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	9450 2425 9725 2425
-$Comp
-L Switch:SW_MEC_5G Alarm_Silence1
-U 1 1 5DC6DC68
-P 9925 2425
-F 0 "Alarm_Silence1" H 9925 2710 50  0000 C CNN
-F 1 "SW_MEC_5G" H 9925 2619 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 9925 2625 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 9925 2625 50  0001 C CNN
-	1    9925 2425
-	-1   0    0    -1  
-$EndComp
+Wire Wire Line
+	9725 2325 9650 2325
+Wire Wire Line
+	9450 2200 9450 2425
+Wire Wire Line
+	9650 2325 9650 2100
+Wire Wire Line
+	9650 2100 9050 2100
 $EndSCHEMATC
