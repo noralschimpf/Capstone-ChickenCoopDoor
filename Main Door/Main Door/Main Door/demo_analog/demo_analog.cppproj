@@ -258,25 +258,34 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Display.cpp">
+    <Compile Include="Contracts\DoorActions.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Display.h">
+    <Compile Include="Contracts\Display.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Safety.cpp">
+    <Compile Include="Contracts\Door.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Safety.h">
+    <Compile Include="Contracts\Safety.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Sensor.cpp">
+    <Compile Include="Contracts\Sensor.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Sensor.h">
+    <Compile Include="DAL\Sensor.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Implementation\Door.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Implementation\Safety.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Sketch.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="UAL\Display.cpp">
       <SubType>compile</SubType>
     </Compile>
     <Content Include="readme.html">
@@ -288,6 +297,12 @@
       <Project>94f5e2c8-3ea2-46ea-9ef0-37d312be8969</Project>
       <Private>True</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Contracts" />
+    <Folder Include="DAL" />
+    <Folder Include="Implementation" />
+    <Folder Include="UAL" />
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>

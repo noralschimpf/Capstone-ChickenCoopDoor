@@ -1,4 +1,4 @@
-16319984784182268
+16321571501314894
 Arduino
 Arduino_101_Shield
 https://store.arduino.cc/genuino-101
@@ -6033,6 +6033,13 @@ Linear Regulator
 0
 4
 4
+Capstone_PCB_Lib
+switch
+
+
+0
+0
+0
 Connector
 Banana_Jack_1Pin
 Single banana socket, footprint - 6mm drill

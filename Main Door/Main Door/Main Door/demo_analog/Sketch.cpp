@@ -1,8 +1,8 @@
 ﻿/*Begining of Auto generated code by Atmel studio */
 #include <Arduino.h>
-#include "Display.h"
-#include "Safety.h"
-#include "Sensor.h"
+#include "Contracts/Display.h"
+#include "Contracts/Safety.h"
+#include "Contracts/Sensor.h"
 #include <avr/interrupt.h>
 /*End of auto generated code by Atmel studio */
 
