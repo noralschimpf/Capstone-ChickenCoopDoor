@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:CapstoneSchematic-cache
+LIBS:Alarm-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title "Wireless Alarm Schematic"
 Date ""
 Rev ""
@@ -15,12 +15,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5DC549DA
 P 2800 2750
-AR Path="/5DC549DA" Ref="#PWR?"  Part="1" 
+AR Path="/5DC549DA" Ref="#PWR0101"  Part="1" 
 AR Path="/5DC4244F/5DC549DA" Ref="#PWR033"  Part="1" 
-F 0 "#PWR033" H 2800 2500 50  0001 C CNN
+F 0 "#PWR0101" H 2800 2500 50  0001 C CNN
 F 1 "GND" H 2805 2577 50  0000 C CNN
 F 2 "" H 2800 2750 50  0001 C CNN
 F 3 "" H 2800 2750 50  0001 C CNN
@@ -28,12 +28,12 @@ F 3 "" H 2800 2750 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0102
 U 1 1 5DC549E0
 P 2800 2250
-AR Path="/5DC549E0" Ref="#PWR?"  Part="1" 
+AR Path="/5DC549E0" Ref="#PWR0102"  Part="1" 
 AR Path="/5DC4244F/5DC549E0" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 2800 2100 50  0001 C CNN
+F 0 "#PWR0102" H 2800 2100 50  0001 C CNN
 F 1 "+5V" H 2815 2423 50  0000 C CNN
 F 2 "" H 2800 2250 50  0001 C CNN
 F 3 "" H 2800 2250 50  0001 C CNN
@@ -52,12 +52,12 @@ F 3 "~" V 8700 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5DC60A34
 P 8825 1050
-AR Path="/5DC60A34" Ref="#PWR?"  Part="1" 
+AR Path="/5DC60A34" Ref="#PWR0103"  Part="1" 
 AR Path="/5DC4244F/5DC60A34" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 8825 800 50  0001 C CNN
+F 0 "#PWR0103" H 8825 800 50  0001 C CNN
 F 1 "GND" V 8830 922 50  0000 R CNN
 F 2 "" H 8825 1050 50  0001 C CNN
 F 3 "" H 8825 1050 50  0001 C CNN
@@ -65,12 +65,12 @@ F 3 "" H 8825 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0104
 U 1 1 5DC69508
 P 2725 1725
-AR Path="/5DC69508" Ref="#PWR?"  Part="1" 
+AR Path="/5DC69508" Ref="#PWR0104"  Part="1" 
 AR Path="/5DC4244F/5DC69508" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 2725 1575 50  0001 C CNN
+F 0 "#PWR0104" H 2725 1575 50  0001 C CNN
 F 1 "+5V" H 2740 1898 50  0000 C CNN
 F 2 "" H 2725 1725 50  0001 C CNN
 F 3 "" H 2725 1725 50  0001 C CNN
@@ -78,12 +78,12 @@ F 3 "" H 2725 1725 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5DC69FE6
 P 2725 1925
-AR Path="/5DC69FE6" Ref="#PWR?"  Part="1" 
+AR Path="/5DC69FE6" Ref="#PWR0105"  Part="1" 
 AR Path="/5DC4244F/5DC69FE6" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 2725 1675 50  0001 C CNN
+F 0 "#PWR0105" H 2725 1675 50  0001 C CNN
 F 1 "GND" H 2730 1752 50  0000 C CNN
 F 2 "" H 2725 1925 50  0001 C CNN
 F 3 "" H 2725 1925 50  0001 C CNN
@@ -126,12 +126,12 @@ Wire Wire Line
 Wire Wire Line
 	8025 2125 7625 2125
 $Comp
-L CapstoneSchematic:LoRa ULoRa?
+L CapstoneSchematic:LoRa ULoRa1
 U 1 1 5DC549E8
 P 2700 2250
-AR Path="/5DC549E8" Ref="ULoRa?"  Part="1" 
+AR Path="/5DC549E8" Ref="ULoRa1"  Part="1" 
 AR Path="/5DC4244F/5DC549E8" Ref="ULoRa2"  Part="1" 
-F 0 "ULoRa2" H 4078 2196 50  0000 L CNN
+F 0 "ULoRa1" H 4078 2196 50  0000 L CNN
 F 1 "LoRa" H 4078 2105 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Horizontal" H 3250 2050 50  0001 C CNN
 F 3 "" H 3250 2050 50  0001 C CNN
@@ -197,7 +197,7 @@ U 1 1 5E936E97
 P 8500 2250
 F 0 "SW1" H 8500 2635 50  0000 C CNN
 F 1 "SW_MEC_5G_LED" H 8500 2544 50  0000 C CNN
-F 2 "" H 8500 2550 50  0001 C CNN
+F 2 "Capstone_PCB_Lib:Button" H 8500 2550 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 8500 2550 50  0001 C CNN
 	1    8500 2250
 	-1   0    0    1   
