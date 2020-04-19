@@ -48,5 +48,14 @@
  ***********************/
 #define MORNING 0
 #define EVENING 1
+/***********************
+ *Door Actions Values*
+ ***********************/
+#define OPENDOOR 0
+#define CLOSEDOOR 1
+#define STOPDOOR 2
+#define EMERGENCYOPENDOOR 3
+
+
 
 #endif

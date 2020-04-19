@@ -158,9 +158,7 @@ Wire Bus Line
 	5500 1500 5500 2500
 Wire Wire Line
 	7050 1900 7050 2350
-Text Label 6550 2750 2    50   ~ 0
-LoRa3
-Text Label 6545 2675 2    50   ~ 0
+Text Label 6645 2750 2    50   ~ 0
 LoRa4
 Text Label 4150 1800 0    50   ~ 0
 LoRa4
@@ -790,6 +788,8 @@ Wire Wire Line
 	7800 3150 7650 3150
 Text Label 4525 3250 0    50   ~ 0
 SAS_Int1
+Text Label 6650 2850 2    50   ~ 0
+LoRa3
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line
