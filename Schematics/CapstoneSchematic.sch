@@ -5,14 +5,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "Coop Main Door"
+Date "2020-04-24"
+Rev "4"
+Comp "UofL ECE Capstone"
+Comment1 "Adedotun Abe"
+Comment2 "Michael Portaro"
+Comment3 "Nathan Schimpf"
+Comment4 "Jacob Berdichevsky"
 $EndDescr
 Wire Wire Line
 	9200 1700 9200 1650
@@ -642,8 +642,6 @@ F 3 "" H 5400 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 4050 6650 5750
-Text Notes 1125 6175 0    50   ~ 0
-Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible\nTo debounce switch will need to put a .1 micro f cap on gnd and input pin
 Wire Wire Line
 	5450 3050 6650 3050
 $Comp
@@ -790,6 +788,8 @@ Text Label 4525 3250 0    50   ~ 0
 SAS_Int1
 Text Label 6650 2850 2    50   ~ 0
 LoRa3
+Text Notes -2950 9800 0    50   ~ 0
+Notes:\nThere was an accidental junction on the Common and 12V for the Relays, need to fix\n\nInterrupts need rewiring: https://www.instructables.com/id/Arduino-Interrupts/\n-THe COMM goes to GND for 5V line\n\nLinear Reg,put pin names on silkscreen\n\nLED_G should just go to 5V line and not be connected to arduino.\n\nMake AREF Accessible\nTo debounce switch will need to put a .1 micro f cap on gnd and input pin
 Wire Bus Line
 	695  4050 695  4885
 Wire Bus Line
